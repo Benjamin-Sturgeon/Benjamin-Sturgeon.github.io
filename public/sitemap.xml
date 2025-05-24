@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.example.com/authors/</loc>
+    <loc>https://benjamin-sturgeon.github.io/ePortfolio/authors/</loc>
   </url><url>
-    <loc>http://www.example.com/</loc>
+    <loc>https://benjamin-sturgeon.github.io/ePortfolio/</loc>
   </url><url>
-    <loc>http://www.example.com/categories/</loc>
+    <loc>https://benjamin-sturgeon.github.io/ePortfolio/categories/</loc>
   </url><url>
-    <loc>http://www.example.com/series/</loc>
+    <loc>https://benjamin-sturgeon.github.io/ePortfolio/series/</loc>
   </url><url>
-    <loc>http://www.example.com/tags/</loc>
+    <loc>https://benjamin-sturgeon.github.io/ePortfolio/tags/</loc>
   </url>
 </urlset>
