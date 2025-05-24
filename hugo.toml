@@ -1,4 +1,4 @@
-baseURL = "https://benjamin-sturgeon.github.io/ePortfolio/"
+baseURL = "https://benjamin-sturgeon.github.io/"
 title = "Benjamin Sturgeon"
 theme = "hugo-coder"
 languageCode = "en"

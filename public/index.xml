@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Benjamin Sturgeon</title>
-    <link>https://benjamin-sturgeon.github.io/ePortfolio/</link>
+    <link>https://benjamin-sturgeon.github.io/</link>
     <description>Recent content on Benjamin Sturgeon</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://benjamin-sturgeon.github.io/ePortfolio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://benjamin-sturgeon.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
