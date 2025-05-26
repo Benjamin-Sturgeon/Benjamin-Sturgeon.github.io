@@ -21,6 +21,10 @@ noClasses = false
 [markup.goldmark.renderer]
 unsafe = true
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
 author = "Benjamin Sturgeon"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
