@@ -5,7 +5,7 @@ title = 'Software Engineering And Design'
 +++
 
 This is the original form of my Weight Tracker Application:
-[Download the file](http://localhost:1313/projects/CS-360WeightTrackerOriginal.zip)
+[Download the file](https://benjamin-sturgeon.github.io/projects/CS-360WeightTrackerOriginal.zip)
 
 This is the improved version:
-[Download the file](http://localhost:1313/projects/CS-360WeightTrackerImproved.zip)
+[Download the file](https://benjamin-sturgeon.github.io/projects/CS-360WeightTrackerImproved.zip)
