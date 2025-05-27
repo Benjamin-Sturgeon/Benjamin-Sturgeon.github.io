@@ -2,9 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://benjamin-sturgeon.github.io/authors/</loc>
-  </url><url>
     <loc>https://benjamin-sturgeon.github.io/</loc>
+    <lastmod>2025-05-26T20:19:54-05:00</lastmod>
+  </url><url>
+    <loc>https://benjamin-sturgeon.github.io/projects/</loc>
+    <lastmod>2025-05-26T20:19:54-05:00</lastmod>
+  </url><url>
+    <loc>https://benjamin-sturgeon.github.io/blog/</loc>
+    <lastmod>2025-05-26T20:10:41-05:00</lastmod>
+  </url><url>
+    <loc>https://benjamin-sturgeon.github.io/about/</loc>
+    <lastmod>2025-05-26T18:33:51-05:00</lastmod>
+  </url><url>
+    <loc>https://benjamin-sturgeon.github.io/authors/</loc>
   </url><url>
     <loc>https://benjamin-sturgeon.github.io/categories/</loc>
   </url><url>
