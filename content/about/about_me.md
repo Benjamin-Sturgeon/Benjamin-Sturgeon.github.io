@@ -17,7 +17,7 @@ My Skills inlcude:
 *	*Frameworks & Technologies:* React, Angular, Node.js, RESTful APIs, Material Design
 *	*Programming Languages:* Java, C++, Python, Kotlin, SQL, NoSQL, HTML, XML
 *	*Database Management:* MSSQL Server, Oracle, MongoDB, SQL Server,
-*	*Development Tools:* GitHub, Visual Studio, Android Studio, Pycharm, Visual Studio Code
+*	*Development Tools:* GitHub, Visual Studio, Android Studio, Pycharm, Visual Studio Code, Eclipse
 *	*System & Networking:* TCP/IP, Sockets, AWS, DevOps principles
 *	*Software Engineering Practices:* Agile Development, Test-Driven Development (TDD), Code Reviews
 
