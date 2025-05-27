@@ -1,9 +1,9 @@
----
-date: '2025-05-26T18:33:51-05:00'
-description: 'Introduction to Benjamin Sturgeon'
-draft: true
-title: 'About Me'
----
++++
+date = '2025-05-26T18:33:51-05:00'
+description = 'Introduction to Benjamin Sturgeon'
+draft = false
+title = 'About Me'
++++ 
 ![Benjamin Stureon](/images/avatar.jpg)
 
 Hello,

@@ -1,6 +1,6 @@
 +++
 date = '2025-05-26T20:19:54-05:00'
-draft = true
+draft = false
 title = 'Software Engineering And Design'
 +++
 

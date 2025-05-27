@@ -6,7 +6,14 @@
     <description>Recent content in Projects on Benjamin Sturgeon</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 20:19:54 -0500</lastBuildDate>
     <atom:link href="https://benjamin-sturgeon.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Engineering And Design</title>
+      <link>https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/</link>
+      <pubDate>Mon, 26 May 2025 20:19:54 -0500</pubDate>
+      <guid>https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/</guid>
+      <description>&lt;p&gt;This is the original form of my Weight Tracker Application:&#xA;&lt;a href=&#34;http://localhost:1313/projects/CS-360WeightTrackerOriginal.zip&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Download the file&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is the improved version:&#xA;&lt;a href=&#34;http://localhost:1313/projects/CS-360WeightTrackerImproved.zip&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Download the file&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
