@@ -2,7 +2,7 @@
 date = '2025-05-30T14:35:25-05:00'
 draft = false
 title = 'Resume'
-featured_image = "/images/post-title-image.png"
+featured_image = "/images/avatar3.jpg"
 +++
 
 I have provided a link to download my current Resume here:

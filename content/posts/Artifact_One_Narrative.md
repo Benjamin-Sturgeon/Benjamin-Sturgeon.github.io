@@ -2,7 +2,7 @@
 date = '2025-05-26T20:10:41-05:00'
 draft = false
 title = 'Artifact One Narrative'
-featured_image = "/images/Coding.jpg"
+featured_image = "/images/avatar4.jpg"
 +++
 
 Artifact One Narrative
