@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Benjamin Sturgeon</title>
-    <link>http://localhost:1313/</link>
+    <link>https://benjamin-sturgeon.github.io/</link>
     <description>Recent content on Benjamin Sturgeon</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 30 May 2025 14:39:10 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://benjamin-sturgeon.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/contact/</link>
+      <link>https://benjamin-sturgeon.github.io/contact/contact/</link>
       <pubDate>Fri, 30 May 2025 14:39:10 -0500</pubDate>
-      <guid>http://localhost:1313/contact/contact/</guid>
+      <guid>https://benjamin-sturgeon.github.io/contact/contact/</guid>
       <description>&lt;h1 id=&#34;contact-information&#34;&gt;&#xD;&#xA;  Contact Information&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#contact-information&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;📍 Address:&lt;/strong&gt;&lt;br&gt;&#xA;11620 Airline Hwy Apt 214&lt;br&gt;&#xA;Baton Rouge, LA 70816&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;📞 Phone:&lt;/strong&gt;&lt;br&gt;&#xA;(334) 372-9730&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;✉️ Email:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;mailto:benjaminsturgeon@outlook.com&#34; &gt;benjaminsturgeon@outlook.com&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resume</title>
-      <link>http://localhost:1313/about/resume/</link>
+      <link>https://benjamin-sturgeon.github.io/about/resume/</link>
       <pubDate>Fri, 30 May 2025 14:35:25 -0500</pubDate>
-      <guid>http://localhost:1313/about/resume/</guid>
+      <guid>https://benjamin-sturgeon.github.io/about/resume/</guid>
       <description>&lt;p&gt;I have provided a link to download my current Resume here:&#xA;&lt;a href=&#34;https://benjamin-sturgeon.github.io/about/Resume.docx&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Download the Resume&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;objective&#34;&gt;&#xD;&#xA;  Objective&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#objective&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;I am a passionate and detail-oriented Software Developer with a strong&#xA;foundation in full-stack development and software engineering. I am&#xA;seeking a dynamic role where I can apply my problem-solving skills,&#xA;technical expertise, and user-focused approach to create innovative,&#xA;efficient solutions..&lt;/p&gt;&#xA;&lt;h1 id=&#34;skills&#34;&gt;&#xD;&#xA;  Skills&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#skills&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Frameworks &amp;amp; Technologies:&lt;/strong&gt; React, Angular, Node.js, RESTful APIs,&#xA;Material Design, MEAN Stack&lt;/p&gt;</description>
     </item>
     <item>
       <title>Journal One</title>
-      <link>http://localhost:1313/posts/journalone/</link>
+      <link>https://benjamin-sturgeon.github.io/posts/journalone/</link>
       <pubDate>Fri, 30 May 2025 14:31:04 -0500</pubDate>
-      <guid>http://localhost:1313/posts/journalone/</guid>
+      <guid>https://benjamin-sturgeon.github.io/posts/journalone/</guid>
       <description>&lt;p&gt;Part One:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;How might you use an ePortfolio for the benefit of self-promotion?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;An ePortfolio provides me with an excellent place to provide potential&#xA;employers with a showcase of my previous work and skills. It also&#xA;provides my contact information and other resume details in pleasant&#xA;format with an interactable UI. This showcases my ability to go above&#xA;and beyond in my application presentation which will potentially give me&#xA;a leg up over other candidates.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software Engineering And Design</title>
-      <link>http://localhost:1313/projects/softwareengineeringanddesign/</link>
+      <link>https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/</link>
       <pubDate>Mon, 26 May 2025 20:19:54 -0500</pubDate>
-      <guid>http://localhost:1313/projects/softwareengineeringanddesign/</guid>
+      <guid>https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/</guid>
       <description>&lt;p&gt;This is the first improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.&lt;/p&gt;&#xA;&lt;p&gt;The artifact that I have chosen for this category is my Weight Tracking application that I developed in my CS 360 Mobile Architecture and Programming class. I have chosen this because it provides an excellent opportunity to showcase my understanding of application development and how to make changes based on the visual needs of users.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Artifact One Narrative</title>
-      <link>http://localhost:1313/posts/artifact_one_narrative/</link>
+      <link>https://benjamin-sturgeon.github.io/posts/artifact_one_narrative/</link>
       <pubDate>Mon, 26 May 2025 20:10:41 -0500</pubDate>
-      <guid>http://localhost:1313/posts/artifact_one_narrative/</guid>
+      <guid>https://benjamin-sturgeon.github.io/posts/artifact_one_narrative/</guid>
       <description>&lt;p&gt;Artifact One Narrative&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Briefly describe the artifact. What is it? When was it created?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The Weight Tracking Application is a mobile-based solution designed to&#xA;help users track their weight progress effectively while integrating&#xA;notifications and user-friendly UI enhancements. Originally developed&#xA;as part of my coursework, the artifact combines data storage,&#xA;interactive UI elements, and real-time notifications to encourage&#xA;weight management. The initial version contained foundational&#xA;functionality but lacked modern aesthetics, efficient UI behavior, and&#xA;seamless account management features.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/about_me/</link>
+      <link>https://benjamin-sturgeon.github.io/about/about_me/</link>
       <pubDate>Mon, 26 May 2025 18:33:51 -0500</pubDate>
-      <guid>http://localhost:1313/about/about_me/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/avatar.jpg&#34; alt=&#34;Benjamin Stureon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hello,&lt;/p&gt;&#xA;&lt;p&gt;I am a passionate and detail-oriented Software Developer with a strong foundation in full-stack development and software engineering. I am seeking a dynamic role where I can apply my problem-solving skills, technical expertise, and user-focused approach to create innovative, efficient solutions.&lt;/p&gt;&#xA;&lt;p&gt;My education in Software Engineering is about to conclude with my graduation in Computer Science in June of this year. I am currently seeking employment in the Computer Science fields of Software Engineering/Development, Full-Stack Development, and Applications Development.&lt;/p&gt;</description>
+      <guid>https://benjamin-sturgeon.github.io/about/about_me/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://benjamin-sturgeon.github.io/images/avatar.jpg&#34; alt=&#34;Benjamin Stureon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hello,&lt;/p&gt;&#xA;&lt;p&gt;I am a passionate and detail-oriented Software Developer with a strong foundation in full-stack development and software engineering. I am seeking a dynamic role where I can apply my problem-solving skills, technical expertise, and user-focused approach to create innovative, efficient solutions.&lt;/p&gt;&#xA;&lt;p&gt;My education in Software Engineering is about to conclude with my graduation in Computer Science in June of this year. I am currently seeking employment in the Computer Science fields of Software Engineering/Development, Full-Stack Development, and Applications Development.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
