@@ -5,7 +5,7 @@ draft = false
 title = 'About Me'
 featured_image = "/images/About.png"
 +++ 
-![Benjamin Stureon](/images/avatar.jpg)
+![Benjamin Stureon](/images/avatar2.jpg)
 
 Hello,
 
