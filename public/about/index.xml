@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on Benjamin Sturgeon</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://benjamin-sturgeon.github.io/about/</link>
     <description>Recent content in Abouts on Benjamin Sturgeon</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 30 May 2025 14:35:25 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://benjamin-sturgeon.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resume</title>
-      <link>http://localhost:1313/about/resume/</link>
+      <link>https://benjamin-sturgeon.github.io/about/resume/</link>
       <pubDate>Fri, 30 May 2025 14:35:25 -0500</pubDate>
-      <guid>http://localhost:1313/about/resume/</guid>
+      <guid>https://benjamin-sturgeon.github.io/about/resume/</guid>
       <description>&lt;p&gt;I have provided a link to download my current Resume here:&#xA;&lt;a href=&#34;https://benjamin-sturgeon.github.io/about/Resume.docx&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Download the Resume&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;objective&#34;&gt;&#xD;&#xA;  Objective&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#objective&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;I am a passionate and detail-oriented Software Developer with a strong&#xA;foundation in full-stack development and software engineering. I am&#xA;seeking a dynamic role where I can apply my problem-solving skills,&#xA;technical expertise, and user-focused approach to create innovative,&#xA;efficient solutions..&lt;/p&gt;&#xA;&lt;h1 id=&#34;skills&#34;&gt;&#xD;&#xA;  Skills&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#skills&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Frameworks &amp;amp; Technologies:&lt;/strong&gt; React, Angular, Node.js, RESTful APIs,&#xA;Material Design, MEAN Stack&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/about_me/</link>
+      <link>https://benjamin-sturgeon.github.io/about/about_me/</link>
       <pubDate>Mon, 26 May 2025 18:33:51 -0500</pubDate>
-      <guid>http://localhost:1313/about/about_me/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/avatar.jpg&#34; alt=&#34;Benjamin Stureon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hello,&lt;/p&gt;&#xA;&lt;p&gt;I am a passionate and detail-oriented Software Developer with a strong foundation in full-stack development and software engineering. I am seeking a dynamic role where I can apply my problem-solving skills, technical expertise, and user-focused approach to create innovative, efficient solutions.&lt;/p&gt;&#xA;&lt;p&gt;My education in Software Engineering is about to conclude with my graduation in Computer Science in June of this year. I am currently seeking employment in the Computer Science fields of Software Engineering/Development, Full-Stack Development, and Applications Development.&lt;/p&gt;</description>
+      <guid>https://benjamin-sturgeon.github.io/about/about_me/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://benjamin-sturgeon.github.io/images/avatar.jpg&#34; alt=&#34;Benjamin Stureon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hello,&lt;/p&gt;&#xA;&lt;p&gt;I am a passionate and detail-oriented Software Developer with a strong foundation in full-stack development and software engineering. I am seeking a dynamic role where I can apply my problem-solving skills, technical expertise, and user-focused approach to create innovative, efficient solutions.&lt;/p&gt;&#xA;&lt;p&gt;My education in Software Engineering is about to conclude with my graduation in Computer Science in June of this year. I am currently seeking employment in the Computer Science fields of Software Engineering/Development, Full-Stack Development, and Applications Development.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

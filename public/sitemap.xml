@@ -2,45 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://benjamin-sturgeon.github.io/</loc>
     <lastmod>2025-05-30T14:39:10-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/contact/</loc>
+    <loc>https://benjamin-sturgeon.github.io/contact/contact/</loc>
     <lastmod>2025-05-30T14:39:10-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://benjamin-sturgeon.github.io/contact/</loc>
     <lastmod>2025-05-30T14:39:10-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://benjamin-sturgeon.github.io/about/</loc>
     <lastmod>2025-05-30T14:35:25-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/resume/</loc>
+    <loc>https://benjamin-sturgeon.github.io/about/resume/</loc>
     <lastmod>2025-05-30T14:35:25-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/journalone/</loc>
+    <loc>https://benjamin-sturgeon.github.io/posts/journalone/</loc>
     <lastmod>2025-05-30T14:31:04-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://benjamin-sturgeon.github.io/posts/</loc>
     <lastmod>2025-05-30T14:31:04-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://benjamin-sturgeon.github.io/projects/</loc>
     <lastmod>2025-05-26T20:19:54-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/softwareengineeringanddesign/</loc>
+    <loc>https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/</loc>
     <lastmod>2025-05-26T20:19:54-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/artifact_one_narrative/</loc>
+    <loc>https://benjamin-sturgeon.github.io/posts/artifact_one_narrative/</loc>
     <lastmod>2025-05-26T20:10:41-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/about_me/</loc>
+    <loc>https://benjamin-sturgeon.github.io/about/about_me/</loc>
     <lastmod>2025-05-26T18:33:51-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://benjamin-sturgeon.github.io/authors/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://benjamin-sturgeon.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://benjamin-sturgeon.github.io/series/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://benjamin-sturgeon.github.io/tags/</loc>
   </url>
 </urlset>
