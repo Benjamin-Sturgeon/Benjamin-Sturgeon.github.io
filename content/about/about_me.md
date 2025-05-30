@@ -3,6 +3,7 @@ date = '2025-05-26T18:33:51-05:00'
 description = 'Introduction to Benjamin Sturgeon'
 draft = false
 title = 'About Me'
+featured_image = "/images/About.png"
 +++ 
 ![Benjamin Stureon](/images/avatar.jpg)
 

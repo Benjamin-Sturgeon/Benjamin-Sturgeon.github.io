@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>
   Software Engineering And Design · Benjamin Sturgeon
 </title>
@@ -13,24 +13,22 @@
 
 
 <meta name="author" content="Benjamin Sturgeon">
-<meta name="description" content="This is the original form of my Weight Tracker Application:
-Download the file
-This is the improved version:
-Download the file">
+<meta name="description" content="This is the first improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.
+The artifact that I have chosen for this category is my Weight Tracking application that I developed in my CS 360 Mobile Architecture and Programming class. I have chosen this because it provides an excellent opportunity to showcase my understanding of application development and how to make changes based on the visual needs of users.">
 <meta name="keywords" content="blog,developer,personal">
 
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Software Engineering And Design">
-  <meta name="twitter:description" content="This is the original form of my Weight Tracker Application: Download the file
-This is the improved version: Download the file">
+  <meta name="twitter:description" content="This is the first improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.
+The artifact that I have chosen for this category is my Weight Tracking application that I developed in my CS 360 Mobile Architecture and Programming class. I have chosen this because it provides an excellent opportunity to showcase my understanding of application development and how to make changes based on the visual needs of users.">
 
-<meta property="og:url" content="https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/">
+<meta property="og:url" content="http://localhost:1313/projects/softwareengineeringanddesign/">
   <meta property="og:site_name" content="Benjamin Sturgeon">
   <meta property="og:title" content="Software Engineering And Design">
-  <meta property="og:description" content="This is the original form of my Weight Tracker Application: Download the file
-This is the improved version: Download the file">
+  <meta property="og:description" content="This is the first improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.
+The artifact that I have chosen for this category is my Weight Tracking application that I developed in my CS 360 Mobile Architecture and Programming class. I have chosen this because it provides an excellent opportunity to showcase my understanding of application development and how to make changes based on the visual needs of users.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="projects">
@@ -39,8 +37,11 @@ This is the improved version: Download the file">
 
 
 
+<link rel="icon" href="http://localhost:1313/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
 
-<link rel="canonical" href="https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/">
+
+<link rel="canonical" href="http://localhost:1313/projects/softwareengineeringanddesign/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -50,7 +51,7 @@ This is the improved version: Download the file">
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.2cd2ba040eaadea1390f8199e24bd994fabd69b5a7034b43fc2440c58fd09808.css" integrity="sha256-LNK6BA6q3qE5D4GZ4kvZlPq9abWnA0tD/CRAxY/QmAg=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
 
 
 
@@ -60,7 +61,7 @@ This is the improved version: Download the file">
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
   
 
 
@@ -108,7 +109,7 @@ This is the improved version: Download the file">
     <nav class="navigation">
   <section class="container">
     
-    <a class="navigation-title" href="https://benjamin-sturgeon.github.io/">
+    <a class="navigation-title" href="http://localhost:1313/">
       Benjamin Sturgeon
     </a>
     
@@ -150,17 +151,390 @@ This is the improved version: Download the file">
   <article>
     <header>
       <h1 class="title">
-        <a class="title-link" href="https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/">
+        <a class="title-link" href="http://localhost:1313/projects/softwareengineeringanddesign/">
           Software Engineering And Design
         </a>
       </h1>
     </header>
 
-    <p>This is the original form of my Weight Tracker Application:
+    <p>This is the first improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.</p>
+<p>The artifact that I have chosen for this category is my Weight Tracking application that I developed in my CS 360 Mobile Architecture and Programming class. I have chosen this because it provides an excellent opportunity to showcase my understanding of application development and how to make changes based on the visual needs of users.</p>
+<p>I completed a code review prior to implementing improvements to the project. The link to this code review is provided here:
+<a href="https://youtu.be/ULIRyS-XVs4"  class="external-link" target="_blank" rel="noopener">https://youtu.be/ULIRyS-XVs4</a></p>
+<p>This is the original form of my Weight Tracker Application:
 <a href="https://benjamin-sturgeon.github.io/projects/CS-360WeightTrackerOriginal.zip"  class="external-link" target="_blank" rel="noopener">Download the file</a></p>
 <p>This is the improved version:
 <a href="https://benjamin-sturgeon.github.io/projects/CS-360WeightTrackerImproved.zip"  class="external-link" target="_blank" rel="noopener">Download the file</a></p>
-
+<p>This is the Code Review Script that I used for my Analysis:</p>
+<ol>
+<li>
+<p><strong>Category One: Software Design and Engineering</strong></p>
+<ol>
+<li>
+<p>Provide a clear, complete description of existing code
+<strong>functionality</strong>.</p>
+<ol>
+<li>
+<p>What does the code do?</p>
+<ul>
+<li>The first artifact that I will be improving is a Weight
+Tracking Application. This simple Java application is
+designed to run on Android OS and provides users with a
+way to track their weight. They can also set their goal
+weight and opt in to receive a text notification once
+their goal weight is reached. User accounts are created
+during the initial login screen of the application. Data
+is kept locally on the device via a MongoDB schema.</li>
+</ul>
+</li>
+<li>
+<p>Focus on the features and functions of the existing code.</p>
+<ul>
+<li>
+<p>User Account Creation and Authentication</p>
+</li>
+<li>
+<p>Weight Recording in pounds and the date of recording</p>
+</li>
+<li>
+<p>Presentation of the weights in a convenient list</p>
+</li>
+<li>
+<p>Addition and Removal of weights from the list</p>
+</li>
+<li>
+<p>Text Notifications</p>
+</li>
+<li>
+<p>Goal Weight Set</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Analyze</strong> existing code using relevant code review criteria to
+support clearly stated findings. <strong>Analysis is completed on Main
+Activity and the relevant SMS Dialog Fragment in order to focus
+on the scope of the specific planned improvements</strong></p>
+<ol>
+<li>
+<p>Use the checklist to review the code critically. This review
+might highlight weaknesses, such as not following secure
+coding best practices, having no error handling, code not
+being efficient, code that needs debugging, and so on. Not
+all the items on the checklist will be applicable, so review
+the ones that are applicable to your artifact.</p>
+<ul>
+<li>Thanks for providing the checklist! Here&rsquo;s my structured
+code review based on the criteria:</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p><strong>MAIN ACTIVITY</strong></p></blockquote>
+<ul>
+<li>
+<p><strong>Structure</strong></p>
+<ul>
+<li>
+<p>The code generally follows good structuring principles, using clear
+class definitions and modularization.</p>
+</li>
+<li>
+<p>The implementation aligns with its intended functionality.</p>
+</li>
+<li>
+<p>No evident coding standards violations, but ensuring consistency in
+commenting conventions would be useful.</p>
+</li>
+<li>
+<p>No unnecessary procedures or unreachable code detected.</p>
+</li>
+<li>
+<p>Reusable components, such as utility functions for validation, could
+improve readability and maintainability.</p>
+</li>
+<li>
+<p>No explicit magic number constants, but using constant variables for
+fixed values (e.g., SEND_SMS_REQUEST_CODE) enhances clarity.</p>
+</li>
+<li>
+<p>No excessive complexity detected, but certain methods such as
+validation functions could be refined for readability.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentation</strong></p>
+<ul>
+<li>
+<p>While some methods are sufficiently documented, improving inline
+comments would enhance maintainability.</p>
+</li>
+<li>
+<p>Some comments appear redundant—ensuring they contribute to
+understanding the code rather than repeating it would improve clarity.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Variables</strong></p>
+<ul>
+<li>
+<p>Meaningful variable names are used.</p>
+</li>
+<li>
+<p>Explicit type definitions are maintained.</p>
+</li>
+<li>
+<p>No apparent redundant or unused variables.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Arithmetic Operations</strong></p>
+<ul>
+<li>
+<p>No floating-point equality checks detected.</p>
+</li>
+<li>
+<p>No evident risk of rounding errors in numerical operations.</p>
+</li>
+<li>
+<p>Division operations are not present, so checking for zero divisors is
+not necessary.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Loops and Branches</strong></p>
+<ul>
+<li>
+<p>All loops appear correct and properly nested.</p>
+</li>
+<li>
+<p>Default conditions are used where needed.</p>
+</li>
+<li>
+<p>Logical flow is maintained within the IF-ELSE constructs.</p>
+</li>
+<li>
+<p>Loop termination is clear, though ensuring rigorous testing of edge
+cases is recommended.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Defensive Programming</strong></p>
+<ul>
+<li>
+<p>User input validation is integrated but could be strengthened by
+checking for possible injection attacks.</p>
+</li>
+<li>
+<p>Error-handling mechanisms for database interactions are minimal—adding
+exception handling would enhance reliability.</p>
+</li>
+<li>
+<p>Permissions checks are correctly implemented, ensuring SMS-related
+permissions are verified before proceeding.</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>SMS DIALOG FRAGMENT</strong></p></blockquote>
+<ul>
+<li>
+<p><strong>Structure</strong></p>
+<ul>
+<li>
+<p>The code correctly implements the expected design, defining a
+<strong>DialogFragment</strong> for SMS permission requests.</p>
+</li>
+<li>
+<p>It follows Android coding conventions and uses appropriate class
+structures.</p>
+</li>
+<li>
+<p>The SMSPermissionDialogMessagePrompt class is modular and does not
+contain unnecessary procedures or unreachable code.</p>
+</li>
+<li>
+<p>There are no redundant test routines or stubs.</p>
+</li>
+<li>
+<p>No evident use of magic numbers, as all constants are sourced from
+resources (R.string values).</p>
+</li>
+<li>
+<p>No excessive complexity detected—the code is relatively simple and
+well-structured.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentation</strong></p>
+<ul>
+<li>
+<p>The code lacks inline comments. Adding brief, meaningful comments for
+method purpose and key logic points would improve maintainability.</p>
+</li>
+<li>
+<p>There’s no misleading documentation, but further explanations of
+behavior (especially around permission handling) would be useful.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Variables</strong></p>
+<ul>
+<li>
+<p>Variables are well-defined with clear names.</p>
+</li>
+<li>
+<p>No redundant or unused variables detected.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Arithmetic Operations</strong></p>
+<ul>
+<li>No arithmetic operations are present, so floating-point comparisons,
+rounding errors, and zero divisors are not relevant.</li>
+</ul>
+</li>
+<li>
+<p><strong>Loops and Branches</strong></p>
+<ul>
+<li>
+<p>No loops are present in this code snippet.</p>
+</li>
+<li>
+<p>The IF-ELSE structure inside setPositiveButton and setNegativeButton
+is well-implemented.</p>
+</li>
+<li>
+<p>Logic flows correctly without any missing conditions.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Defensive Programming</strong></p>
+<ul>
+<li>
+<p>The code correctly checks for user interaction using the
+DialogInterface.OnClickListener.</p>
+</li>
+<li>
+<p>However, there is <strong>no null check</strong> for mListener before invoking
+onSMSPermissionDialogMessagePrompt(true/false). If the fragment is
+attached incorrectly or the context is mismanaged, this could lead to
+a NullPointerException.</p>
+</li>
+<li>
+<p>The usage of TextView padding is hardcoded
+(textView.setPadding(30,10,30,10);). Consider using <strong>resource
+values</strong> to maintain consistency across different device screens.</p>
+</li>
+<li>
+<p>No external device access or memory allocation issues are present.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Target areas for improvement such as structure, logic, efficiency,
+functionality, security, testing, commenting, and documenting.</li>
+</ol>
+<blockquote>
+<p><strong>MAIN ACTIVITY</strong></p></blockquote>
+<ul>
+<li>
+<p><strong>Suggested Improvements</strong></p>
+<ul>
+<li>
+<p><strong>Enhance Error Handling:</strong> Introduce exception handling in database
+access methods to avoid application crashes.</p>
+</li>
+<li>
+<p><strong>Improve Reusability:</strong> Create separate utility functions for
+validation logic rather than keeping them within MainActivity.</p>
+</li>
+<li>
+<p><strong>Strengthen Security:</strong> Consider salting and hashing user passwords
+at the validation stage instead of relying on retrieval functions.</p>
+</li>
+<li>
+<p><strong>Improve Commenting:</strong> Ensure comments provide meaningful
+explanations rather than redundant clarifications.</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>SMS DIALOG FRAGMENT</strong></p></blockquote>
+<ul>
+<li>
+<p><strong>Suggested Improvements</strong></p>
+<ul>
+<li>
+<p><strong>Add Null Checks</strong> for mListener to prevent runtime crashes due to
+unexpected fragment attachment failures.</p>
+</li>
+<li>
+<p><strong>Improve Documentation</strong> by adding concise comments that explain the
+purpose of each method.</p>
+</li>
+<li>
+<p><strong>Use Resource Values</strong> for TextView padding instead of hardcoded
+values.</p>
+</li>
+<li>
+<p><strong>Refactor Listener Assignment</strong>—consider safer handling during the
+onAttach lifecycle to avoid unexpected failures.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>
+<p>Explain practical <strong>enhancements</strong> aligned with analysis findings in
+a clear and organized manner.</p>
+<ul>
+<li>
+<p>Say what you plan to do in your enhancement. What specific
+skills will you demonstrate, and which of the five course
+outcomes will your enhancements support?</p>
+<ul>
+<li>I will specifically convert the SMS notification system to a
+dialogue which users can designate as Push Notifications, SMS
+Notifications, none, or both. This will greatly enhance the
+notification capabilities of the application. This enhancement
+will demonstrate my capabilities in developing and altering
+notification systems within a mobile application. I will also
+be creating the visual enhancements necessary for push
+notifications which will demonstrate my understanding of UI
+enhancement. The outcomes that this enhancement will
+demonstrate are two and three. This will demonstrate my
+ability to design, develop, and deliver visual and written
+communications which are well adapted to the intended
+audience. Push notifications are an excellent way to present
+information in a mobile environment and giving users the
+ability to choose represents evaluation of computing solutions
+which solve the problem of knowing when a goal weight has been
+reached.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<!-- -->
   </article>
 </section>
 
@@ -189,7 +563,7 @@ This is the improved version: Download the file">
 
   
   
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  <script src="/js/coder.js"></script>
   
 
   

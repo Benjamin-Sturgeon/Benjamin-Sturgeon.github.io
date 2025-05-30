@@ -10640,6 +10640,42 @@ figure {
 .fas {
   font-weight: 900; }
 
+.post-details {
+  display: flex;
+  align-items: center;
+  /* Keeps date and title vertically aligned */
+  justify-content: flex-start;
+  /* Prevents indentation */
+  gap: 8px;
+  /* Adds a small space between date and title */
+  width: 100%; }
+
+.date {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #777;
+  white-space: nowrap;
+  /* Prevents line breaks */ }
+
+.post-title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  /* Ensures the title stays inline */ }
+
+.post-thumbnail {
+  width: 100%;
+  /* Makes the image responsive */
+  max-width: 600px;
+  /* Ensures all images stay within a defined width */
+  height: auto;
+  /* Maintains aspect ratio */
+  object-fit: cover;
+  /* Prevents distortion */ }
+
 .content {
   flex: 1;
   display: flex;

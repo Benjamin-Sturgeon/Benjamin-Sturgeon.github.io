@@ -32,6 +32,7 @@ description = "Benjamin Sturgeon's personal website"
 keywords = "blog,developer,personal"
 info = ["Full Stack DevOps", "App Development"]
 avatarURL = "images/avatar.jpg"
+featuredImagePath = "images/"
 #gravatar = "Benjamin.Sturgeon@example.com"
 dateFormat = "January 2, 2006"
 since = 2019
