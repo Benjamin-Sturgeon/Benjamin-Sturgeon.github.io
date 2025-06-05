@@ -12,7 +12,7 @@ I have chosen to improve the code for the animal shelters application which util
 I completed a code review prior to implementing improvements to the project. The link to this code review is provided here:
 https://youtu.be/ULIRyS-XVs4
 
-This is the original form of my Weight Tracker Application:
+This is the original form of my Animal Shelter Dash Application:
 [Download the file](https://benjamin-sturgeon.github.io/projects/Animal_Shelter_Application_Original.zip)
 
 This is the improved version:
