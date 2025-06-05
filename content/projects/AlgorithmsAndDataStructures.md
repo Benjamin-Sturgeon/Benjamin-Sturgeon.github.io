@@ -2,7 +2,7 @@
 date = '2025-05-26T20:19:54-05:00'
 draft = false
 title = 'Algorithms and Data Structures'
-featured_image = "/images/Coding.jpg"
+featured_image = "/images/Grazioso_Salvare_Logo.png"
 +++
 
 This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.
