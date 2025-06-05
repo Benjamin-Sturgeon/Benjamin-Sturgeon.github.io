@@ -9,6 +9,13 @@
     <lastBuildDate>Fri, 30 May 2025 14:31:04 -0500</lastBuildDate>
     <atom:link href="https://benjamin-sturgeon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Code Review</title>
+      <link>https://benjamin-sturgeon.github.io/posts/codereview/</link>
+      <pubDate>Fri, 30 May 2025 14:31:04 -0500</pubDate>
+      <guid>https://benjamin-sturgeon.github.io/posts/codereview/</guid>
+      <description>&lt;p&gt;I completed a code review prior to implementing improvements to the project. The link to this code review is provided here:&#xA;&lt;a href=&#34;https://youtu.be/ULIRyS-XVs4&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://youtu.be/ULIRyS-XVs4&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is the Script for the code review. It addresses improvmenent for three seperate projects:&lt;/p&gt;&#xA;&lt;p&gt;Code Review Script&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Category One: Software Design and Engineering&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Provide a clear, complete description of existing code&#xA;&lt;strong&gt;functionality&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;What does the code do?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The first artifact that I will be improving is a Weight&#xA;Tracking Application. This simple Java application is&#xA;designed to run on Android OS and provides users with a&#xA;way to track their weight. They can also set their goal&#xA;weight and opt in to receive a text notification once&#xA;their goal weight is reached. User accounts are created&#xA;during the initial login screen of the application. Data&#xA;is kept locally on the device via a MongoDB schema.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Focus on the features and functions of the existing code.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Journal One</title>
       <link>https://benjamin-sturgeon.github.io/posts/journalone/</link>
       <pubDate>Fri, 30 May 2025 14:31:04 -0500</pubDate>
@@ -21,6 +28,13 @@
       <pubDate>Mon, 26 May 2025 20:10:41 -0500</pubDate>
       <guid>https://benjamin-sturgeon.github.io/posts/artifact_one_narrative/</guid>
       <description>&lt;p&gt;Artifact One Narrative&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Briefly describe the artifact. What is it? When was it created?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The Weight Tracking Application is a mobile-based solution designed to&#xA;help users track their weight progress effectively while integrating&#xA;notifications and user-friendly UI enhancements. Originally developed&#xA;as part of my coursework, the artifact combines data storage,&#xA;interactive UI elements, and real-time notifications to encourage&#xA;weight management. The initial version contained foundational&#xA;functionality but lacked modern aesthetics, efficient UI behavior, and&#xA;seamless account management features.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Artifact Two Narrative</title>
+      <link>https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/</link>
+      <pubDate>Mon, 26 May 2025 20:10:41 -0500</pubDate>
+      <guid>https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/</guid>
+      <description>&lt;p&gt;Artifact Two Narrative&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Narrative: Enhancing the AAC Grazioso Salvare Dashboard&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Brief Description of the Artifact&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This artifact is an interactive Jupyter Dash application, built to&#xA;visualize animal rescue data efficiently using MongoDB queries, Dash&#xA;components, and Plotly visualizations. Originally created as part of the&#xA;Southern New Hampshire University CS 499 Capstone, the dashboard&#xA;provides users with filtering options, an interactive data table, a map&#xA;visualization, and a pie chart representation of rescued animal breeds.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
