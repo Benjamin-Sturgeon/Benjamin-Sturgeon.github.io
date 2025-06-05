@@ -6,8 +6,15 @@
     <description>Recent content on Benjamin Sturgeon</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 May 2025 14:39:10 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 02 Jun 2025 14:31:04 -0500</lastBuildDate>
     <atom:link href="https://benjamin-sturgeon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Journal Two</title>
+      <link>https://benjamin-sturgeon.github.io/posts/journaltwo/</link>
+      <pubDate>Mon, 02 Jun 2025 14:31:04 -0500</pubDate>
+      <guid>https://benjamin-sturgeon.github.io/posts/journaltwo/</guid>
+      <description>&lt;p&gt;Part One:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Have you changed your career plans? If so, what prompted this&#xA;change? If not, why have you remained with your original plan?&lt;/strong&gt;&lt;br&gt;&#xA;Yes, I’ve shifted my career plans from data science to full-stack&#xA;development and application development. This change was driven by&#xA;my growing interest in user-centric design, structured workflows,&#xA;and maintainability. Through hands-on coding and collaborative&#xA;projects, I realized that I enjoy building complete systems that&#xA;prioritize efficiency and adaptability, rather than purely analyzing&#xA;data.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Contact</title>
       <link>https://benjamin-sturgeon.github.io/contact/contact/</link>
