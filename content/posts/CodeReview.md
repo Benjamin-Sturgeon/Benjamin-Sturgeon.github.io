@@ -12,7 +12,7 @@ externalLink = ""
 series = []
 +++
 
-I completed a code review prior to implementing improvements to the project. The link to this code review is provided here:
+I completed a code review prior to implementing improvements to the projects. The link to this code review is provided here:
 https://youtu.be/ULIRyS-XVs4
 
 This is the Script for the code review. It addresses improvmenent for three seperate projects:
