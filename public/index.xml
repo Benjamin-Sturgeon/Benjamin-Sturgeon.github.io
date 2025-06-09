@@ -6,8 +6,29 @@
     <description>Recent content on Benjamin Sturgeon</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Jun 2025 14:31:04 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 08 Jun 2025 20:19:54 -0500</lastBuildDate>
     <atom:link href="https://benjamin-sturgeon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Databases</title>
+      <link>https://benjamin-sturgeon.github.io/projects/databases/</link>
+      <pubDate>Sun, 08 Jun 2025 20:19:54 -0500</pubDate>
+      <guid>https://benjamin-sturgeon.github.io/projects/databases/</guid>
+      <description>&lt;p&gt;This is the third improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.&lt;/p&gt;&#xA;&lt;p&gt;The artifact that I have chosen for this category is my full-stack&#xA;development website utilizing the MEAN stack. This application is&#xA;derived from my CS-465 Full-Stack Development 1 class. I have chosen&#xA;this artifact because it provides me with a great framework to showcase&#xA;my ability to improve a full-stack application. I specifically planned&#xA;to implement Authorization security procedures for users which access&#xA;the Mongo Database in this application.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Artifact Three Narrative</title>
+      <link>https://benjamin-sturgeon.github.io/posts/artifact_three_narrative/</link>
+      <pubDate>Sun, 08 Jun 2025 20:10:41 -0500</pubDate>
+      <guid>https://benjamin-sturgeon.github.io/posts/artifact_three_narrative/</guid>
+      <description>&lt;p&gt;Artifact Three Narrative&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Travlr Authentication System Enhancement and Debugging&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artifact Overview&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The artifact that I have chosen for this category is my full-stack&#xA;development website utilizing the MEAN stack. This application is&#xA;derived from my CS-465 Full-Stack Development 1 class. I have chosen&#xA;this artifact because it provides me with a great framework to showcase&#xA;my ability to improve a full-stack application. I specifically planned&#xA;to implement Authorization security procedures for users which access&#xA;the Mongo Database in this application.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal Two</title>
+      <link>https://benjamin-sturgeon.github.io/posts/journalthree/</link>
+      <pubDate>Sun, 08 Jun 2025 14:31:04 -0500</pubDate>
+      <guid>https://benjamin-sturgeon.github.io/posts/journalthree/</guid>
+      <description>&lt;p&gt;Part One:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Journal Entry: Emerging Trends in Computer Science&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. What is the significance of each trend?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artificial Intelligence in Cybersecurity&lt;/strong&gt;&lt;br&gt;&#xA;AI in cybersecurity is revolutionizing threat detection by automating&#xA;security analysis, predicting potential vulnerabilities, and responding&#xA;to attacks in real time. With the rise of sophisticated cyber threats,&#xA;AI-driven security systems play a vital role in safeguarding sensitive&#xA;data and ensuring operational continuity across industries.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Blockchain for Secure Data Management&lt;/strong&gt;&lt;br&gt;&#xA;Blockchain technology is transforming secure data handling by&#xA;introducing decentralized, tamper-proof ledgers that enhance&#xA;transparency and eliminate third-party dependencies. This approach&#xA;ensures that data remains verifiable and resilient to unauthorized&#xA;modifications, reinforcing trust in digital transactions.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Journal Two</title>
       <link>https://benjamin-sturgeon.github.io/posts/journaltwo/</link>
