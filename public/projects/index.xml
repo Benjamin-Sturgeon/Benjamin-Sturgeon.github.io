@@ -1,33 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Projects on Benjamin Sturgeon</title>
-    <link>https://benjamin-sturgeon.github.io/projects/</link>
-    <description>Recent content in Projects on Benjamin Sturgeon</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 08 Jun 2025 20:19:54 -0500</lastBuildDate>
-    <atom:link href="https://benjamin-sturgeon.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Databases</title>
-      <link>https://benjamin-sturgeon.github.io/projects/databases/</link>
-      <pubDate>Sun, 08 Jun 2025 20:19:54 -0500</pubDate>
-      <guid>https://benjamin-sturgeon.github.io/projects/databases/</guid>
-      <description>&lt;p&gt;This is the third improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.&lt;/p&gt;&#xA;&lt;p&gt;The artifact that I have chosen for this category is my full-stack&#xA;development website utilizing the MEAN stack. This application is&#xA;derived from my CS-465 Full-Stack Development 1 class. I have chosen&#xA;this artifact because it provides me with a great framework to showcase&#xA;my ability to improve a full-stack application. I specifically planned&#xA;to implement Authorization security procedures for users which access&#xA;the Mongo Database in this application.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Algorithms and Data Structures</title>
-      <link>https://benjamin-sturgeon.github.io/projects/algorithmsanddatastructures/</link>
-      <pubDate>Mon, 26 May 2025 20:19:54 -0500</pubDate>
-      <guid>https://benjamin-sturgeon.github.io/projects/algorithmsanddatastructures/</guid>
-      <description>&lt;p&gt;This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.&lt;/p&gt;&#xA;&lt;p&gt;I have chosen to improve the code for the animal shelters application which utilizes python in order to perform CRUD operations as well as search and filters on content within a database. This application was developed in my CS-340 Client/Server Development class. This provides an excellent framework to implement improved code structure, improved portability of code methods, and enhanced optimization.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Software Engineering And Design</title>
-      <link>https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/</link>
-      <pubDate>Mon, 26 May 2025 20:19:54 -0500</pubDate>
-      <guid>https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/</guid>
-      <description>&lt;p&gt;This is the first improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.&lt;/p&gt;&#xA;&lt;p&gt;The artifact that I have chosen for this category is my Weight Tracking application that I developed in my CS 360 Mobile Architecture and Programming class. I have chosen this because it provides an excellent opportunity to showcase my understanding of application development and how to make changes based on the visual needs of users.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Benjamin Sturgeon</title><link>https://benjamin-sturgeon.github.io/projects/</link><description>Recent content in Projects on Benjamin Sturgeon</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 08 Jun 2025 20:19:54 -0500</lastBuildDate><atom:link href="https://benjamin-sturgeon.github.io/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Databases</title><link>https://benjamin-sturgeon.github.io/projects/databases/</link><pubDate>Sun, 08 Jun 2025 20:19:54 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/projects/databases/</guid><description>&lt;p>This is the third improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.&lt;/p>
+&lt;p>The artifact that I have chosen for this category is my full-stack
+development website utilizing the MEAN stack. This application is
+derived from my CS-465 Full-Stack Development 1 class. I have chosen
+this artifact because it provides me with a great framework to showcase
+my ability to improve a full-stack application. I specifically planned
+to implement Authorization security procedures for users which access
+the Mongo Database in this application.&lt;/p></description></item><item><title>Algorithms and Data Structures</title><link>https://benjamin-sturgeon.github.io/projects/algorithmsanddatastructures/</link><pubDate>Mon, 26 May 2025 20:19:54 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/projects/algorithmsanddatastructures/</guid><description>&lt;p>This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.&lt;/p>
+&lt;p>I have chosen to improve the code for the animal shelters application which utilizes python in order to perform CRUD operations as well as search and filters on content within a database. This application was developed in my CS-340 Client/Server Development class. This provides an excellent framework to implement improved code structure, improved portability of code methods, and enhanced optimization.&lt;/p></description></item><item><title>Software Engineering And Design</title><link>https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/</link><pubDate>Mon, 26 May 2025 20:19:54 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/projects/softwareengineeringanddesign/</guid><description>&lt;p>This is the first improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.&lt;/p>
+&lt;p>The artifact that I have chosen for this category is my Weight Tracking application that I developed in my CS 360 Mobile Architecture and Programming class. I have chosen this because it provides an excellent opportunity to showcase my understanding of application development and how to make changes based on the visual needs of users.&lt;/p></description></item></channel></rss>

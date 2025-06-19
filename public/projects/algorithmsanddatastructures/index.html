@@ -1,499 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>
-  Algorithms and Data Structures · Benjamin Sturgeon
-</title>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
-
-
-
-
-<meta name="author" content="Benjamin Sturgeon">
-<meta name="description" content="This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.
-I have chosen to improve the code for the animal shelters application which utilizes python in order to perform CRUD operations as well as search and filters on content within a database. This application was developed in my CS-340 Client/Server Development class. This provides an excellent framework to implement improved code structure, improved portability of code methods, and enhanced optimization.">
-<meta name="keywords" content="blog,developer,personal">
-
-
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Algorithms and Data Structures">
-  <meta name="twitter:description" content="This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.
-I have chosen to improve the code for the animal shelters application which utilizes python in order to perform CRUD operations as well as search and filters on content within a database. This application was developed in my CS-340 Client/Server Development class. This provides an excellent framework to implement improved code structure, improved portability of code methods, and enhanced optimization.">
-
-<meta property="og:url" content="https://benjamin-sturgeon.github.io/projects/algorithmsanddatastructures/">
-  <meta property="og:site_name" content="Benjamin Sturgeon">
-  <meta property="og:title" content="Algorithms and Data Structures">
-  <meta property="og:description" content="This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.
-I have chosen to improve the code for the animal shelters application which utilizes python in order to perform CRUD operations as well as search and filters on content within a database. This application was developed in my CS-340 Client/Server Development class. This provides an excellent framework to implement improved code structure, improved portability of code methods, and enhanced optimization.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="projects">
-    <meta property="article:published_time" content="2025-05-26T20:19:54-05:00">
-    <meta property="article:modified_time" content="2025-05-26T20:19:54-05:00">
-
-
-
-<link rel="icon" href="https://benjamin-sturgeon.github.io/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="https://benjamin-sturgeon.github.io/apple-touch-icon.png">
-
-
-<link rel="canonical" href="https://benjamin-sturgeon.github.io/projects/algorithmsanddatastructures/">
-
-
-<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-
-
-  
-  
-  <link rel="stylesheet" href="/css/coder.min.e89ea821b5f9d40148801e26ab1c7526fb058bcdbf0b0e3701213b29e321c68e.css" integrity="sha256-6J6oIbX51AFIgB4mqxx1JvsFi82/Cw43ASE7KeMhxo4=" crossorigin="anonymous" media="screen" />
-
-
-
-
-
-
-  
-    
-    
-    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
-  
-
-
-
- 
-
-
-
-
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-
-
-
-
-
-</head>
-
-
-
-
-
-
-<body class="preload-transitions colorscheme-auto">
-  
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
-</div>
-
-
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    
-    <a class="navigation-title" href="https://benjamin-sturgeon.github.io/">
-      Benjamin Sturgeon
-    </a>
-    
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
-        
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/about/">About</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/posts/">Blog</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/projects/">Projects</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/contact/">Contact me</a>
-            </li>
-          
-        
-        
-      </ul>
-    
-  </section>
-</nav>
-
-
-    <div class="content">
-      
-  <section class="container page">
-  <article>
-    <header>
-      <h1 class="title">
-        <a class="title-link" href="https://benjamin-sturgeon.github.io/projects/algorithmsanddatastructures/">
-          Algorithms and Data Structures
-        </a>
-      </h1>
-    </header>
-
-    <p>This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.</p>
-<p>I have chosen to improve the code for the animal shelters application which utilizes python in order to perform CRUD operations as well as search and filters on content within a database. This application was developed in my CS-340 Client/Server Development class. This provides an excellent framework to implement improved code structure, improved portability of code methods, and enhanced optimization.</p>
-<p>I completed a code review prior to implementing improvements to the project. The link to this code review is provided here:
-<a href="https://youtu.be/ULIRyS-XVs4"  class="external-link" target="_blank" rel="noopener">https://youtu.be/ULIRyS-XVs4</a></p>
-<p>This is the original form of my Animal Shelter Dash Application:
-<a href="https://benjamin-sturgeon.github.io/projects/Animal_Shelter_Application_Original.zip"  class="external-link" target="_blank" rel="noopener">Download the file</a></p>
-<p>This is the improved version:
-<a href="https://benjamin-sturgeon.github.io/projects/Animal_Shelter_Application_Improved.zip"  class="external-link" target="_blank" rel="noopener">Download the file</a></p>
-<p>This is the Code Review Script that I used for my Analysis:</p>
-<ol>
-<li>
-<p><strong>Category Two: Algorithms and Data Structures</strong></p>
-<ol>
-<li>
-<p>Provide a clear, complete description of existing code
-<strong>functionality.</strong></p>
-<ol>
-<li>
-<p>What does the code do?</p>
-<ul>
-<li>This application provides an organized view of the
+<!doctype html><html lang=en><head><title>Algorithms and Data Structures · Benjamin Sturgeon</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Benjamin Sturgeon"><meta name=description content="This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.
+I have chosen to improve the code for the animal shelters application which utilizes python in order to perform CRUD operations as well as search and filters on content within a database. This application was developed in my CS-340 Client/Server Development class. This provides an excellent framework to implement improved code structure, improved portability of code methods, and enhanced optimization."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Algorithms and Data Structures"><meta name=twitter:description content="This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.
+I have chosen to improve the code for the animal shelters application which utilizes python in order to perform CRUD operations as well as search and filters on content within a database. This application was developed in my CS-340 Client/Server Development class. This provides an excellent framework to implement improved code structure, improved portability of code methods, and enhanced optimization."><meta property="og:url" content="https://benjamin-sturgeon.github.io/projects/algorithmsanddatastructures/"><meta property="og:site_name" content="Benjamin Sturgeon"><meta property="og:title" content="Algorithms and Data Structures"><meta property="og:description" content="This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.
+I have chosen to improve the code for the animal shelters application which utilizes python in order to perform CRUD operations as well as search and filters on content within a database. This application was developed in my CS-340 Client/Server Development class. This provides an excellent framework to implement improved code structure, improved portability of code methods, and enhanced optimization."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="projects"><meta property="article:published_time" content="2025-05-26T20:19:54-05:00"><meta property="article:modified_time" content="2025-05-26T20:19:54-05:00"><link rel=icon href=https://benjamin-sturgeon.github.io/favicon.svg type=image/svg+xml><link rel=apple-touch-icon href=https://benjamin-sturgeon.github.io/apple-touch-icon.png><link rel=canonical href=https://benjamin-sturgeon.github.io/projects/algorithmsanddatastructures/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.e89ea821b5f9d40148801e26ab1c7526fb058bcdbf0b0e3701213b29e321c68e.css integrity="sha256-6J6oIbX51AFIgB4mqxx1JvsFi82/Cw43ASE7KeMhxo4=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.83ab4947b5a4592d4646776b0927cf69acff3e2d285da9604f464dbdeed89769.css integrity="sha256-g6tJR7WkWS1GRndrCSfPaaz/Pi0oXalgT0ZNve7Yl2k=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/images/favicon.svg sizes=any><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=https://benjamin-sturgeon.github.io/>Benjamin Sturgeon
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/about/>About</a></li><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/projects/>Projects</a></li><li class=navigation-item><a class=navigation-link href=/contact/>Contact me</a></li></ul></section></nav><div class=content><section class="container page"><article><header><h1 class=title><a class=title-link href=https://benjamin-sturgeon.github.io/projects/algorithmsanddatastructures/>Algorithms and Data Structures</a></h1></header><p>This is the second improvement project that I have chosen to showcase as part of my Computer Scence Capstone Class.</p><p>I have chosen to improve the code for the animal shelters application which utilizes python in order to perform CRUD operations as well as search and filters on content within a database. This application was developed in my CS-340 Client/Server Development class. This provides an excellent framework to implement improved code structure, improved portability of code methods, and enhanced optimization.</p><p>I completed a code review prior to implementing improvements to the project. The link to this code review is provided here:
+<a href=https://youtu.be/ULIRyS-XVs4 class=external-link target=_blank rel=noopener>https://youtu.be/ULIRyS-XVs4</a></p><p>This is the original form of my Animal Shelter Dash Application:
+<a href=https://benjamin-sturgeon.github.io/projects/Animal_Shelter_Application_Original.zip class=external-link target=_blank rel=noopener>Download the file</a></p><p>This is the improved version:
+<a href=https://benjamin-sturgeon.github.io/projects/Animal_Shelter_Application_Improved.zip class=external-link target=_blank rel=noopener>Download the file</a></p><p>This is the Code Review Script that I used for my Analysis:</p><ol><li><p><strong>Category Two: Algorithms and Data Structures</strong></p><ol><li><p>Provide a clear, complete description of existing code
+<strong>functionality.</strong></p><ol><li><p>What does the code do?</p><ul><li>This application provides an organized view of the
 contents of a database which stores various details about
 pets in an Animal Shelter. Information is displayed on
 easy to view charts with options to filter results. CRUD
 operations are provided in order to add or remove database
 contents and complete the necessary MongoDB queries to
-filter results.</li>
-</ul>
-</li>
-<li>
-<p>Focus on the features and functions of the existing code.</p>
-<ul>
-<li>
-<p>The features provided in this application are:</p>
-<ul>
-<li>
-<p>Animal Shelter Pet Information Storage</p>
-</li>
-<li>
-<p>Presentation of Information from the Database</p>
-</li>
-<li>
-<p>An Interactable UI to set presentation style and
-contents</p>
-</li>
-<li>
-<p>CRUD operations on database contents</p>
-</li>
-<li>
-<p>Changeable filters to show specific Animals and traits</p>
-</li>
-<li>
-<p>Information presented in Charts</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>
-<p><strong>Analyze</strong> existing code using relevant code review criteria to
-support clearly stated findings.</p>
-<ol>
-<li>
-<p>Use the checklist to review the code critically. This review
+filter results.</li></ul></li><li><p>Focus on the features and functions of the existing code.</p><ul><li><p>The features provided in this application are:</p><ul><li><p>Animal Shelter Pet Information Storage</p></li><li><p>Presentation of Information from the Database</p></li><li><p>An Interactable UI to set presentation style and
+contents</p></li><li><p>CRUD operations on database contents</p></li><li><p>Changeable filters to show specific Animals and traits</p></li><li><p>Information presented in Charts</p></li></ul></li></ul></li></ol></li><li><p><strong>Analyze</strong> existing code using relevant code review criteria to
+support clearly stated findings.</p><ol><li><p>Use the checklist to review the code critically. This review
 might highlight weaknesses, such as not following secure
 coding best practices, having no error handling, code not
 being efficient, code that needs debugging, and so on. Not
 all the items on the checklist will be applicable, so review
-the ones that are applicable to your artifact.</p>
-<ul>
-<li>
-<p>Here’s a structured code review based on the <strong>CS 499 Code
-Review Checklist</strong>:</p>
-</li>
-<li>
-<p><strong>Structure</strong></p>
-</li>
-<li>
-<p>The code is well-structured and conforms to standard
-Dash practices.</p>
-</li>
-<li>
-<p>Some FIX ME comments indicate unfinished
-implementations (e.g., Grazioso Salvare logo).</p>
-</li>
-<li>
-<p>Several instances of pd.Dataframe.from_records should
-be corrected to pd.DataFrame.from_records.</p>
-</li>
-<li>
-<p>The filter logic contains {&ldquo;or&rdquo;: [&hellip;]}—should be
-{&quot;$or&quot;: [&hellip;]} for valid MongoDB syntax.</p>
-</li>
-<li>
-<p>Efficient use of reusable components such as DataTable
-and Map widgets.</p>
-</li>
-<li>
-<p><strong>Documentation</strong></p>
-</li>
-<li>
-<p>Code has inline comments explaining functionality.</p>
-</li>
-<li>
-<p>Some comments indicate planned updates but are not yet
-implemented.</p>
-</li>
-<li>
-<p>Commenting style is consistent and maintainable.</p>
-</li>
-<li>
-<p><strong>Variables</strong></p>
-</li>
-<li>
-<p>Meaningful variable names enhance readability (e.g.,
-username, password, df).</p>
-</li>
-<li>
-<p>Hardcoded credentials (&ldquo;aacuser&rdquo; and &ldquo;SNHU1234&rdquo;) should
-be replaced with environment variables.</p>
-</li>
-<li>
-<p>Correct type consistency in assignments.</p>
-</li>
-<li>
-<p><strong>Arithmetic Operations</strong></p>
-</li>
-<li>
-<p>No floating-point equality checks detected.</p>
-</li>
-<li>
-<p>No risky additions/subtractions with drastically
-different magnitudes.</p>
-</li>
-<li>
-<p><strong>Loops and Branches</strong></p>
-</li>
-<li>
-<p>Loop structures are simple and correct.</p>
-</li>
-<li>
-<p>df.drop(columns=[&rsquo;_id&rsquo;], inplace=True) appears
+the ones that are applicable to your artifact.</p><ul><li><p>Here’s a structured code review based on the <strong>CS 499 Code
+Review Checklist</strong>:</p></li><li><p><strong>Structure</strong></p></li><li><p>The code is well-structured and conforms to standard
+Dash practices.</p></li><li><p>Some FIX ME comments indicate unfinished
+implementations (e.g., Grazioso Salvare logo).</p></li><li><p>Several instances of pd.Dataframe.from_records should
+be corrected to pd.DataFrame.from_records.</p></li><li><p>The filter logic contains {&ldquo;or&rdquo;: [&mldr;]}—should be
+{"$or": [&mldr;]} for valid MongoDB syntax.</p></li><li><p>Efficient use of reusable components such as DataTable
+and Map widgets.</p></li><li><p><strong>Documentation</strong></p></li><li><p>Code has inline comments explaining functionality.</p></li><li><p>Some comments indicate planned updates but are not yet
+implemented.</p></li><li><p>Commenting style is consistent and maintainable.</p></li><li><p><strong>Variables</strong></p></li><li><p>Meaningful variable names enhance readability (e.g.,
+username, password, df).</p></li><li><p>Hardcoded credentials (&ldquo;aacuser&rdquo; and &ldquo;SNHU1234&rdquo;) should
+be replaced with environment variables.</p></li><li><p>Correct type consistency in assignments.</p></li><li><p><strong>Arithmetic Operations</strong></p></li><li><p>No floating-point equality checks detected.</p></li><li><p>No risky additions/subtractions with drastically
+different magnitudes.</p></li><li><p><strong>Loops and Branches</strong></p></li><li><p>Loop structures are simple and correct.</p></li><li><p>df.drop(columns=[&rsquo;_id&rsquo;], inplace=True) appears
 multiple times—could be moved to a function to avoid
-redundancy.</p>
-</li>
-<li>
-<p>Case statements (if filter_type == &lsquo;Water&rsquo; etc.) are
-missing explicit else handling to confirm valid defaults.</p>
-</li>
-<li>
-<p><strong>Defensive Programming</strong></p>
-</li>
-<li>
-<p>Missing checks for file existence before reading
-(open(image_filename, &lsquo;rb&rsquo;) could fail).</p>
-</li>
-<li>
-<p>MongoDB queries correctly structured (except $or
-issue).</p>
-</li>
-<li>
-<p>No explicit error handling for database connections.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Target areas for improvement such as structure, logic,
+redundancy.</p></li><li><p>Case statements (if filter_type == &lsquo;Water&rsquo; etc.) are
+missing explicit else handling to confirm valid defaults.</p></li><li><p><strong>Defensive Programming</strong></p></li><li><p>Missing checks for file existence before reading
+(open(image_filename, &lsquo;rb&rsquo;) could fail).</p></li><li><p>MongoDB queries correctly structured (except $or
+issue).</p></li><li><p>No explicit error handling for database connections.</p></li></ul></li><li><p>Target areas for improvement such as structure, logic,
 efficiency, functionality, security, testing, commenting,
-and documenting.</p>
-<ul>
-<li>
-<p><strong>Suggestions for Improvement</strong></p>
-</li>
-<li>
-<p>Move repeated DataFrame transformation
-(df.drop(columns=[&rsquo;_id&rsquo;])) to a helper function.</p>
-</li>
-<li>
-<p>Secure credentials with environment variables instead of
-hardcoded values.</p>
-</li>
-<li>
-<p>Ensure logo file handling accounts for potential missing
-files.</p>
-</li>
-<li>
-<p>Fix incorrect MongoDB syntax ({&ldquo;or&rdquo;: [&hellip;]} → {&quot;$or&quot;:
-[&hellip;]}).</p>
-</li>
-<li>
-<p>Clean up FIX ME comments by completing pending tasks.</p>
-</li>
-<li>
-<p>Overall, great structure—just a few fixes needed!</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>
-<p>Explain practical <strong>enhancements</strong> aligned with analysis
-findings in a clear and organized manner.</p>
-<ol>
-<li>
-<p>Say what you plan to do in your enhancement. What specific
+and documenting.</p><ul><li><p><strong>Suggestions for Improvement</strong></p></li><li><p>Move repeated DataFrame transformation
+(df.drop(columns=[&rsquo;_id&rsquo;])) to a helper function.</p></li><li><p>Secure credentials with environment variables instead of
+hardcoded values.</p></li><li><p>Ensure logo file handling accounts for potential missing
+files.</p></li><li><p>Fix incorrect MongoDB syntax ({&ldquo;or&rdquo;: [&mldr;]} → {"$or":
+[&mldr;]}).</p></li><li><p>Clean up FIX ME comments by completing pending tasks.</p></li><li><p>Overall, great structure—just a few fixes needed!</p></li></ul></li></ol></li><li><p>Explain practical <strong>enhancements</strong> aligned with analysis
+findings in a clear and organized manner.</p><ol><li><p>Say what you plan to do in your enhancement. What specific
 skills will you demonstrate, and which of the five course
-outcomes will your enhancements support?</p>
-<ul>
-<li>
-<p>I will improve this application in a few key areas. First,
+outcomes will your enhancements support?</p><ul><li><p>I will improve this application in a few key areas. First,
 I will restructure code by creating designated filter
 helper methods for each filter operation utilized within
 the code. This will improve the portability and will more
-closely align with object-oriented programming methods.</p>
-</li>
-<li>
-<p>I will also optimize the application by implementing a
+closely align with object-oriented programming methods.</p></li><li><p>I will also optimize the application by implementing a
 dictionary-based filtration system which can be accessed
 by any of the filter methods. This will be much more
 efficient than utilizing separate filtered code present in
 every method. This will also make it much easier to change
-and upgrade filter functions.</p>
-</li>
-<li>
-<p>In addition to this, comments will be cleaned up to
+and upgrade filter functions.</p></li><li><p>In addition to this, comments will be cleaned up to
 eliminate FIX ME sections and provide clear and concise
-information.</p>
-</li>
-<li>
-<p>Hardcoded content will be converted into specific
-variables to allow for easy manipulation.</p>
-</li>
-<li>
-<p>File handling will be improved to account for failures to
-read or write.</p>
-</li>
-<li>
-<p>Syntax Errors will be corrected to ensure that the program
-behaves as expected.</p>
-</li>
-<li>
-<p>The specific skills highlighted in this enhancement
+information.</p></li><li><p>Hardcoded content will be converted into specific
+variables to allow for easy manipulation.</p></li><li><p>File handling will be improved to account for failures to
+read or write.</p></li><li><p>Syntax Errors will be corrected to ensure that the program
+behaves as expected.</p></li><li><p>The specific skills highlighted in this enhancement
 showcase my ability to improve code usability and
 portability, which are critical when developing code
 intended to be analyzed by others or used in a team
 setting. This will also highlight my understanding of how
 to improve search and filtration of data within a
-database.</p>
-</li>
-<li>
-<p>The enhancements that I implement on this artifact best
+database.</p></li><li><p>The enhancements that I implement on this artifact best
 align with course outcomes three and four. I will design
 and evaluate a computing solution which follows the best
 computer science practices and standards set forth in
 object-oriented programming. This also demonstrates
 increased value by making the program more efficient and
 easier to use while also aligning with industry standards
-of code portability and reusability.</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-
-  </article>
-</section>
-
-  
-
-    </div>
-
-    <footer class="footer">
-  <section class="container">
-    ©
-    
-      2019 -
-    
-    2025
-     Benjamin Sturgeon 
-    ·
-    
-    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
-    
-  </section>
-</footer>
-
-  </main>
-
-  
-
-  
-  
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</body>
-</html>
+of code portability and reusability.</p></li></ul></li></ol></li></ol></li></ol></article></section></div><footer class=footer><section class=container>©
+2019 -
+2025
+Benjamin Sturgeon
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

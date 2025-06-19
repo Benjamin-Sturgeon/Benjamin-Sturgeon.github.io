@@ -1,509 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>
-  Code Review · Benjamin Sturgeon
-</title>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
-
-
-
-
-<meta name="author" content="Benjamin Sturgeon">
-<meta name="description" content="FCode Review for Improvement Projects in CS-499 Capstone">
-<meta name="keywords" content="blog,developer,personal">
-
-
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Code Review">
-  <meta name="twitter:description" content="FCode Review for Improvement Projects in CS-499 Capstone">
-
-<meta property="og:url" content="https://benjamin-sturgeon.github.io/posts/codereview/">
-  <meta property="og:site_name" content="Benjamin Sturgeon">
-  <meta property="og:title" content="Code Review">
-  <meta property="og:description" content="FCode Review for Improvement Projects in CS-499 Capstone">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-05-30T14:31:04-05:00">
-    <meta property="article:modified_time" content="2025-05-30T14:31:04-05:00">
-
-
-
-<link rel="icon" href="https://benjamin-sturgeon.github.io/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="https://benjamin-sturgeon.github.io/apple-touch-icon.png">
-
-
-<link rel="canonical" href="https://benjamin-sturgeon.github.io/posts/codereview/">
-
-
-<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-
-
-  
-  
-  <link rel="stylesheet" href="/css/coder.min.e89ea821b5f9d40148801e26ab1c7526fb058bcdbf0b0e3701213b29e321c68e.css" integrity="sha256-6J6oIbX51AFIgB4mqxx1JvsFi82/Cw43ASE7KeMhxo4=" crossorigin="anonymous" media="screen" />
-
-
-
-
-
-
-  
-    
-    
-    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
-  
-
-
-
- 
-
-
-
-
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-
-
-
-
-
-</head>
-
-
-
-
-
-
-<body class="preload-transitions colorscheme-auto">
-  
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
-</div>
-
-
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    
-    <a class="navigation-title" href="https://benjamin-sturgeon.github.io/">
-      Benjamin Sturgeon
-    </a>
-    
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
-        
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/about/">About</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/posts/">Blog</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/projects/">Projects</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/contact/">Contact me</a>
-            </li>
-          
-        
-        
-      </ul>
-    
-  </section>
-</nav>
-
-
-    <div class="content">
-      
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">
-            <a class="title-link" href="https://benjamin-sturgeon.github.io/posts/codereview/">
-              Code Review
-            </a>
-          </h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-              <time datetime="2025-05-30T14:31:04-05:00">
-                May 30, 2025
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              23-minute read
-            </span>
-          </div>
-          
-          
-          
-        </div>
-      </header>
-
-      <div class="post-content">
-        
-          <a href="/posts/codereview/">
-            <img src="/images/Coding.jpg" alt="Code Review" class="post-thumbnail">
-          </a>
-        
-        <p>I completed a code review prior to implementing improvements to the projects. The link to this code review is provided here:
-<a href="https://youtu.be/ULIRyS-XVs4"  class="external-link" target="_blank" rel="noopener">https://youtu.be/ULIRyS-XVs4</a></p>
-<p>This is the Script for the code review. It addresses improvmenent for three seperate projects:</p>
-<p>Code Review Script</p>
-<ol>
-<li>
-<p><strong>Category One: Software Design and Engineering</strong></p>
-<ol>
-<li>
-<p>Provide a clear, complete description of existing code
-<strong>functionality</strong>.</p>
-<ol>
-<li>
-<p>What does the code do?</p>
-<ul>
-<li>The first artifact that I will be improving is a Weight
+<!doctype html><html lang=en><head><title>Code Review · Benjamin Sturgeon</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Benjamin Sturgeon"><meta name=description content="FCode Review for Improvement Projects in CS-499 Capstone"><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Code Review"><meta name=twitter:description content="FCode Review for Improvement Projects in CS-499 Capstone"><meta property="og:url" content="https://benjamin-sturgeon.github.io/posts/codereview/"><meta property="og:site_name" content="Benjamin Sturgeon"><meta property="og:title" content="Code Review"><meta property="og:description" content="FCode Review for Improvement Projects in CS-499 Capstone"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-05-30T14:31:04-05:00"><meta property="article:modified_time" content="2025-05-30T14:31:04-05:00"><link rel=icon href=https://benjamin-sturgeon.github.io/favicon.svg type=image/svg+xml><link rel=apple-touch-icon href=https://benjamin-sturgeon.github.io/apple-touch-icon.png><link rel=canonical href=https://benjamin-sturgeon.github.io/posts/codereview/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.e89ea821b5f9d40148801e26ab1c7526fb058bcdbf0b0e3701213b29e321c68e.css integrity="sha256-6J6oIbX51AFIgB4mqxx1JvsFi82/Cw43ASE7KeMhxo4=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.83ab4947b5a4592d4646776b0927cf69acff3e2d285da9604f464dbdeed89769.css integrity="sha256-g6tJR7WkWS1GRndrCSfPaaz/Pi0oXalgT0ZNve7Yl2k=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/images/favicon.svg sizes=any><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=https://benjamin-sturgeon.github.io/>Benjamin Sturgeon
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/about/>About</a></li><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/projects/>Projects</a></li><li class=navigation-item><a class=navigation-link href=/contact/>Contact me</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://benjamin-sturgeon.github.io/posts/codereview/>Code Review</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2025-05-30T14:31:04-05:00>May 30, 2025
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+23-minute read</span></div></div></header><div class=post-content><a href=/posts/codereview/><img src=/images/Coding.jpg alt="Code Review" class=post-thumbnail></a><p>I completed a code review prior to implementing improvements to the projects. The link to this code review is provided here:
+<a href=https://youtu.be/ULIRyS-XVs4 class=external-link target=_blank rel=noopener>https://youtu.be/ULIRyS-XVs4</a></p><p>This is the Script for the code review. It addresses improvmenent for three seperate projects:</p><p>Code Review Script</p><ol><li><p><strong>Category One: Software Design and Engineering</strong></p><ol><li><p>Provide a clear, complete description of existing code
+<strong>functionality</strong>.</p><ol><li><p>What does the code do?</p><ul><li>The first artifact that I will be improving is a Weight
 Tracking Application. This simple Java application is
 designed to run on Android OS and provides users with a
 way to track their weight. They can also set their goal
 weight and opt in to receive a text notification once
 their goal weight is reached. User accounts are created
 during the initial login screen of the application. Data
-is kept locally on the device via a MongoDB schema.</li>
-</ul>
-</li>
-<li>
-<p>Focus on the features and functions of the existing code.</p>
-<ul>
-<li>
-<p>User Account Creation and Authentication</p>
-</li>
-<li>
-<p>Weight Recording in pounds and the date of recording</p>
-</li>
-<li>
-<p>Presentation of the weights in a convenient list</p>
-</li>
-<li>
-<p>Addition and Removal of weights from the list</p>
-</li>
-<li>
-<p>Text Notifications</p>
-</li>
-<li>
-<p>Goal Weight Set</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>
-<p><strong>Analyze</strong> existing code using relevant code review criteria to
+is kept locally on the device via a MongoDB schema.</li></ul></li><li><p>Focus on the features and functions of the existing code.</p><ul><li><p>User Account Creation and Authentication</p></li><li><p>Weight Recording in pounds and the date of recording</p></li><li><p>Presentation of the weights in a convenient list</p></li><li><p>Addition and Removal of weights from the list</p></li><li><p>Text Notifications</p></li><li><p>Goal Weight Set</p></li></ul></li></ol></li><li><p><strong>Analyze</strong> existing code using relevant code review criteria to
 support clearly stated findings. <strong>Analysis is completed on Main
 Activity and the relevant SMS Dialog Fragment in order to focus
-on the scope of the specific planned improvements</strong></p>
-<ol>
-<li>
-<p>Use the checklist to review the code critically. This review
+on the scope of the specific planned improvements</strong></p><ol><li><p>Use the checklist to review the code critically. This review
 might highlight weaknesses, such as not following secure
 coding best practices, having no error handling, code not
 being efficient, code that needs debugging, and so on. Not
 all the items on the checklist will be applicable, so review
-the ones that are applicable to your artifact.</p>
-<ul>
-<li>Thanks for providing the checklist! Here&rsquo;s my structured
-code review based on the criteria:</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<blockquote>
-<p><strong>MAIN ACTIVITY</strong></p></blockquote>
-<ul>
-<li>
-<p><strong>Structure</strong></p>
-</li>
-<li>
-<p>The code generally follows good structuring principles, using clear
-class definitions and modularization.</p>
-</li>
-<li>
-<p>The implementation aligns with its intended functionality.</p>
-</li>
-<li>
-<p>No evident coding standards violations, but ensuring consistency in
-commenting conventions would be useful.</p>
-</li>
-<li>
-<p>No unnecessary procedures or unreachable code detected.</p>
-</li>
-<li>
-<p>Reusable components, such as utility functions for validation, could
-improve readability and maintainability.</p>
-</li>
-<li>
-<p>No explicit magic number constants, but using constant variables for
-fixed values (e.g., SEND_SMS_REQUEST_CODE) enhances clarity.</p>
-</li>
-<li>
-<p>No excessive complexity detected, but certain methods such as
-validation functions could be refined for readability.</p>
-</li>
-<li>
-<p><strong>Documentation</strong></p>
-</li>
-<li>
-<p>While some methods are sufficiently documented, improving inline
-comments would enhance maintainability.</p>
-</li>
-<li>
-<p>Some comments appear redundant—ensuring they contribute to
-understanding the code rather than repeating it would improve clarity.</p>
-</li>
-<li>
-<p><strong>Variables</strong></p>
-</li>
-<li>
-<p>Meaningful variable names are used.</p>
-</li>
-<li>
-<p>Explicit type definitions are maintained.</p>
-</li>
-<li>
-<p>No apparent redundant or unused variables.</p>
-</li>
-<li>
-<p><strong>Arithmetic Operations</strong></p>
-</li>
-<li>
-<p>No floating-point equality checks detected.</p>
-</li>
-<li>
-<p>No evident risk of rounding errors in numerical operations.</p>
-</li>
-<li>
-<p>Division operations are not present, so checking for zero divisors is
-not necessary.</p>
-</li>
-<li>
-<p><strong>Loops and Branches</strong></p>
-</li>
-<li>
-<p>All loops appear correct and properly nested.</p>
-</li>
-<li>
-<p>Default conditions are used where needed.</p>
-</li>
-<li>
-<p>Logical flow is maintained within the IF-ELSE constructs.</p>
-</li>
-<li>
-<p>Loop termination is clear, though ensuring rigorous testing of edge
-cases is recommended.</p>
-</li>
-<li>
-<p><strong>Defensive Programming</strong></p>
-</li>
-<li>
-<p>User input validation is integrated but could be strengthened by
-checking for possible injection attacks.</p>
-</li>
-<li>
-<p>Error-handling mechanisms for database interactions are minimal—adding
-exception handling would enhance reliability.</p>
-</li>
-<li>
-<p>Permissions checks are correctly implemented, ensuring SMS-related
-permissions are verified before proceeding.</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>SMS DIALOG FRAGMENT</strong></p></blockquote>
-<ul>
-<li>
-<p><strong>Structure</strong></p>
-</li>
-<li>
-<p>The code correctly implements the expected design, defining a
-<strong>DialogFragment</strong> for SMS permission requests.</p>
-</li>
-<li>
-<p>It follows Android coding conventions and uses appropriate class
-structures.</p>
-</li>
-<li>
-<p>The SMSPermissionDialogMessagePrompt class is modular and does not
-contain unnecessary procedures or unreachable code.</p>
-</li>
-<li>
-<p>There are no redundant test routines or stubs.</p>
-</li>
-<li>
-<p>No evident use of magic numbers, as all constants are sourced from
-resources (R.string values).</p>
-</li>
-<li>
-<p>No excessive complexity detected—the code is relatively simple and
-well-structured.</p>
-</li>
-<li>
-<p><strong>Documentation</strong></p>
-</li>
-<li>
-<p>The code lacks inline comments. Adding brief, meaningful comments for
-method purpose and key logic points would improve maintainability.</p>
-</li>
-<li>
-<p>There’s no misleading documentation, but further explanations of
-behavior (especially around permission handling) would be useful.</p>
-</li>
-<li>
-<p><strong>Variables</strong></p>
-</li>
-<li>
-<p>Variables are well-defined with clear names.</p>
-</li>
-<li>
-<p>No redundant or unused variables detected.</p>
-</li>
-<li>
-<p><strong>Arithmetic Operations</strong></p>
-</li>
-<li>
-<p>No arithmetic operations are present, so floating-point comparisons,
-rounding errors, and zero divisors are not relevant.</p>
-</li>
-<li>
-<p><strong>Loops and Branches</strong></p>
-</li>
-<li>
-<p>No loops are present in this code snippet.</p>
-</li>
-<li>
-<p>The IF-ELSE structure inside setPositiveButton and setNegativeButton
-is well-implemented.</p>
-</li>
-<li>
-<p>Logic flows correctly without any missing conditions.</p>
-</li>
-<li>
-<p><strong>Defensive Programming</strong></p>
-</li>
-<li>
-<p>The code correctly checks for user interaction using the
-DialogInterface.OnClickListener.</p>
-</li>
-<li>
-<p>However, there is <strong>no null check</strong> for mListener before invoking
+the ones that are applicable to your artifact.</p><ul><li>Thanks for providing the checklist! Here&rsquo;s my structured
+code review based on the criteria:</li></ul></li></ol></li></ol></li></ol><blockquote><p><strong>MAIN ACTIVITY</strong></p></blockquote><ul><li><p><strong>Structure</strong></p></li><li><p>The code generally follows good structuring principles, using clear
+class definitions and modularization.</p></li><li><p>The implementation aligns with its intended functionality.</p></li><li><p>No evident coding standards violations, but ensuring consistency in
+commenting conventions would be useful.</p></li><li><p>No unnecessary procedures or unreachable code detected.</p></li><li><p>Reusable components, such as utility functions for validation, could
+improve readability and maintainability.</p></li><li><p>No explicit magic number constants, but using constant variables for
+fixed values (e.g., SEND_SMS_REQUEST_CODE) enhances clarity.</p></li><li><p>No excessive complexity detected, but certain methods such as
+validation functions could be refined for readability.</p></li><li><p><strong>Documentation</strong></p></li><li><p>While some methods are sufficiently documented, improving inline
+comments would enhance maintainability.</p></li><li><p>Some comments appear redundant—ensuring they contribute to
+understanding the code rather than repeating it would improve clarity.</p></li><li><p><strong>Variables</strong></p></li><li><p>Meaningful variable names are used.</p></li><li><p>Explicit type definitions are maintained.</p></li><li><p>No apparent redundant or unused variables.</p></li><li><p><strong>Arithmetic Operations</strong></p></li><li><p>No floating-point equality checks detected.</p></li><li><p>No evident risk of rounding errors in numerical operations.</p></li><li><p>Division operations are not present, so checking for zero divisors is
+not necessary.</p></li><li><p><strong>Loops and Branches</strong></p></li><li><p>All loops appear correct and properly nested.</p></li><li><p>Default conditions are used where needed.</p></li><li><p>Logical flow is maintained within the IF-ELSE constructs.</p></li><li><p>Loop termination is clear, though ensuring rigorous testing of edge
+cases is recommended.</p></li><li><p><strong>Defensive Programming</strong></p></li><li><p>User input validation is integrated but could be strengthened by
+checking for possible injection attacks.</p></li><li><p>Error-handling mechanisms for database interactions are minimal—adding
+exception handling would enhance reliability.</p></li><li><p>Permissions checks are correctly implemented, ensuring SMS-related
+permissions are verified before proceeding.</p></li></ul><blockquote><p><strong>SMS DIALOG FRAGMENT</strong></p></blockquote><ul><li><p><strong>Structure</strong></p></li><li><p>The code correctly implements the expected design, defining a
+<strong>DialogFragment</strong> for SMS permission requests.</p></li><li><p>It follows Android coding conventions and uses appropriate class
+structures.</p></li><li><p>The SMSPermissionDialogMessagePrompt class is modular and does not
+contain unnecessary procedures or unreachable code.</p></li><li><p>There are no redundant test routines or stubs.</p></li><li><p>No evident use of magic numbers, as all constants are sourced from
+resources (R.string values).</p></li><li><p>No excessive complexity detected—the code is relatively simple and
+well-structured.</p></li><li><p><strong>Documentation</strong></p></li><li><p>The code lacks inline comments. Adding brief, meaningful comments for
+method purpose and key logic points would improve maintainability.</p></li><li><p>There’s no misleading documentation, but further explanations of
+behavior (especially around permission handling) would be useful.</p></li><li><p><strong>Variables</strong></p></li><li><p>Variables are well-defined with clear names.</p></li><li><p>No redundant or unused variables detected.</p></li><li><p><strong>Arithmetic Operations</strong></p></li><li><p>No arithmetic operations are present, so floating-point comparisons,
+rounding errors, and zero divisors are not relevant.</p></li><li><p><strong>Loops and Branches</strong></p></li><li><p>No loops are present in this code snippet.</p></li><li><p>The IF-ELSE structure inside setPositiveButton and setNegativeButton
+is well-implemented.</p></li><li><p>Logic flows correctly without any missing conditions.</p></li><li><p><strong>Defensive Programming</strong></p></li><li><p>The code correctly checks for user interaction using the
+DialogInterface.OnClickListener.</p></li><li><p>However, there is <strong>no null check</strong> for mListener before invoking
 onSMSPermissionDialogMessagePrompt(true/false). If the fragment is
 attached incorrectly or the context is mismanaged, this could lead to
-a NullPointerException.</p>
-</li>
-<li>
-<p>The usage of TextView padding is hardcoded
+a NullPointerException.</p></li><li><p>The usage of TextView padding is hardcoded
 (textView.setPadding(30,10,30,10);). Consider using <strong>resource
-values</strong> to maintain consistency across different device screens.</p>
-</li>
-<li>
-<p>No external device access or memory allocation issues are present.</p>
-</li>
-</ul>
-<ol>
-<li>Target areas for improvement such as structure, logic, efficiency,
-functionality, security, testing, commenting, and documenting.</li>
-</ol>
-<blockquote>
-<p><strong>MAIN ACTIVITY</strong></p></blockquote>
-<ul>
-<li>
-<p><strong>Suggested Improvements</strong></p>
-</li>
-<li>
-<p><strong>Enhance Error Handling:</strong> Introduce exception handling in database
-access methods to avoid application crashes.</p>
-</li>
-<li>
-<p><strong>Improve Reusability:</strong> Create separate utility functions for
-validation logic rather than keeping them within MainActivity.</p>
-</li>
-<li>
-<p><strong>Strengthen Security:</strong> Consider salting and hashing user passwords
-at the validation stage instead of relying on retrieval functions.</p>
-</li>
-<li>
-<p><strong>Improve Commenting:</strong> Ensure comments provide meaningful
-explanations rather than redundant clarifications.</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>SMS DIALOG FRAGMENT</strong></p></blockquote>
-<ul>
-<li>
-<p><strong>Suggested Improvements</strong></p>
-</li>
-<li>
-<p><strong>Add Null Checks</strong> for mListener to prevent runtime crashes due to
-unexpected fragment attachment failures.</p>
-</li>
-<li>
-<p><strong>Improve Documentation</strong> by adding concise comments that explain the
-purpose of each method.</p>
-</li>
-<li>
-<p><strong>Use Resource Values</strong> for TextView padding instead of hardcoded
-values.</p>
-</li>
-<li>
-<p><strong>Refactor Listener Assignment</strong>—consider safer handling during the
-onAttach lifecycle to avoid unexpected failures.</p>
-</li>
-</ul>
-<ol>
-<li>
-<p>Explain practical <strong>enhancements</strong> aligned with analysis findings in
-a clear and organized manner.</p>
-<ol>
-<li>
-<p>Say what you plan to do in your enhancement. What specific
+values</strong> to maintain consistency across different device screens.</p></li><li><p>No external device access or memory allocation issues are present.</p></li></ul><ol><li>Target areas for improvement such as structure, logic, efficiency,
+functionality, security, testing, commenting, and documenting.</li></ol><blockquote><p><strong>MAIN ACTIVITY</strong></p></blockquote><ul><li><p><strong>Suggested Improvements</strong></p></li><li><p><strong>Enhance Error Handling:</strong> Introduce exception handling in database
+access methods to avoid application crashes.</p></li><li><p><strong>Improve Reusability:</strong> Create separate utility functions for
+validation logic rather than keeping them within MainActivity.</p></li><li><p><strong>Strengthen Security:</strong> Consider salting and hashing user passwords
+at the validation stage instead of relying on retrieval functions.</p></li><li><p><strong>Improve Commenting:</strong> Ensure comments provide meaningful
+explanations rather than redundant clarifications.</p></li></ul><blockquote><p><strong>SMS DIALOG FRAGMENT</strong></p></blockquote><ul><li><p><strong>Suggested Improvements</strong></p></li><li><p><strong>Add Null Checks</strong> for mListener to prevent runtime crashes due to
+unexpected fragment attachment failures.</p></li><li><p><strong>Improve Documentation</strong> by adding concise comments that explain the
+purpose of each method.</p></li><li><p><strong>Use Resource Values</strong> for TextView padding instead of hardcoded
+values.</p></li><li><p><strong>Refactor Listener Assignment</strong>—consider safer handling during the
+onAttach lifecycle to avoid unexpected failures.</p></li></ul><ol><li><p>Explain practical <strong>enhancements</strong> aligned with analysis findings in
+a clear and organized manner.</p><ol><li><p>Say what you plan to do in your enhancement. What specific
 skills will you demonstrate, and which of the five course
-outcomes will your enhancements support?</p>
-<ul>
-<li>I will specifically convert the SMS notification system to a
+outcomes will your enhancements support?</p><ul><li>I will specifically convert the SMS notification system to a
 dialogue which users can designate as Push Notifications, SMS
 Notifications, none, or both. This will greatly enhance the
 notification capabilities of the application. This enhancement
@@ -519,282 +76,73 @@ audience. Push notifications are an excellent way to present
 information in a mobile environment and giving users the
 ability to choose represents evaluation of computing solutions
 which solve the problem of knowing when a goal weight has been
-reached.</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-<!-- -->
-<ol>
-<li>
-<p><strong>Category Two: Algorithms and Data Structures</strong></p>
-<ol>
-<li>
-<p>Provide a clear, complete description of existing code
-<strong>functionality.</strong></p>
-<ol>
-<li>
-<p>What does the code do?</p>
-<ul>
-<li>This application provides an organized view of the
+reached.</li></ul></li></ol></li></ol><ol><li><p><strong>Category Two: Algorithms and Data Structures</strong></p><ol><li><p>Provide a clear, complete description of existing code
+<strong>functionality.</strong></p><ol><li><p>What does the code do?</p><ul><li>This application provides an organized view of the
 contents of a database which stores various details about
 pets in an Animal Shelter. Information is displayed on
 easy to view charts with options to filter results. CRUD
 operations are provided in order to add or remove database
 contents and complete the necessary MongoDB queries to
-filter results.</li>
-</ul>
-</li>
-<li>
-<p>Focus on the features and functions of the existing code.</p>
-<ul>
-<li>
-<p>The features provided in this application are:</p>
-<ul>
-<li>
-<p>Animal Shelter Pet Information Storage</p>
-</li>
-<li>
-<p>Presentation of Information from the Database</p>
-</li>
-<li>
-<p>An Interactable UI to set presentation style and
-contents</p>
-</li>
-<li>
-<p>CRUD operations on database contents</p>
-</li>
-<li>
-<p>Changeable filters to show specific Animals and traits</p>
-</li>
-<li>
-<p>Information presented in Charts</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>
-<p><strong>Analyze</strong> existing code using relevant code review criteria to
-support clearly stated findings.</p>
-<ol>
-<li>
-<p>Use the checklist to review the code critically. This review
+filter results.</li></ul></li><li><p>Focus on the features and functions of the existing code.</p><ul><li><p>The features provided in this application are:</p><ul><li><p>Animal Shelter Pet Information Storage</p></li><li><p>Presentation of Information from the Database</p></li><li><p>An Interactable UI to set presentation style and
+contents</p></li><li><p>CRUD operations on database contents</p></li><li><p>Changeable filters to show specific Animals and traits</p></li><li><p>Information presented in Charts</p></li></ul></li></ul></li></ol></li><li><p><strong>Analyze</strong> existing code using relevant code review criteria to
+support clearly stated findings.</p><ol><li><p>Use the checklist to review the code critically. This review
 might highlight weaknesses, such as not following secure
 coding best practices, having no error handling, code not
 being efficient, code that needs debugging, and so on. Not
 all the items on the checklist will be applicable, so review
-the ones that are applicable to your artifact.</p>
-<ul>
-<li>
-<p>Here’s a structured code review based on the <strong>CS 499 Code
-Review Checklist</strong>:</p>
-</li>
-<li>
-<p><strong>Structure</strong></p>
-</li>
-<li>
-<p>The code is well-structured and conforms to standard
-Dash practices.</p>
-</li>
-<li>
-<p>Some FIX ME comments indicate unfinished
-implementations (e.g., Grazioso Salvare logo).</p>
-</li>
-<li>
-<p>Several instances of pd.Dataframe.from_records should
-be corrected to pd.DataFrame.from_records.</p>
-</li>
-<li>
-<p>The filter logic contains {&ldquo;or&rdquo;: [&hellip;]}—should be
-{&quot;$or&quot;: [&hellip;]} for valid MongoDB syntax.</p>
-</li>
-<li>
-<p>Efficient use of reusable components such as DataTable
-and Map widgets.</p>
-</li>
-<li>
-<p><strong>Documentation</strong></p>
-</li>
-<li>
-<p>Code has inline comments explaining functionality.</p>
-</li>
-<li>
-<p>Some comments indicate planned updates but are not yet
-implemented.</p>
-</li>
-<li>
-<p>Commenting style is consistent and maintainable.</p>
-</li>
-<li>
-<p><strong>Variables</strong></p>
-</li>
-<li>
-<p>Meaningful variable names enhance readability (e.g.,
-username, password, df).</p>
-</li>
-<li>
-<p>Hardcoded credentials (&ldquo;aacuser&rdquo; and &ldquo;SNHU1234&rdquo;) should
-be replaced with environment variables.</p>
-</li>
-<li>
-<p>Correct type consistency in assignments.</p>
-</li>
-<li>
-<p><strong>Arithmetic Operations</strong></p>
-</li>
-<li>
-<p>No floating-point equality checks detected.</p>
-</li>
-<li>
-<p>No risky additions/subtractions with drastically
-different magnitudes.</p>
-</li>
-<li>
-<p><strong>Loops and Branches</strong></p>
-</li>
-<li>
-<p>Loop structures are simple and correct.</p>
-</li>
-<li>
-<p>df.drop(columns=[&rsquo;_id&rsquo;], inplace=True) appears
+the ones that are applicable to your artifact.</p><ul><li><p>Here’s a structured code review based on the <strong>CS 499 Code
+Review Checklist</strong>:</p></li><li><p><strong>Structure</strong></p></li><li><p>The code is well-structured and conforms to standard
+Dash practices.</p></li><li><p>Some FIX ME comments indicate unfinished
+implementations (e.g., Grazioso Salvare logo).</p></li><li><p>Several instances of pd.Dataframe.from_records should
+be corrected to pd.DataFrame.from_records.</p></li><li><p>The filter logic contains {&ldquo;or&rdquo;: [&mldr;]}—should be
+{"$or": [&mldr;]} for valid MongoDB syntax.</p></li><li><p>Efficient use of reusable components such as DataTable
+and Map widgets.</p></li><li><p><strong>Documentation</strong></p></li><li><p>Code has inline comments explaining functionality.</p></li><li><p>Some comments indicate planned updates but are not yet
+implemented.</p></li><li><p>Commenting style is consistent and maintainable.</p></li><li><p><strong>Variables</strong></p></li><li><p>Meaningful variable names enhance readability (e.g.,
+username, password, df).</p></li><li><p>Hardcoded credentials (&ldquo;aacuser&rdquo; and &ldquo;SNHU1234&rdquo;) should
+be replaced with environment variables.</p></li><li><p>Correct type consistency in assignments.</p></li><li><p><strong>Arithmetic Operations</strong></p></li><li><p>No floating-point equality checks detected.</p></li><li><p>No risky additions/subtractions with drastically
+different magnitudes.</p></li><li><p><strong>Loops and Branches</strong></p></li><li><p>Loop structures are simple and correct.</p></li><li><p>df.drop(columns=[&rsquo;_id&rsquo;], inplace=True) appears
 multiple times—could be moved to a function to avoid
-redundancy.</p>
-</li>
-<li>
-<p>Case statements (if filter_type == &lsquo;Water&rsquo; etc.) are
-missing explicit else handling to confirm valid defaults.</p>
-</li>
-<li>
-<p><strong>Defensive Programming</strong></p>
-</li>
-<li>
-<p>Missing checks for file existence before reading
-(open(image_filename, &lsquo;rb&rsquo;) could fail).</p>
-</li>
-<li>
-<p>MongoDB queries correctly structured (except $or
-issue).</p>
-</li>
-<li>
-<p>No explicit error handling for database connections.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Target areas for improvement such as structure, logic,
+redundancy.</p></li><li><p>Case statements (if filter_type == &lsquo;Water&rsquo; etc.) are
+missing explicit else handling to confirm valid defaults.</p></li><li><p><strong>Defensive Programming</strong></p></li><li><p>Missing checks for file existence before reading
+(open(image_filename, &lsquo;rb&rsquo;) could fail).</p></li><li><p>MongoDB queries correctly structured (except $or
+issue).</p></li><li><p>No explicit error handling for database connections.</p></li></ul></li><li><p>Target areas for improvement such as structure, logic,
 efficiency, functionality, security, testing, commenting,
-and documenting.</p>
-<ul>
-<li>
-<p><strong>Suggestions for Improvement</strong></p>
-</li>
-<li>
-<p>Move repeated DataFrame transformation
-(df.drop(columns=[&rsquo;_id&rsquo;])) to a helper function.</p>
-</li>
-<li>
-<p>Secure credentials with environment variables instead of
-hardcoded values.</p>
-</li>
-<li>
-<p>Ensure logo file handling accounts for potential missing
-files.</p>
-</li>
-<li>
-<p>Fix incorrect MongoDB syntax ({&ldquo;or&rdquo;: [&hellip;]} → {&quot;$or&quot;:
-[&hellip;]}).</p>
-</li>
-<li>
-<p>Clean up FIX ME comments by completing pending tasks.</p>
-</li>
-<li>
-<p>Overall, great structure—just a few fixes needed!</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>
-<p>Explain practical <strong>enhancements</strong> aligned with analysis
-findings in a clear and organized manner.</p>
-<ol>
-<li>
-<p>Say what you plan to do in your enhancement. What specific
+and documenting.</p><ul><li><p><strong>Suggestions for Improvement</strong></p></li><li><p>Move repeated DataFrame transformation
+(df.drop(columns=[&rsquo;_id&rsquo;])) to a helper function.</p></li><li><p>Secure credentials with environment variables instead of
+hardcoded values.</p></li><li><p>Ensure logo file handling accounts for potential missing
+files.</p></li><li><p>Fix incorrect MongoDB syntax ({&ldquo;or&rdquo;: [&mldr;]} → {"$or":
+[&mldr;]}).</p></li><li><p>Clean up FIX ME comments by completing pending tasks.</p></li><li><p>Overall, great structure—just a few fixes needed!</p></li></ul></li></ol></li><li><p>Explain practical <strong>enhancements</strong> aligned with analysis
+findings in a clear and organized manner.</p><ol><li><p>Say what you plan to do in your enhancement. What specific
 skills will you demonstrate, and which of the five course
-outcomes will your enhancements support?</p>
-<ul>
-<li>
-<p>I will improve this application in a few key areas. First,
+outcomes will your enhancements support?</p><ul><li><p>I will improve this application in a few key areas. First,
 I will restructure code by creating designated filter
 helper methods for each filter operation utilized within
 the code. This will improve the portability and will more
-closely align with object-oriented programming methods.</p>
-</li>
-<li>
-<p>I will also optimize the application by implementing a
+closely align with object-oriented programming methods.</p></li><li><p>I will also optimize the application by implementing a
 dictionary-based filtration system which can be accessed
 by any of the filter methods. This will be much more
 efficient than utilizing separate filtered code present in
 every method. This will also make it much easier to change
-and upgrade filter functions.</p>
-</li>
-<li>
-<p>In addition to this, comments will be cleaned up to
+and upgrade filter functions.</p></li><li><p>In addition to this, comments will be cleaned up to
 eliminate FIX ME sections and provide clear and concise
-information.</p>
-</li>
-<li>
-<p>Hardcoded content will be converted into specific
-variables to allow for easy manipulation.</p>
-</li>
-<li>
-<p>File handling will be improved to account for failures to
-read or write.</p>
-</li>
-<li>
-<p>Syntax Errors will be corrected to ensure that the program
-behaves as expected.</p>
-</li>
-<li>
-<p>The specific skills highlighted in this enhancement
+information.</p></li><li><p>Hardcoded content will be converted into specific
+variables to allow for easy manipulation.</p></li><li><p>File handling will be improved to account for failures to
+read or write.</p></li><li><p>Syntax Errors will be corrected to ensure that the program
+behaves as expected.</p></li><li><p>The specific skills highlighted in this enhancement
 showcase my ability to improve code usability and
 portability, which are critical when developing code
 intended to be analyzed by others or used in a team
 setting. This will also highlight my understanding of how
 to improve search and filtration of data within a
-database.</p>
-</li>
-<li>
-<p>The enhancements that I implement on this artifact best
+database.</p></li><li><p>The enhancements that I implement on this artifact best
 align with course outcomes three and four. I will design
 and evaluate a computing solution which follows the best
 computer science practices and standards set forth in
 object-oriented programming. This also demonstrates
 increased value by making the program more efficient and
 easier to use while also aligning with industry standards
-of code portability and reusability.</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>
-<p><strong>Category Three: Databases</strong></p>
-<ol>
-<li>
-<p>Provide a clear, complete description of existing code
-<strong>functionality</strong>.</p>
-<ol>
-<li>
-<p>What does the code do?</p>
-<ul>
-<li>The artifact that I have chosen for this category is my
+of code portability and reusability.</p></li></ul></li></ol></li></ol></li><li><p><strong>Category Three: Databases</strong></p><ol><li><p>Provide a clear, complete description of existing code
+<strong>functionality</strong>.</p><ol><li><p>What does the code do?</p><ul><li>The artifact that I have chosen for this category is my
 full-stack development website utilizing the MEAN stack.
 This application is derived from my CS-465 Full-Stack
 Development 1 class. I have chosen this artifact because
@@ -816,924 +164,179 @@ These changes then reflect on the client website. There is
 also an add trip button which allows administrators to add
 a trip. To view these buttons, administrators must click
 the log in button at the top right of the screen and then
-complete sign in with the correct sign in details.</li>
-</ul>
-</li>
-<li>
-<p>Focus on the features and functions of the existing code.</p>
-<ul>
-<li>
-<p>Trip Cards</p>
-</li>
-<li>
-<p>See Trip Details</p>
-</li>
-<li>
-<p>Add Trips</p>
-</li>
-<li>
-<p>Edit Trips</p>
-</li>
-<li>
-<p>Delete Trips</p>
-</li>
-<li>
-<p>User authentication</p>
-</li>
-<li>
-<p>Operation buttons hidden when not sign in</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>
-<p><strong>Analyze</strong> existing code using relevant code review criteria to
-support clearly stated findings.</p>
-<ol>
-<li>Use the checklist to review the code critically. This review
+complete sign in with the correct sign in details.</li></ul></li><li><p>Focus on the features and functions of the existing code.</p><ul><li><p>Trip Cards</p></li><li><p>See Trip Details</p></li><li><p>Add Trips</p></li><li><p>Edit Trips</p></li><li><p>Delete Trips</p></li><li><p>User authentication</p></li><li><p>Operation buttons hidden when not sign in</p></li></ul></li></ol></li><li><p><strong>Analyze</strong> existing code using relevant code review criteria to
+support clearly stated findings.</p><ol><li>Use the checklist to review the code critically. This review
 might highlight weaknesses, such as not following secure
 coding best practices, having no error handling, code not
 being efficient, code that needs debugging, and so on. Not
 all the items on the checklist will be applicable, so review
-the ones that are applicable to your artifact.</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<blockquote>
-<p><strong>Login.component.ts</strong></p></blockquote>
-<ul>
-<li>
-<p>Here&rsquo;s a structured code review of your <strong>MEAN stack login
-component</strong>, using the checklist you provided:</p>
-</li>
-<li>
-<p><strong>Structure</strong></p>
-</li>
-<li>
-<p>The code correctly implements the design of a login component using
-Angular.</p>
-</li>
-<li>
-<p>It follows TypeScript and Angular coding standards, but styleUrl
-should be corrected to styleUrls.</p>
-</li>
-<li>
-<p>The component structure is clean and modular, with necessary
-dependencies imported correctly.</p>
-</li>
-<li>
-<p>No unused procedures or unreachable code detected.</p>
-</li>
-<li>
-<p>The component does not contain repeated logic that could be moved into
-reusable services.</p>
-</li>
-<li>
-<p>Storage usage appears efficient, as credentials are handled within the
-component state.</p>
-</li>
-<li>
-<p>No magic numbers, but setTimeout introduces an arbitrary delay
-(3000ms). This value should be configurable rather than hardcoded.</p>
-</li>
-<li>
-<p><strong>Documentation</strong></p>
-</li>
-<li>
-<p>The code lacks inline comments, which would be helpful for
-maintainability.</p>
-</li>
-<li>
-<p>The purpose of setTimeout is unclear—comments explaining why this
-delay is used would be beneficial.</p>
-</li>
-<li>
-<p>Removing commented-out debugging (console.log) would improve
-cleanliness.</p>
-</li>
-<li>
-<p><strong>Variables</strong></p>
-</li>
-<li>
-<p>Variables are properly defined with meaningful names (credentials,
-newUser, formError).</p>
-</li>
-<li>
-<p>Type consistency is maintained.</p>
-</li>
-<li>
-<p>No redundant or unused variables detected.</p>
-</li>
-<li>
-<p><strong>Arithmetic Operations</strong></p>
-</li>
-<li>
-<p>No arithmetic operations are present, so floating-point comparison and
-rounding errors are not relevant.</p>
-</li>
-<li>
-<p><strong>Loops and Branches</strong></p>
-</li>
-<li>
-<p>The IF conditions in onLoginSubmit properly validate input fields.</p>
-</li>
-<li>
-<p>The most common failure condition (empty credentials) is tested first.</p>
-</li>
-<li>
-<p>The default navigation in router.navigateByUrl(&rsquo;#&rsquo;) is
+the ones that are applicable to your artifact.</li></ol></li></ol></li></ol><blockquote><p><strong>Login.component.ts</strong></p></blockquote><ul><li><p>Here&rsquo;s a structured code review of your <strong>MEAN stack login
+component</strong>, using the checklist you provided:</p></li><li><p><strong>Structure</strong></p></li><li><p>The code correctly implements the design of a login component using
+Angular.</p></li><li><p>It follows TypeScript and Angular coding standards, but styleUrl
+should be corrected to styleUrls.</p></li><li><p>The component structure is clean and modular, with necessary
+dependencies imported correctly.</p></li><li><p>No unused procedures or unreachable code detected.</p></li><li><p>The component does not contain repeated logic that could be moved into
+reusable services.</p></li><li><p>Storage usage appears efficient, as credentials are handled within the
+component state.</p></li><li><p>No magic numbers, but setTimeout introduces an arbitrary delay
+(3000ms). This value should be configurable rather than hardcoded.</p></li><li><p><strong>Documentation</strong></p></li><li><p>The code lacks inline comments, which would be helpful for
+maintainability.</p></li><li><p>The purpose of setTimeout is unclear—comments explaining why this
+delay is used would be beneficial.</p></li><li><p>Removing commented-out debugging (console.log) would improve
+cleanliness.</p></li><li><p><strong>Variables</strong></p></li><li><p>Variables are properly defined with meaningful names (credentials,
+newUser, formError).</p></li><li><p>Type consistency is maintained.</p></li><li><p>No redundant or unused variables detected.</p></li><li><p><strong>Arithmetic Operations</strong></p></li><li><p>No arithmetic operations are present, so floating-point comparison and
+rounding errors are not relevant.</p></li><li><p><strong>Loops and Branches</strong></p></li><li><p>The IF conditions in onLoginSubmit properly validate input fields.</p></li><li><p>The most common failure condition (empty credentials) is tested first.</p></li><li><p>The default navigation in router.navigateByUrl(&rsquo;#&rsquo;) is
 ineffective—consider redirecting to an appropriate login error page
-instead.</p>
-</li>
-<li>
-<p>In doLogin, the conditional
+instead.</p></li><li><p>In doLogin, the conditional
 if(this.authenticationService.isLoggedIn()) correctly directs the user
-but lacks a <strong>clear failure handling mechanism</strong>.</p>
-</li>
-<li>
-<p><strong>Defensive Programming</strong></p>
-</li>
-<li>
-<p>No input sanitization is visible. Validation checks prevent empty
+but lacks a <strong>clear failure handling mechanism</strong>.</p></li><li><p><strong>Defensive Programming</strong></p></li><li><p>No input sanitization is visible. Validation checks prevent empty
 fields, but <strong>no explicit protections</strong> exist against malformed or
-malicious inputs.</p>
-</li>
-<li>
-<p>No error handling for authentication failures—if login fails, there’s
-no feedback or retry mechanism.</p>
-</li>
-<li>
-<p>The <strong>setTimeout</strong> retry pattern is unreliable—it should rely on
-authentication observables or asynchronous event tracking instead.</p>
-</li>
-<li>
-<p>formError is assigned a message but never displayed in the
-template—ensure it integrates with UI feedback mechanisms.</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>App_api/Authentication.js</strong></p></blockquote>
-<ul>
-<li>
-<p>Here’s a structured code review of the <strong>authentication controller</strong>
-for your MEAN stack application using the CS 499 checklist:</p>
-</li>
-<li>
-<p><strong>Structure</strong></p>
-</li>
-<li>
-<p>The code correctly implements <strong>user authentication</strong> using Mongoose
-and Passport.js.</p>
-</li>
-<li>
-<p>The function naming (register, login) is intuitive and follows common
-authentication conventions.</p>
-</li>
-<li>
-<p>No excessive complexity, but register could benefit from better
-<strong>error-handling mechanisms</strong>.</p>
-</li>
-<li>
-<p>No unnecessary functions or unreachable code detected.</p>
-</li>
-<li>
-<p>The <strong>use of symbolics</strong> for message strings is appropriate, avoiding
-magic numbers.</p>
-</li>
-<li>
-<p><strong>Efficiency</strong>: The user model is used correctly, though error
-handling could be improved for robustness.</p>
-</li>
-<li>
-<p><strong>Documentation</strong></p>
-</li>
-<li>
-<p><strong>Lack of comments</strong>: While function purposes are evident, adding
+malicious inputs.</p></li><li><p>No error handling for authentication failures—if login fails, there’s
+no feedback or retry mechanism.</p></li><li><p>The <strong>setTimeout</strong> retry pattern is unreliable—it should rely on
+authentication observables or asynchronous event tracking instead.</p></li><li><p>formError is assigned a message but never displayed in the
+template—ensure it integrates with UI feedback mechanisms.</p></li></ul><blockquote><p><strong>App_api/Authentication.js</strong></p></blockquote><ul><li><p>Here’s a structured code review of the <strong>authentication controller</strong>
+for your MEAN stack application using the CS 499 checklist:</p></li><li><p><strong>Structure</strong></p></li><li><p>The code correctly implements <strong>user authentication</strong> using Mongoose
+and Passport.js.</p></li><li><p>The function naming (register, login) is intuitive and follows common
+authentication conventions.</p></li><li><p>No excessive complexity, but register could benefit from better
+<strong>error-handling mechanisms</strong>.</p></li><li><p>No unnecessary functions or unreachable code detected.</p></li><li><p>The <strong>use of symbolics</strong> for message strings is appropriate, avoiding
+magic numbers.</p></li><li><p><strong>Efficiency</strong>: The user model is used correctly, though error
+handling could be improved for robustness.</p></li><li><p><strong>Documentation</strong></p></li><li><p><strong>Lack of comments</strong>: While function purposes are evident, adding
 <strong>inline documentation</strong> explaining JWT generation and password
-handling would improve clarity.</p>
-</li>
-<li>
-<p>Comments should describe <strong>why</strong> specific error cases are handled a
-certain way, rather than just summarizing the function logic.</p>
-</li>
-<li>
-<p><strong>Variables</strong></p>
-</li>
-<li>
-<p>Variable names (user, q, token) are mostly clear, but q is <strong>not
+handling would improve clarity.</p></li><li><p>Comments should describe <strong>why</strong> specific error cases are handled a
+certain way, rather than just summarizing the function logic.</p></li><li><p><strong>Variables</strong></p></li><li><p>Variable names (user, q, token) are mostly clear, but q is <strong>not
 descriptive</strong>—renaming to something meaningful like savedUser would
-enhance readability.</p>
-</li>
-<li>
-<p>Proper type consistency is maintained.</p>
-</li>
-<li>
-<p>No redundant or unused variables detected.</p>
-</li>
-<li>
-<p><strong>Arithmetic Operations</strong></p>
-</li>
-<li>
-<p>No arithmetic operations are present, so floating-point comparison
-issues are <strong>not relevant</strong>.</p>
-</li>
-<li>
-<p><strong>Loops and Branches</strong></p>
-</li>
-<li>
-<p><strong>IF conditions</strong> correctly validate input presence.</p>
-</li>
-<li>
-<p>The <strong>login function’s error-checking</strong> branches (if (user), if (err))
+enhance readability.</p></li><li><p>Proper type consistency is maintained.</p></li><li><p>No redundant or unused variables detected.</p></li><li><p><strong>Arithmetic Operations</strong></p></li><li><p>No arithmetic operations are present, so floating-point comparison
+issues are <strong>not relevant</strong>.</p></li><li><p><strong>Loops and Branches</strong></p></li><li><p><strong>IF conditions</strong> correctly validate input presence.</p></li><li><p>The <strong>login function’s error-checking</strong> branches (if (user), if (err))
 are clear, but handling <strong>user authentication failures</strong> could be more
-detailed.</p>
-</li>
-<li>
-<p>The authentication response should <strong>explicitly log failure reasons</strong>
-for debugging.</p>
-</li>
-<li>
-<p><strong>Using passport.authenticate(&rsquo;local&rsquo;) properly</strong>, but consider
-<strong>returning structured error messages</strong> when authentication fails.</p>
-</li>
-<li>
-<p><strong>Defensive Programming</strong></p>
-</li>
-<li>
-<p><strong>Missing error handling in register</strong>:</p>
-</li>
-<li>
-<p>await user.save() should wrap in a try-catch block instead of checking
+detailed.</p></li><li><p>The authentication response should <strong>explicitly log failure reasons</strong>
+for debugging.</p></li><li><p><strong>Using passport.authenticate(&rsquo;local&rsquo;) properly</strong>, but consider
+<strong>returning structured error messages</strong> when authentication fails.</p></li><li><p><strong>Defensive Programming</strong></p></li><li><p><strong>Missing error handling in register</strong>:</p></li><li><p>await user.save() should wrap in a try-catch block instead of checking
 if(!q). If an error occurs, err is undefined, which may lead to
-issues.</p>
-</li>
-<li>
-<p><strong>Login function does not sanitize inputs</strong>—while Passport handles
+issues.</p></li><li><p><strong>Login function does not sanitize inputs</strong>—while Passport handles
 authentication, directly validating or sanitizing user input would
-strengthen security.</p>
-</li>
-<li>
-<p><strong>Generated JWT is returned in plaintext</strong>—this is standard, but
-<strong>consider including expiration times</strong> for security enhancement.</p>
-</li>
-<li>
-<p><strong>Potential vulnerability</strong>: No checks on <strong>email validation</strong> or
+strengthen security.</p></li><li><p><strong>Generated JWT is returned in plaintext</strong>—this is standard, but
+<strong>consider including expiration times</strong> for security enhancement.</p></li><li><p><strong>Potential vulnerability</strong>: No checks on <strong>email validation</strong> or
 <strong>password strength</strong> during registration. This leaves room for weak
-passwords.</p>
-</li>
-<li>
-<p><strong>Error handling in passport.authenticate is minimal</strong>—consider
+passwords.</p></li><li><p><strong>Error handling in passport.authenticate is minimal</strong>—consider
 handling cases where authentication fails due to incorrect credentials
-more explicitly.</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>App_api/models/user.js</strong></p></blockquote>
-<ul>
-<li>
-<p>Here’s a <strong>structured code review</strong> of the <strong>user model</strong> in your MEAN
-stack application, based on the <strong>CS 499 checklist</strong>:</p>
-</li>
-<li>
-<p><strong>Structure</strong></p>
-</li>
-<li>
-<p>The <strong>Mongoose schema</strong> is well-defined, correctly modeling a user
-with essential fields (email, name, hash, salt).</p>
-</li>
-<li>
-<p>The <strong>password hashing mechanism</strong> follows security best practices
-using crypto.pbkdf2Sync with a <strong>salt</strong>.</p>
-</li>
-<li>
-<p>No unnecessary procedures or unreachable code detected.</p>
-</li>
-<li>
-<p>Storage efficiency is maintained—fields are appropriately stored.</p>
-</li>
-<li>
-<p><strong>No excessive complexity</strong>, but certain methods (setPassword,
-validPassword) could be <strong>refactored</strong> for better modularization.</p>
-</li>
-<li>
-<p>No magic numbers—<strong>constants for PBKDF2 iterations and key length</strong>
-(1000, 64) could be defined as configurable values instead.</p>
-</li>
-<li>
-<p><strong>Documentation</strong></p>
-</li>
-<li>
-<p>The <strong>JWT generation method includes a useful inline comment</strong>, but
-overall, documentation is minimal.</p>
-</li>
-<li>
-<p><strong>Lack of comments</strong> in setPassword and validPassword—adding
-explanations would improve maintainability.</p>
-</li>
-<li>
-<p>No misleading comments detected.</p>
-</li>
-<li>
-<p><strong>Variables</strong></p>
-</li>
-<li>
-<p><strong>Variable names are clear</strong> (hash, salt, userSchema).</p>
-</li>
-<li>
-<p>Proper type consistency is maintained.</p>
-</li>
-<li>
-<p>The variable hash inside validPassword could be renamed to <strong>a more
-descriptive name</strong> (computedHash) for clarity.</p>
-</li>
-<li>
-<p><strong>Arithmetic Operations</strong></p>
-</li>
-<li>
-<p>No direct arithmetic operations are present, so concerns about
+more explicitly.</p></li></ul><blockquote><p><strong>App_api/models/user.js</strong></p></blockquote><ul><li><p>Here’s a <strong>structured code review</strong> of the <strong>user model</strong> in your MEAN
+stack application, based on the <strong>CS 499 checklist</strong>:</p></li><li><p><strong>Structure</strong></p></li><li><p>The <strong>Mongoose schema</strong> is well-defined, correctly modeling a user
+with essential fields (email, name, hash, salt).</p></li><li><p>The <strong>password hashing mechanism</strong> follows security best practices
+using crypto.pbkdf2Sync with a <strong>salt</strong>.</p></li><li><p>No unnecessary procedures or unreachable code detected.</p></li><li><p>Storage efficiency is maintained—fields are appropriately stored.</p></li><li><p><strong>No excessive complexity</strong>, but certain methods (setPassword,
+validPassword) could be <strong>refactored</strong> for better modularization.</p></li><li><p>No magic numbers—<strong>constants for PBKDF2 iterations and key length</strong>
+(1000, 64) could be defined as configurable values instead.</p></li><li><p><strong>Documentation</strong></p></li><li><p>The <strong>JWT generation method includes a useful inline comment</strong>, but
+overall, documentation is minimal.</p></li><li><p><strong>Lack of comments</strong> in setPassword and validPassword—adding
+explanations would improve maintainability.</p></li><li><p>No misleading comments detected.</p></li><li><p><strong>Variables</strong></p></li><li><p><strong>Variable names are clear</strong> (hash, salt, userSchema).</p></li><li><p>Proper type consistency is maintained.</p></li><li><p>The variable hash inside validPassword could be renamed to <strong>a more
+descriptive name</strong> (computedHash) for clarity.</p></li><li><p><strong>Arithmetic Operations</strong></p></li><li><p>No direct arithmetic operations are present, so concerns about
 floating-point equality, rounding errors, or zero divisors do not
-apply.</p>
-</li>
-<li>
-<p><strong>Loops and Branches</strong></p>
-</li>
-<li>
-<p>No loops or branching logic are present—the schema primarily defines
-methods for password security and authentication.</p>
-</li>
-<li>
-<p><strong>Defensive Programming</strong></p>
-</li>
-<li>
-<p><strong>Missing error handling</strong> in setPassword—using a <strong>try-catch block</strong>
-would improve robustness.</p>
-</li>
-<li>
-<p><strong>No validation for email format</strong>—consider adding an <strong>email
-validation check</strong> to ensure a properly formatted email address.</p>
-</li>
-<li>
-<p><strong>JWT generation relies on process.env.JWT_SECRET</strong>—this is good
+apply.</p></li><li><p><strong>Loops and Branches</strong></p></li><li><p>No loops or branching logic are present—the schema primarily defines
+methods for password security and authentication.</p></li><li><p><strong>Defensive Programming</strong></p></li><li><p><strong>Missing error handling</strong> in setPassword—using a <strong>try-catch block</strong>
+would improve robustness.</p></li><li><p><strong>No validation for email format</strong>—consider adding an <strong>email
+validation check</strong> to ensure a properly formatted email address.</p></li><li><p><strong>JWT generation relies on process.env.JWT_SECRET</strong>—this is good
 practice, but ensuring that it is <strong>properly loaded and handled</strong> at
-runtime is crucial.</p>
-</li>
-<li>
-<p><strong>Password hashing security</strong>:</p>
-</li>
-<li>
-<p><strong>PBKDF2 key stretching iterations (1000) could be increased</strong>—modern
+runtime is crucial.</p></li><li><p><strong>Password hashing security</strong>:</p></li><li><p><strong>PBKDF2 key stretching iterations (1000) could be increased</strong>—modern
 recommendations suggest <strong>higher iteration counts</strong> (e.g.,
-<strong>10,000+</strong>) for added security.</p>
-</li>
-<li>
-<p>The hashing algorithm <strong>uses SHA-512</strong>, which is strong, but consider
-<strong>bcrypt</strong> for better built-in protection against brute-force attacks.</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>App_api/config/passport.js</strong></p></blockquote>
-<ul>
-<li>
-<p>Here&rsquo;s a structured <strong>code review</strong> of your <strong>Passport.js
-configuration</strong> using the <strong>CS 499 Code Review Checklist</strong>:</p>
-</li>
-<li>
-<p><strong>Structure</strong></p>
-</li>
-<li>
-<p>The implementation correctly follows <strong>Passport.js best practices</strong>
-for a <strong>local authentication strategy</strong>.</p>
-</li>
-<li>
-<p>No unused procedures or unreachable code detected.</p>
-</li>
-<li>
-<p>The LocalStrategy constructor <strong>correctly specifies</strong> that
-authentication should use the email field (usernameField: &rsquo;email&rsquo;).</p>
-</li>
-<li>
-<p>No excessive complexity—logic is clear and <strong>concise</strong>, but <strong>error
-handling could be improved</strong>.</p>
-</li>
-<li>
-<p><strong>Storage efficiency:</strong> The query logic retrieves a <strong>single user
-record</strong>, which is appropriate for authentication.</p>
-</li>
-<li>
-<p>No <strong>&ldquo;magic numbers&rdquo;</strong>, but <strong>symbolic error codes/messages</strong> could be
-used instead of hardcoded strings.</p>
-</li>
-<li>
-<p><strong>Documentation</strong></p>
-</li>
-<li>
-<p><strong>Minimal comments</strong>—adding brief explanations for <strong>Passport.js
-workflow</strong> and authentication behavior would improve maintainability.</p>
-</li>
-<li>
-<p><strong>Uncommented console log statement</strong>—consider either removing or
-documenting its purpose.</p>
-</li>
-<li>
-<p><strong>Variables</strong></p>
-</li>
-<li>
-<p>Variable q is <strong>not descriptive</strong>—renaming it to userRecord or
-foundUser would improve readability.</p>
-</li>
-<li>
-<p>No unused or redundant variables detected.</p>
-</li>
-<li>
-<p>Proper type consistency is maintained.</p>
-</li>
-<li>
-<p><strong>Arithmetic Operations</strong></p>
-</li>
-<li>
-<p>No arithmetic operations present, so <strong>floating-point concerns</strong> are
-not relevant.</p>
-</li>
-<li>
-<p><strong>Loops and Branches</strong></p>
-</li>
-<li>
-<p><strong>IF conditions</strong> correctly handle authentication logic, but
-passport.authenticate does <strong>not include explicit error handling</strong>.</p>
-</li>
-<li>
-<p>The authentication flow is structured logically:</p>
-</li>
-<li>
-<p><strong>Checks if the user exists (if (!q))</strong></p>
-</li>
-<li>
-<p><strong>Checks if the password is valid (if (!q.validPassword(password)))</strong></p>
-</li>
-<li>
-<p><strong>Returns the user if credentials are correct</strong></p>
-</li>
-<li>
-<p><strong>No default error catch</strong>—consider adding <strong>a catch block</strong> to handle
-potential <strong>database or unexpected failures</strong>.</p>
-</li>
-<li>
-<p><strong>Most common cases tested first</strong> (if (!q) runs before password
-validation), ensuring efficiency.</p>
-</li>
-<li>
-<p><strong>Defensive Programming</strong></p>
-</li>
-<li>
-<p><strong>Error handling is minimal</strong>—if User.findOne fails due to database
-errors, it <strong>does not return a structured response</strong>.</p>
-</li>
-<li>
-<p><strong>No input sanitization</strong>—since user credentials come from req.body,
+<strong>10,000+</strong>) for added security.</p></li><li><p>The hashing algorithm <strong>uses SHA-512</strong>, which is strong, but consider
+<strong>bcrypt</strong> for better built-in protection against brute-force attacks.</p></li></ul><blockquote><p><strong>App_api/config/passport.js</strong></p></blockquote><ul><li><p>Here&rsquo;s a structured <strong>code review</strong> of your <strong>Passport.js
+configuration</strong> using the <strong>CS 499 Code Review Checklist</strong>:</p></li><li><p><strong>Structure</strong></p></li><li><p>The implementation correctly follows <strong>Passport.js best practices</strong>
+for a <strong>local authentication strategy</strong>.</p></li><li><p>No unused procedures or unreachable code detected.</p></li><li><p>The LocalStrategy constructor <strong>correctly specifies</strong> that
+authentication should use the email field (usernameField: &rsquo;email&rsquo;).</p></li><li><p>No excessive complexity—logic is clear and <strong>concise</strong>, but <strong>error
+handling could be improved</strong>.</p></li><li><p><strong>Storage efficiency:</strong> The query logic retrieves a <strong>single user
+record</strong>, which is appropriate for authentication.</p></li><li><p>No <strong>&ldquo;magic numbers&rdquo;</strong>, but <strong>symbolic error codes/messages</strong> could be
+used instead of hardcoded strings.</p></li><li><p><strong>Documentation</strong></p></li><li><p><strong>Minimal comments</strong>—adding brief explanations for <strong>Passport.js
+workflow</strong> and authentication behavior would improve maintainability.</p></li><li><p><strong>Uncommented console log statement</strong>—consider either removing or
+documenting its purpose.</p></li><li><p><strong>Variables</strong></p></li><li><p>Variable q is <strong>not descriptive</strong>—renaming it to userRecord or
+foundUser would improve readability.</p></li><li><p>No unused or redundant variables detected.</p></li><li><p>Proper type consistency is maintained.</p></li><li><p><strong>Arithmetic Operations</strong></p></li><li><p>No arithmetic operations present, so <strong>floating-point concerns</strong> are
+not relevant.</p></li><li><p><strong>Loops and Branches</strong></p></li><li><p><strong>IF conditions</strong> correctly handle authentication logic, but
+passport.authenticate does <strong>not include explicit error handling</strong>.</p></li><li><p>The authentication flow is structured logically:</p></li><li><p><strong>Checks if the user exists (if (!q))</strong></p></li><li><p><strong>Checks if the password is valid (if (!q.validPassword(password)))</strong></p></li><li><p><strong>Returns the user if credentials are correct</strong></p></li><li><p><strong>No default error catch</strong>—consider adding <strong>a catch block</strong> to handle
+potential <strong>database or unexpected failures</strong>.</p></li><li><p><strong>Most common cases tested first</strong> (if (!q) runs before password
+validation), ensuring efficiency.</p></li><li><p><strong>Defensive Programming</strong></p></li><li><p><strong>Error handling is minimal</strong>—if User.findOne fails due to database
+errors, it <strong>does not return a structured response</strong>.</p></li><li><p><strong>No input sanitization</strong>—since user credentials come from req.body,
 additional validation (e.g., <strong>email format checking</strong>) would enhance
-security.</p>
-</li>
-<li>
-<p><strong>Missing try-catch block</strong>—await User.findOne({ email: username })
+security.</p></li><li><p><strong>Missing try-catch block</strong>—await User.findOne({ email: username })
 could fail under certain conditions. Wrapping it in a try-catch
-ensures <strong>robust error handling</strong>.</p>
-</li>
-<li>
-<p><strong>Valid password check relies on an instance method</strong>
+ensures <strong>robust error handling</strong>.</p></li><li><p><strong>Valid password check relies on an instance method</strong>
 (q.validPassword(password))—this is correct, but consider logging
-failed authentication attempts for security monitoring.</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>App_admin/src/app/services/authentication.service.ts</strong></p></blockquote>
-<ul>
-<li>
-<p>Here&rsquo;s a <strong>structured code review</strong> of the <strong>authentication service</strong>
-for the SPA frontend, using the CS 499 checklist:</p>
-</li>
-<li>
-<p><strong>Structure</strong></p>
-</li>
-<li>
-<p>The <strong>authentication service</strong> correctly implements essential
-authentication logic.</p>
-</li>
-<li>
-<p>The code adheres to <strong>Angular service conventions</strong> with proper
-dependency injection (@Inject(BROWSER_STORAGE)).</p>
-</li>
-<li>
-<p>No excessive complexity—each method is well-contained and serves a
-clear purpose.</p>
-</li>
-<li>
-<p>Storage use is efficient; however, <strong>no encryption or security
-measures are applied</strong> to local storage, which is a security risk.</p>
-</li>
-<li>
-<p>No repeated code, but error-handling logic is minimal.</p>
-</li>
-<li>
-<p>No unnecessary procedures, though error messages should be structured
-for better debugging.</p>
-</li>
-<li>
-<p><strong>Documentation</strong></p>
-</li>
-<li>
-<p><strong>Minimal inline comments</strong>—comments exist for token storage and
-logout behavior but could be expanded.</p>
-</li>
-<li>
-<p><strong>Missing explanation of security risks</strong>—storing JWTs in local
+failed authentication attempts for security monitoring.</p></li></ul><blockquote><p><strong>App_admin/src/app/services/authentication.service.ts</strong></p></blockquote><ul><li><p>Here&rsquo;s a <strong>structured code review</strong> of the <strong>authentication service</strong>
+for the SPA frontend, using the CS 499 checklist:</p></li><li><p><strong>Structure</strong></p></li><li><p>The <strong>authentication service</strong> correctly implements essential
+authentication logic.</p></li><li><p>The code adheres to <strong>Angular service conventions</strong> with proper
+dependency injection (@Inject(BROWSER_STORAGE)).</p></li><li><p>No excessive complexity—each method is well-contained and serves a
+clear purpose.</p></li><li><p>Storage use is efficient; however, <strong>no encryption or security
+measures are applied</strong> to local storage, which is a security risk.</p></li><li><p>No repeated code, but error-handling logic is minimal.</p></li><li><p>No unnecessary procedures, though error messages should be structured
+for better debugging.</p></li><li><p><strong>Documentation</strong></p></li><li><p><strong>Minimal inline comments</strong>—comments exist for token storage and
+logout behavior but could be expanded.</p></li><li><p><strong>Missing explanation of security risks</strong>—storing JWTs in local
 storage exposes the app to potential <strong>XSS (Cross-Site Scripting)</strong>
-attacks. This should be documented or mitigated.</p>
-</li>
-<li>
-<p>No misleading comments.</p>
-</li>
-<li>
-<p><strong>Variables</strong></p>
-</li>
-<li>
-<p>Variable naming is <strong>clear and meaningful</strong> (authResp, token, user).</p>
-</li>
-<li>
-<p><strong>Type consistency is maintained</strong>, but let out: any; could be
-explicitly typed (let out: string | null;).</p>
-</li>
-<li>
-<p>No redundant or unused variables detected.</p>
-</li>
-<li>
-<p><strong>Arithmetic Operations</strong></p>
-</li>
-<li>
-<p>No arithmetic operations are present, though <strong>token expiration check
-(payload.exp &gt; (Date.now() / 1000)) relies on time-based
+attacks. This should be documented or mitigated.</p></li><li><p>No misleading comments.</p></li><li><p><strong>Variables</strong></p></li><li><p>Variable naming is <strong>clear and meaningful</strong> (authResp, token, user).</p></li><li><p><strong>Type consistency is maintained</strong>, but let out: any; could be
+explicitly typed (let out: string | null;).</p></li><li><p>No redundant or unused variables detected.</p></li><li><p><strong>Arithmetic Operations</strong></p></li><li><p>No arithmetic operations are present, though <strong>token expiration check
+(payload.exp > (Date.now() / 1000)) relies on time-based
 arithmetic</strong>. This could fail in edge cases if client-side time
-settings are incorrect.</p>
-</li>
-<li>
-<p><strong>Loops and Branches</strong></p>
-</li>
-<li>
-<p>Conditional checks are correct, ensuring token retrieval and validity
-in isLoggedIn().</p>
-</li>
-<li>
-<p><strong>Missing default error handling in login/register methods</strong>—failed
+settings are incorrect.</p></li><li><p><strong>Loops and Branches</strong></p></li><li><p>Conditional checks are correct, ensuring token retrieval and validity
+in isLoggedIn().</p></li><li><p><strong>Missing default error handling in login/register methods</strong>—failed
 authentication should provide structured error feedback instead of
-just logging the error (console.log(&lsquo;Error: &rsquo; + error)).</p>
-</li>
-<li>
-<p>No loop termination conditions required in this service.</p>
-</li>
-<li>
-<p><strong>Defensive Programming</strong></p>
-</li>
-<li>
-<p><strong>Storage Security Issue</strong>:</p>
-</li>
-<li>
-<p>JWT <strong>should not be stored in local storage</strong> due to XSS risks. A more
-secure approach is <strong>HTTP-only cookies</strong>.</p>
-</li>
-<li>
-<p><strong>No error handling for token parsing</strong>:</p>
-</li>
-<li>
-<p>If JSON.parse(atob(token.split(&rsquo;.&rsquo;)[1])) fails (due to an invalid or
+just logging the error (console.log(&lsquo;Error: &rsquo; + error)).</p></li><li><p>No loop termination conditions required in this service.</p></li><li><p><strong>Defensive Programming</strong></p></li><li><p><strong>Storage Security Issue</strong>:</p></li><li><p>JWT <strong>should not be stored in local storage</strong> due to XSS risks. A more
+secure approach is <strong>HTTP-only cookies</strong>.</p></li><li><p><strong>No error handling for token parsing</strong>:</p></li><li><p>If JSON.parse(atob(token.split(&rsquo;.&rsquo;)[1])) fails (due to an invalid or
 malformed JWT), it will cause runtime errors. Adding a <strong>try-catch
-block</strong> would improve robustness.</p>
-</li>
-<li>
-<p><strong>No sanitization of user input</strong> before sending credentials via
-login() and register().</p>
-</li>
-<li>
-<p><strong>No validation for email format or password strength</strong> before
-authentication attempts.</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>App_admin/src/app/login/login.component.ts</strong></p></blockquote>
-<ul>
-<li>
-<p>Here&rsquo;s a <strong>structured code review</strong> of your <strong>Angular login
-component</strong>, using the <strong>CS 499 Code Review Checklist</strong>:</p>
-</li>
-<li>
-<p><strong>Structure</strong></p>
-</li>
-<li>
-<p>The component correctly implements <strong>user authentication</strong>, handling
-form submission and routing.</p>
-</li>
-<li>
-<p>It follows <strong>Angular component conventions</strong>, with necessary
-dependencies injected (Router, AuthenticationService).</p>
-</li>
-<li>
-<p>No excessive complexity detected, but <strong>logic for login validation
-could be improved</strong> for clarity.</p>
-</li>
-<li>
-<p>No unnecessary procedures, but router.navigateByUrl(&rsquo;#&rsquo;) is
-ineffective—it should redirect to a <strong>specific error page</strong> instead.</p>
-</li>
-<li>
-<p><strong>Storage efficiency is good</strong>, but validation methods could be
-externalized into a utility function.</p>
-</li>
-<li>
-<p>No <strong>magic numbers</strong>, though the <strong>3000ms delay in setTimeout should
-be configurable instead of hardcoded</strong>.</p>
-</li>
-<li>
-<p><strong>Documentation</strong></p>
-</li>
-<li>
-<p>Minimal comments—<strong>login flow lacks clear explanations</strong>.</p>
-</li>
-<li>
-<p><strong>Commented-out console.log statements</strong> should be removed or properly
-documented for debugging use.</p>
-</li>
-<li>
-<p>No misleading comments detected.</p>
-</li>
-<li>
-<p><strong>Variables</strong></p>
-</li>
-<li>
-<p><strong>Variable names are clear</strong> (credentials, formError, newUser).</p>
-</li>
-<li>
-<p><strong>submitted variable is declared but never used</strong>—should either be
-removed or utilized for tracking form submission state.</p>
-</li>
-<li>
-<p>No redundant variables detected.</p>
-</li>
-<li>
-<p><strong>Arithmetic Operations</strong></p>
-</li>
-<li>
-<p>No arithmetic operations present, but <strong>time-based arithmetic
+block</strong> would improve robustness.</p></li><li><p><strong>No sanitization of user input</strong> before sending credentials via
+login() and register().</p></li><li><p><strong>No validation for email format or password strength</strong> before
+authentication attempts.</p></li></ul><blockquote><p><strong>App_admin/src/app/login/login.component.ts</strong></p></blockquote><ul><li><p>Here&rsquo;s a <strong>structured code review</strong> of your <strong>Angular login
+component</strong>, using the <strong>CS 499 Code Review Checklist</strong>:</p></li><li><p><strong>Structure</strong></p></li><li><p>The component correctly implements <strong>user authentication</strong>, handling
+form submission and routing.</p></li><li><p>It follows <strong>Angular component conventions</strong>, with necessary
+dependencies injected (Router, AuthenticationService).</p></li><li><p>No excessive complexity detected, but <strong>logic for login validation
+could be improved</strong> for clarity.</p></li><li><p>No unnecessary procedures, but router.navigateByUrl(&rsquo;#&rsquo;) is
+ineffective—it should redirect to a <strong>specific error page</strong> instead.</p></li><li><p><strong>Storage efficiency is good</strong>, but validation methods could be
+externalized into a utility function.</p></li><li><p>No <strong>magic numbers</strong>, though the <strong>3000ms delay in setTimeout should
+be configurable instead of hardcoded</strong>.</p></li><li><p><strong>Documentation</strong></p></li><li><p>Minimal comments—<strong>login flow lacks clear explanations</strong>.</p></li><li><p><strong>Commented-out console.log statements</strong> should be removed or properly
+documented for debugging use.</p></li><li><p>No misleading comments detected.</p></li><li><p><strong>Variables</strong></p></li><li><p><strong>Variable names are clear</strong> (credentials, formError, newUser).</p></li><li><p><strong>submitted variable is declared but never used</strong>—should either be
+removed or utilized for tracking form submission state.</p></li><li><p>No redundant variables detected.</p></li><li><p><strong>Arithmetic Operations</strong></p></li><li><p>No arithmetic operations present, but <strong>time-based arithmetic
 (setTimeout) could be error-prone</strong> if the user&rsquo;s system clock is
-inaccurate.</p>
-</li>
-<li>
-<p><strong>Loops and Branches</strong></p>
-</li>
-<li>
-<p>IF conditions correctly validate input presence in onLoginSubmit(),
+inaccurate.</p></li><li><p><strong>Loops and Branches</strong></p></li><li><p>IF conditions correctly validate input presence in onLoginSubmit(),
 but <strong>error messages should be displayed in the UI instead of just
-being assigned</strong>.</p>
-</li>
-<li>
-<p>Login retry logic using setTimeout is <strong>inefficient</strong>—consider using
-<strong>observables or event-driven authentication updates</strong> instead.</p>
-</li>
-<li>
-<p><strong>No default failure handling in authentication logic</strong>—if
-authentication fails, the response should provide structured feedback.</p>
-</li>
-<li>
-<p><strong>Defensive Programming</strong></p>
-</li>
-<li>
-<p><strong>No input sanitization</strong> before submitting credentials—potential
-<strong>security risk</strong> for malformed input.</p>
-</li>
-<li>
-<p><strong>No error handling for authentication failures</strong>—doLogin() does not
-catch unexpected errors or provide feedback beyond UI navigation.</p>
-</li>
-<li>
-<p><strong>router.navigate([&rsquo;&rsquo;]) should ensure that authenticated state is
-truly confirmed before redirecting</strong>.</p>
-</li>
-<li>
-<p><strong>Potential timing issue with setTimeout</strong>—relying on this method for
-authentication verification is unreliable.</p>
-</li>
-</ul>
-<ol>
-<li>Target areas for improvement such as structure, logic, efficiency,
-functionality, security, testing, commenting, and documenting.</li>
-</ol>
-<blockquote>
-<p><strong>Login.component.ts</strong></p></blockquote>
-<ul>
-<li>
-<p><strong>Suggested Improvements</strong></p>
-</li>
-<li>
-<p><strong>Improve Documentation</strong>—add meaningful comments explaining login
-flow and retry logic.</p>
-</li>
-<li>
-<p><strong>Handle Authentication Failures</strong>—provide user feedback when login
-fails rather than relying on setTimeout.</p>
-</li>
-<li>
-<p><strong>Fix Navigation Handling</strong>—replace router.navigateByUrl(&rsquo;#&rsquo;) with
-proper redirection after failed login.</p>
-</li>
-<li>
-<p><strong>Enhance Security</strong>—sanitize user input and prevent potential
-injection risks.</p>
-</li>
-<li>
-<p><strong>Use Observables for Login Status</strong>—replace setTimeout with an
-event-driven approach for login validation.</p>
-</li>
-<li>
-<p>Would you like help refactoring the authentication logic to improve
-reliability and error handling?</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>App_api/Authentication.js</strong></p></blockquote>
-<ul>
-<li>
-<p><strong>Suggested Improvements</strong></p>
-</li>
-<li>
-<p><strong>Improve Error Handling</strong>—wrap user.save() in a try-catch block to
-properly handle Mongoose errors.</p>
-</li>
-<li>
-<p><strong>Enhance Security</strong>—validate and sanitize email and password inputs
-before processing.</p>
-</li>
-<li>
-<p><strong>Better Logging &amp; Debugging</strong>—provide detailed failure messages in
-the login function for improved debugging.</p>
-</li>
-<li>
-<p><strong>Refine JWT Generation</strong>—consider adding expiration times and
-encoding best practices for token security.</p>
-</li>
-<li>
-<p><strong>Strengthen Password Handling</strong>—ensure passwords meet complexity
-requirements before allowing registration.</p>
-</li>
-<li>
-<p>Would you like help implementing these improvements, or refining error
-handling further?</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>App_api/models/user.js</strong></p></blockquote>
-<ul>
-<li>
-<p><strong>Suggested Improvements</strong></p>
-</li>
-<li>
-<p><strong>Enhance Documentation</strong>—add comments explaining <strong>password
-hashing</strong>, <strong>salting</strong>, and <strong>JWT generation</strong> for clarity.</p>
-</li>
-<li>
-<p><strong>Improve Error Handling</strong>—wrap password-setting logic in try-catch to
-handle unexpected failures.</p>
-</li>
-<li>
-<p><strong>Refine Naming Conventions</strong>—rename hash in validPassword to
-something more descriptive (computedHash).</p>
-</li>
-<li>
-<p><strong>Increase PBKDF2 Iterations</strong>—update iteration count <strong>beyond 1000</strong>
-for stronger protection against brute-force attempts.</p>
-</li>
-<li>
-<p><strong>Implement Email Validation</strong>—use a <strong>regex or built-in validation</strong>
-to ensure email format integrity.</p>
-</li>
-<li>
-<p><strong>Consider Using bcrypt</strong>—bcrypt offers <strong>automatic salt handling</strong>
-and is <strong>better suited for password security</strong>.</p>
-</li>
-<li>
-<p>Would you like guidance on implementing stronger authentication
-security practices?</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>App_api/config/passport.js</strong></p></blockquote>
-<ul>
-<li>
-<p><strong>Suggested Improvements</strong></p>
-</li>
-<li>
-<p><strong>Improve Error Handling</strong>—wrap User.findOne in a <strong>try-catch</strong> block
-and provide a structured error response.</p>
-</li>
-<li>
-<p><strong>Refine Variable Naming</strong>—rename q to something more descriptive
-(userRecord, foundUser).</p>
-</li>
-<li>
-<p><strong>Enhance Documentation</strong>—add comments to <strong>clarify authentication
-flow and Passport.js behavior</strong>.</p>
-</li>
-<li>
-<p><strong>Strengthen Security</strong>—validate and sanitize email input to prevent
-malformed entries.</p>
-</li>
-<li>
-<p><strong>Handle Unexpected Errors</strong>—include a <strong>catch-all failure response</strong>
-in passport.authenticate for <strong>database query failures</strong>.</p>
-</li>
-<li>
-<p><strong>Consider Logging Failed Logins</strong>—track failed authentication
-attempts for potential <strong>security monitoring</strong>.</p>
-</li>
-<li>
-<p>Would you like me to help refactor the authentication logic to include
-better error handling and security practices?</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>App_admin/src/app/services/authentication.service.ts</strong></p></blockquote>
-<ul>
-<li>
-<p><strong>Suggested Improvements</strong></p>
-</li>
-<li>
-<p><strong>Improve Token Storage Security</strong>—use <strong>HTTP-only cookies</strong> instead
-of local storage for JWTs.</p>
-</li>
-<li>
-<p><strong>Implement Error Handling for Token Parsing</strong>—wrap JWT parsing in a
-<strong>try-catch</strong> block to handle malformed tokens.</p>
-</li>
-<li>
-<p><strong>Strengthen Login Failure Handling</strong>—instead of console logging
-errors, provide structured error responses in the UI.</p>
-</li>
-<li>
-<p><strong>Validate and Sanitize User Input</strong>—ensure credentials are properly
-formatted before sending authentication requests.</p>
-</li>
-<li>
-<p><strong>Improve Documentation</strong>—explain the risks of local storage and why
-authentication security matters.</p>
-</li>
-<li>
-<p>Would you like help implementing these improvements, particularly
-around <strong>secure authentication practices</strong>?</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>App_admin/src/app/login/login.component.ts</strong></p></blockquote>
-<ul>
-<li>
-<p><strong>Suggested Improvements</strong></p>
-</li>
-<li>
-<p><strong>Improve Error Handling</strong>—ensure login failures provide <strong>structured
-feedback</strong> rather than just assigning formError.</p>
-</li>
-<li>
-<p><strong>Remove Hardcoded Timeout</strong>—replace setTimeout with <strong>event-driven
-authentication checks</strong>.</p>
-</li>
-<li>
-<p><strong>Enhance Documentation</strong>—add inline comments explaining
-<strong>authentication flow</strong> and <strong>login handling mechanisms</strong>.</p>
-</li>
-<li>
-<p><strong>Validate and Sanitize User Input</strong>—ensure credentials meet format
-and security standards before submitting authentication requests.</p>
-</li>
-<li>
-<p><strong>Fix Navigation Handling</strong>—replace router.navigateByUrl(&rsquo;#&rsquo;) with
-proper redirection logic.</p>
-</li>
-<li>
-<p>Would you like assistance in <strong>refactoring authentication logic for
-better reliability and security</strong>?</p>
-</li>
-</ul>
-<ol>
-<li>
-<p>Explain practical <strong>enhancements</strong> aligned with analysis findings in
-a clear and organized manner.</p>
-<ol>
-<li>Say what you plan to do in your enhancement. What specific
+being assigned</strong>.</p></li><li><p>Login retry logic using setTimeout is <strong>inefficient</strong>—consider using
+<strong>observables or event-driven authentication updates</strong> instead.</p></li><li><p><strong>No default failure handling in authentication logic</strong>—if
+authentication fails, the response should provide structured feedback.</p></li><li><p><strong>Defensive Programming</strong></p></li><li><p><strong>No input sanitization</strong> before submitting credentials—potential
+<strong>security risk</strong> for malformed input.</p></li><li><p><strong>No error handling for authentication failures</strong>—doLogin() does not
+catch unexpected errors or provide feedback beyond UI navigation.</p></li><li><p><strong>router.navigate([&rsquo;&rsquo;]) should ensure that authenticated state is
+truly confirmed before redirecting</strong>.</p></li><li><p><strong>Potential timing issue with setTimeout</strong>—relying on this method for
+authentication verification is unreliable.</p></li></ul><ol><li>Target areas for improvement such as structure, logic, efficiency,
+functionality, security, testing, commenting, and documenting.</li></ol><blockquote><p><strong>Login.component.ts</strong></p></blockquote><ul><li><p><strong>Suggested Improvements</strong></p></li><li><p><strong>Improve Documentation</strong>—add meaningful comments explaining login
+flow and retry logic.</p></li><li><p><strong>Handle Authentication Failures</strong>—provide user feedback when login
+fails rather than relying on setTimeout.</p></li><li><p><strong>Fix Navigation Handling</strong>—replace router.navigateByUrl(&rsquo;#&rsquo;) with
+proper redirection after failed login.</p></li><li><p><strong>Enhance Security</strong>—sanitize user input and prevent potential
+injection risks.</p></li><li><p><strong>Use Observables for Login Status</strong>—replace setTimeout with an
+event-driven approach for login validation.</p></li><li><p>Would you like help refactoring the authentication logic to improve
+reliability and error handling?</p></li></ul><blockquote><p><strong>App_api/Authentication.js</strong></p></blockquote><ul><li><p><strong>Suggested Improvements</strong></p></li><li><p><strong>Improve Error Handling</strong>—wrap user.save() in a try-catch block to
+properly handle Mongoose errors.</p></li><li><p><strong>Enhance Security</strong>—validate and sanitize email and password inputs
+before processing.</p></li><li><p><strong>Better Logging & Debugging</strong>—provide detailed failure messages in
+the login function for improved debugging.</p></li><li><p><strong>Refine JWT Generation</strong>—consider adding expiration times and
+encoding best practices for token security.</p></li><li><p><strong>Strengthen Password Handling</strong>—ensure passwords meet complexity
+requirements before allowing registration.</p></li><li><p>Would you like help implementing these improvements, or refining error
+handling further?</p></li></ul><blockquote><p><strong>App_api/models/user.js</strong></p></blockquote><ul><li><p><strong>Suggested Improvements</strong></p></li><li><p><strong>Enhance Documentation</strong>—add comments explaining <strong>password
+hashing</strong>, <strong>salting</strong>, and <strong>JWT generation</strong> for clarity.</p></li><li><p><strong>Improve Error Handling</strong>—wrap password-setting logic in try-catch to
+handle unexpected failures.</p></li><li><p><strong>Refine Naming Conventions</strong>—rename hash in validPassword to
+something more descriptive (computedHash).</p></li><li><p><strong>Increase PBKDF2 Iterations</strong>—update iteration count <strong>beyond 1000</strong>
+for stronger protection against brute-force attempts.</p></li><li><p><strong>Implement Email Validation</strong>—use a <strong>regex or built-in validation</strong>
+to ensure email format integrity.</p></li><li><p><strong>Consider Using bcrypt</strong>—bcrypt offers <strong>automatic salt handling</strong>
+and is <strong>better suited for password security</strong>.</p></li><li><p>Would you like guidance on implementing stronger authentication
+security practices?</p></li></ul><blockquote><p><strong>App_api/config/passport.js</strong></p></blockquote><ul><li><p><strong>Suggested Improvements</strong></p></li><li><p><strong>Improve Error Handling</strong>—wrap User.findOne in a <strong>try-catch</strong> block
+and provide a structured error response.</p></li><li><p><strong>Refine Variable Naming</strong>—rename q to something more descriptive
+(userRecord, foundUser).</p></li><li><p><strong>Enhance Documentation</strong>—add comments to <strong>clarify authentication
+flow and Passport.js behavior</strong>.</p></li><li><p><strong>Strengthen Security</strong>—validate and sanitize email input to prevent
+malformed entries.</p></li><li><p><strong>Handle Unexpected Errors</strong>—include a <strong>catch-all failure response</strong>
+in passport.authenticate for <strong>database query failures</strong>.</p></li><li><p><strong>Consider Logging Failed Logins</strong>—track failed authentication
+attempts for potential <strong>security monitoring</strong>.</p></li><li><p>Would you like me to help refactor the authentication logic to include
+better error handling and security practices?</p></li></ul><blockquote><p><strong>App_admin/src/app/services/authentication.service.ts</strong></p></blockquote><ul><li><p><strong>Suggested Improvements</strong></p></li><li><p><strong>Improve Token Storage Security</strong>—use <strong>HTTP-only cookies</strong> instead
+of local storage for JWTs.</p></li><li><p><strong>Implement Error Handling for Token Parsing</strong>—wrap JWT parsing in a
+<strong>try-catch</strong> block to handle malformed tokens.</p></li><li><p><strong>Strengthen Login Failure Handling</strong>—instead of console logging
+errors, provide structured error responses in the UI.</p></li><li><p><strong>Validate and Sanitize User Input</strong>—ensure credentials are properly
+formatted before sending authentication requests.</p></li><li><p><strong>Improve Documentation</strong>—explain the risks of local storage and why
+authentication security matters.</p></li><li><p>Would you like help implementing these improvements, particularly
+around <strong>secure authentication practices</strong>?</p></li></ul><blockquote><p><strong>App_admin/src/app/login/login.component.ts</strong></p></blockquote><ul><li><p><strong>Suggested Improvements</strong></p></li><li><p><strong>Improve Error Handling</strong>—ensure login failures provide <strong>structured
+feedback</strong> rather than just assigning formError.</p></li><li><p><strong>Remove Hardcoded Timeout</strong>—replace setTimeout with <strong>event-driven
+authentication checks</strong>.</p></li><li><p><strong>Enhance Documentation</strong>—add inline comments explaining
+<strong>authentication flow</strong> and <strong>login handling mechanisms</strong>.</p></li><li><p><strong>Validate and Sanitize User Input</strong>—ensure credentials meet format
+and security standards before submitting authentication requests.</p></li><li><p><strong>Fix Navigation Handling</strong>—replace router.navigateByUrl(&rsquo;#&rsquo;) with
+proper redirection logic.</p></li><li><p>Would you like assistance in <strong>refactoring authentication logic for
+better reliability and security</strong>?</p></li></ul><ol><li><p>Explain practical <strong>enhancements</strong> aligned with analysis findings in
+a clear and organized manner.</p><ol><li>Say what you plan to do in your enhancement. What specific
 skills will you demonstrate, and which of the five course
-outcomes will your enhancements support?</li>
-</ol>
-</li>
-</ol>
-<blockquote>
-<p>I will introduce Authorization strategies in this application by
+outcomes will your enhancements support?</li></ol></li></ol><blockquote><p>I will introduce Authorization strategies in this application by
 enhancing the existing authentication framework present for the SPA
 (Single Page Application) as well as the client-side website. I will
 create user access privileges which determine whether certain CRUD
@@ -1758,91 +361,9 @@ to this, I am implementing a security practice which perfectly aligns
 with the security mindset outlined in outcome five. Authorization will
 represent a further layer of security following the defense in depth
 concept so that an exploit which allowed the creation of a user would
-not be sufficient to make changes to the database.</p></blockquote>
-
-      </div>
-
-
-      <footer>
-        
-
-
-        
-        
-        
-        
-        
-        
-        
-      </footer>
-    </article>
-
-    
-  </section>
-
-    </div>
-
-    <footer class="footer">
-  <section class="container">
-    ©
-    
-      2019 -
-    
-    2025
-     Benjamin Sturgeon 
-    ·
-    
-    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
-    
-  </section>
-</footer>
-
-  </main>
-
-  
-
-  
-  
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</body>
-</html>
+not be sufficient to make changes to the database.</p></blockquote></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+2019 -
+2025
+Benjamin Sturgeon
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

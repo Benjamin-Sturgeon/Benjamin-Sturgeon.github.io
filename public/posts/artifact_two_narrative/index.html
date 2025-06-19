@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>
-  Artifact Two Narrative · Benjamin Sturgeon
-</title>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
-
-
-
-
-<meta name="author" content="Benjamin Sturgeon">
-<meta name="description" content="Artifact Two Narrative
+<!doctype html><html lang=en><head><title>Artifact Two Narrative · Benjamin Sturgeon</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Benjamin Sturgeon"><meta name=description content="Artifact Two Narrative
 Narrative: Enhancing the AAC Grazioso Salvare Dashboard
 Brief Description of the Artifact
 This artifact is an interactive Jupyter Dash application, built to
@@ -21,472 +6,76 @@ visualize animal rescue data efficiently using MongoDB queries, Dash
 components, and Plotly visualizations. Originally created as part of the
 Southern New Hampshire University CS 499 Capstone, the dashboard
 provides users with filtering options, an interactive data table, a map
-visualization, and a pie chart representation of rescued animal breeds.">
-<meta name="keywords" content="blog,developer,personal">
-
-
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Artifact Two Narrative">
-  <meta name="twitter:description" content="Artifact Two Narrative
+visualization, and a pie chart representation of rescued animal breeds."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Artifact Two Narrative"><meta name=twitter:description content="Artifact Two Narrative
 Narrative: Enhancing the AAC Grazioso Salvare Dashboard
 Brief Description of the Artifact
-This artifact is an interactive Jupyter Dash application, built to visualize animal rescue data efficiently using MongoDB queries, Dash components, and Plotly visualizations. Originally created as part of the Southern New Hampshire University CS 499 Capstone, the dashboard provides users with filtering options, an interactive data table, a map visualization, and a pie chart representation of rescued animal breeds.">
-
-<meta property="og:url" content="https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/">
-  <meta property="og:site_name" content="Benjamin Sturgeon">
-  <meta property="og:title" content="Artifact Two Narrative">
-  <meta property="og:description" content="Artifact Two Narrative
+This artifact is an interactive Jupyter Dash application, built to visualize animal rescue data efficiently using MongoDB queries, Dash components, and Plotly visualizations. Originally created as part of the Southern New Hampshire University CS 499 Capstone, the dashboard provides users with filtering options, an interactive data table, a map visualization, and a pie chart representation of rescued animal breeds."><meta property="og:url" content="https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/"><meta property="og:site_name" content="Benjamin Sturgeon"><meta property="og:title" content="Artifact Two Narrative"><meta property="og:description" content="Artifact Two Narrative
 Narrative: Enhancing the AAC Grazioso Salvare Dashboard
 Brief Description of the Artifact
-This artifact is an interactive Jupyter Dash application, built to visualize animal rescue data efficiently using MongoDB queries, Dash components, and Plotly visualizations. Originally created as part of the Southern New Hampshire University CS 499 Capstone, the dashboard provides users with filtering options, an interactive data table, a map visualization, and a pie chart representation of rescued animal breeds.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-05-26T20:10:41-05:00">
-    <meta property="article:modified_time" content="2025-05-26T20:10:41-05:00">
-
-
-
-<link rel="icon" href="https://benjamin-sturgeon.github.io/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="https://benjamin-sturgeon.github.io/apple-touch-icon.png">
-
-
-<link rel="canonical" href="https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/">
-
-
-<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-
-
-  
-  
-  <link rel="stylesheet" href="/css/coder.min.e89ea821b5f9d40148801e26ab1c7526fb058bcdbf0b0e3701213b29e321c68e.css" integrity="sha256-6J6oIbX51AFIgB4mqxx1JvsFi82/Cw43ASE7KeMhxo4=" crossorigin="anonymous" media="screen" />
-
-
-
-
-
-
-  
-    
-    
-    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
-  
-
-
-
- 
-
-
-
-
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-
-
-
-
-
-</head>
-
-
-
-
-
-
-<body class="preload-transitions colorscheme-auto">
-  
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
-</div>
-
-
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    
-    <a class="navigation-title" href="https://benjamin-sturgeon.github.io/">
-      Benjamin Sturgeon
-    </a>
-    
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
-        
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/about/">About</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/posts/">Blog</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/projects/">Projects</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/contact/">Contact me</a>
-            </li>
-          
-        
-        
-      </ul>
-    
-  </section>
-</nav>
-
-
-    <div class="content">
-      
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">
-            <a class="title-link" href="https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/">
-              Artifact Two Narrative
-            </a>
-          </h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-              <time datetime="2025-05-26T20:10:41-05:00">
-                May 26, 2025
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              5-minute read
-            </span>
-          </div>
-          
-          
-          
-        </div>
-      </header>
-
-      <div class="post-content">
-        
-          <a href="/posts/artifact_two_narrative/">
-            <img src="/images/avatar4.jpg" alt="Artifact Two Narrative" class="post-thumbnail">
-          </a>
-        
-        <p>Artifact Two Narrative</p>
-<p><strong>Narrative: Enhancing the AAC Grazioso Salvare Dashboard</strong></p>
-<p><strong>Brief Description of the Artifact</strong></p>
-<p>This artifact is an interactive Jupyter Dash application, built to
+This artifact is an interactive Jupyter Dash application, built to visualize animal rescue data efficiently using MongoDB queries, Dash components, and Plotly visualizations. Originally created as part of the Southern New Hampshire University CS 499 Capstone, the dashboard provides users with filtering options, an interactive data table, a map visualization, and a pie chart representation of rescued animal breeds."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-05-26T20:10:41-05:00"><meta property="article:modified_time" content="2025-05-26T20:10:41-05:00"><link rel=icon href=https://benjamin-sturgeon.github.io/favicon.svg type=image/svg+xml><link rel=apple-touch-icon href=https://benjamin-sturgeon.github.io/apple-touch-icon.png><link rel=canonical href=https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.e89ea821b5f9d40148801e26ab1c7526fb058bcdbf0b0e3701213b29e321c68e.css integrity="sha256-6J6oIbX51AFIgB4mqxx1JvsFi82/Cw43ASE7KeMhxo4=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.83ab4947b5a4592d4646776b0927cf69acff3e2d285da9604f464dbdeed89769.css integrity="sha256-g6tJR7WkWS1GRndrCSfPaaz/Pi0oXalgT0ZNve7Yl2k=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/images/favicon.svg sizes=any><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=https://benjamin-sturgeon.github.io/>Benjamin Sturgeon
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/about/>About</a></li><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/projects/>Projects</a></li><li class=navigation-item><a class=navigation-link href=/contact/>Contact me</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/>Artifact Two Narrative</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2025-05-26T20:10:41-05:00>May 26, 2025
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+5-minute read</span></div></div></header><div class=post-content><a href=/posts/artifact_two_narrative/><img src=/images/avatar4.jpg alt="Artifact Two Narrative" class=post-thumbnail></a><p>Artifact Two Narrative</p><p><strong>Narrative: Enhancing the AAC Grazioso Salvare Dashboard</strong></p><p><strong>Brief Description of the Artifact</strong></p><p>This artifact is an interactive Jupyter Dash application, built to
 visualize animal rescue data efficiently using MongoDB queries, Dash
 components, and Plotly visualizations. Originally created as part of the
 Southern New Hampshire University CS 499 Capstone, the dashboard
 provides users with filtering options, an interactive data table, a map
-visualization, and a pie chart representation of rescued animal breeds.</p>
-<p>Initially, the application contained a functional design but lacked
+visualization, and a pie chart representation of rescued animal breeds.</p><p>Initially, the application contained a functional design but lacked
 security best practices, efficiency optimizations, and thorough error
 handling. The enhancement process focused on addressing these weaknesses
-while refining code quality for better maintainability.</p>
-<p><strong>Justification for Inclusion in My ePortfolio</strong></p>
-<p>I selected this artifact because it showcases my ability to develop
+while refining code quality for better maintainability.</p><p><strong>Justification for Inclusion in My ePortfolio</strong></p><p>I selected this artifact because it showcases my ability to develop
 full-stack applications with a strong emphasis on data handling,
 efficient querying, and UI design principles. Specifically, this
-dashboard demonstrates my proficiency in:</p>
-<ul>
-<li>
-<p><strong>Algorithms and Data Structures</strong>: Implementing optimized database
-queries with MongoDB’s filtering mechanisms.</p>
-</li>
-<li>
-<p><strong>Security Best Practices</strong>: Replacing hardcoded credentials with
-environment variables to prevent exposure.</p>
-</li>
-<li>
-<p><strong>Software Engineering Principles</strong>: Modularizing redundant operations
-through helper functions and error handling.</p>
-</li>
-</ul>
-<p>The improvements made to this artifact reflect my growth as a software
+dashboard demonstrates my proficiency in:</p><ul><li><p><strong>Algorithms and Data Structures</strong>: Implementing optimized database
+queries with MongoDB’s filtering mechanisms.</p></li><li><p><strong>Security Best Practices</strong>: Replacing hardcoded credentials with
+environment variables to prevent exposure.</p></li><li><p><strong>Software Engineering Principles</strong>: Modularizing redundant operations
+through helper functions and error handling.</p></li></ul><p>The improvements made to this artifact reflect my growth as a software
 engineer, as they required analytical thinking, debugging, and
-performance tuning which are critical skills in industry settings.</p>
-<p><strong>Enhancements and Course Outcome Alignment</strong></p>
-<p>The changes made to this artifact align with key course outcomes by
-reinforcing:</p>
-<ol>
-<li>
-<p><strong>Secure Software Development Practices</strong>:</p>
-<ul>
-<li>
-<p>Implementing environment variables for authentication.</p>
-</li>
-<li>
-<p>Adding file existence checks before reading images to prevent
-runtime errors.</p>
-</li>
-<li>
-<p>Enhancing MongoDB query validity (&quot;$or&quot; instead of &ldquo;or&rdquo;) to
-prevent unexpected database errors.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Performance Optimization</strong>:</p>
-<ul>
-<li>
-<p>Refactored repetitive operations (e.g., removing redundant _id
-column) into a helper function (clean_dataframe()).</p>
-</li>
-<li>
-<p>Streamlined conditional filtering logic, making it more readable
-and scalable.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Improved Code Maintainability</strong>:</p>
-<ul>
-<li>
-<p>Added detailed comments explaining functionality for better
-documentation.</p>
-</li>
-<li>
-<p>Modularized query handling, reducing redundancy and improving
-clarity.</p>
-</li>
-</ul>
-</li>
-</ol>
-<p>These enhancements directly contribute to my goal of securing a software
+performance tuning which are critical skills in industry settings.</p><p><strong>Enhancements and Course Outcome Alignment</strong></p><p>The changes made to this artifact align with key course outcomes by
+reinforcing:</p><ol><li><p><strong>Secure Software Development Practices</strong>:</p><ul><li><p>Implementing environment variables for authentication.</p></li><li><p>Adding file existence checks before reading images to prevent
+runtime errors.</p></li><li><p>Enhancing MongoDB query validity ("$or" instead of &ldquo;or&rdquo;) to
+prevent unexpected database errors.</p></li></ul></li><li><p><strong>Performance Optimization</strong>:</p><ul><li><p>Refactored repetitive operations (e.g., removing redundant _id
+column) into a helper function (clean_dataframe()).</p></li><li><p>Streamlined conditional filtering logic, making it more readable
+and scalable.</p></li></ul></li><li><p><strong>Improved Code Maintainability</strong>:</p><ul><li><p>Added detailed comments explaining functionality for better
+documentation.</p></li><li><p>Modularized query handling, reducing redundancy and improving
+clarity.</p></li></ul></li></ol><p>These enhancements directly contribute to my goal of securing a software
 development role, ensuring I can write scalable, optimized, and secure
 code. No major updates are needed to my course outcome plans, but this
-project further solidifies my strengths in database-driven applications.</p>
-<p><strong>Reflection on the Enhancement Process</strong></p>
-<p>Throughout the revision, I deepened my understanding of Dash, MongoDB,
-and Python’s best practices. I learned:</p>
-<ul>
-<li>
-<p>The importance of readability; writing well-structured code minimizes
-future debugging efforts.</p>
-</li>
-<li>
-<p>How data validation safeguards prevent application crashes.</p>
-</li>
-<li>
-<p>Why code modularization enhances both maintainability and performance.</p>
-</li>
-</ul>
-<p>One of the biggest challenges was ensuring MongoDB queries returned the
+project further solidifies my strengths in database-driven applications.</p><p><strong>Reflection on the Enhancement Process</strong></p><p>Throughout the revision, I deepened my understanding of Dash, MongoDB,
+and Python’s best practices. I learned:</p><ul><li><p>The importance of readability; writing well-structured code minimizes
+future debugging efforts.</p></li><li><p>How data validation safeguards prevent application crashes.</p></li><li><p>Why code modularization enhances both maintainability and performance.</p></li></ul><p>One of the biggest challenges was ensuring MongoDB queries returned the
 expected results without errors. Debugging filtering logic required
-careful attention to syntax corrections (&quot;$or&quot; instead of &ldquo;or&rdquo;),
-reinforcing the necessity of accurate database querying.</p>
-<p>Overall, refining this artifact not only strengthened my technical
+careful attention to syntax corrections ("$or" instead of &ldquo;or&rdquo;),
+reinforcing the necessity of accurate database querying.</p><p>Overall, refining this artifact not only strengthened my technical
 expertise but also reinforced the importance of writing efficient,
 scalable, and secure code which are all crucial for professional
-software development.</p>
-<p>I provided some examples of the improvements I implemented below:</p>
-<p><strong>1. Secure Authentication Handling</strong></p>
-<p>Initially, hardcoded credentials (username = &ldquo;aacuser&rdquo;, password =
+software development.</p><p>I provided some examples of the improvements I implemented below:</p><p><strong>1. Secure Authentication Handling</strong></p><p>Initially, hardcoded credentials (username = &ldquo;aacuser&rdquo;, password =
 &ldquo;SNHU1234&rdquo;) posed a security risk. I improved this by using environment
-variables.</p>
-<p><strong>Before (Insecure Hardcoded Credentials)</strong></p>
-<p>username = &ldquo;aacuser&rdquo;</p>
-<p>password = &ldquo;SNHU1234&rdquo;</p>
-<p><strong>After (Secure Approach with Environment Variables)</strong></p>
-<p>import os # Import OS module to access environment variables</p>
-<p>username = os.getenv(&ldquo;AAC_USERNAME&rdquo;, &ldquo;aacuser&rdquo;) # Default to &lsquo;aacuser&rsquo;
-if env var is missing</p>
-<p>password = os.getenv(&ldquo;AAC_PASSWORD&rdquo;, &ldquo;SNHU1234&rdquo;) # Default to
-&lsquo;SNHU1234&rsquo; if env var is missing</p>
-<p><strong>Benefit:</strong> Sensitive credentials are no longer exposed in the source
-code, reducing security vulnerabilities.</p>
-<p><strong>2. Modularized Data Cleaning for Better Code Maintainability</strong></p>
-<p>The original code repeated the same operation
+variables.</p><p><strong>Before (Insecure Hardcoded Credentials)</strong></p><p>username = &ldquo;aacuser&rdquo;</p><p>password = &ldquo;SNHU1234&rdquo;</p><p><strong>After (Secure Approach with Environment Variables)</strong></p><p>import os # Import OS module to access environment variables</p><p>username = os.getenv(&ldquo;AAC_USERNAME&rdquo;, &ldquo;aacuser&rdquo;) # Default to &lsquo;aacuser&rsquo;
+if env var is missing</p><p>password = os.getenv(&ldquo;AAC_PASSWORD&rdquo;, &ldquo;SNHU1234&rdquo;) # Default to
+&lsquo;SNHU1234&rsquo; if env var is missing</p><p><strong>Benefit:</strong> Sensitive credentials are no longer exposed in the source
+code, reducing security vulnerabilities.</p><p><strong>2. Modularized Data Cleaning for Better Code Maintainability</strong></p><p>The original code repeated the same operation
 (df.drop(columns=[&rsquo;_id&rsquo;], inplace=True)) multiple times across
-different sections. I improved this by creating a reusable function.</p>
-<p><strong>Before (Repeated Code in Multiple Places)</strong></p>
-<p>df.drop(columns=[&rsquo;_id&rsquo;], inplace=True) # Removing MongoDB ObjectID
-in multiple locations</p>
-<p><strong>After (Reusable Helper Function)</strong></p>
-<p>def clean_dataframe(df):</p>
-<p>&ldquo;&ldquo;&ldquo;Removes MongoDB&rsquo;s &lsquo;_id&rsquo; column safely.&rdquo;&rdquo;&rdquo;</p>
-<p>if &lsquo;_id&rsquo; in df.columns:</p>
-<p>df.drop(columns=[&rsquo;_id&rsquo;], inplace=True)</p>
-<p>return df # Returns cleaned dataframe</p>
-<p># Use the function wherever needed</p>
-<p>df =
+different sections. I improved this by creating a reusable function.</p><p><strong>Before (Repeated Code in Multiple Places)</strong></p><p>df.drop(columns=[&rsquo;_id&rsquo;], inplace=True) # Removing MongoDB ObjectID
+in multiple locations</p><p><strong>After (Reusable Helper Function)</strong></p><p>def clean_dataframe(df):</p><p>&ldquo;&ldquo;&ldquo;Removes MongoDB&rsquo;s &lsquo;_id&rsquo; column safely.&rdquo;&rdquo;&rdquo;</p><p>if &lsquo;_id&rsquo; in df.columns:</p><p>df.drop(columns=[&rsquo;_id&rsquo;], inplace=True)</p><p>return df # Returns cleaned dataframe</p><p># Use the function wherever needed</p><p>df =
 clean_dataframe(pd.DataFrame.from_records(db.read({&lsquo;animal_type&rsquo;:
-&lsquo;Dog&rsquo;})))</p>
-<p><strong>Benefit:</strong> Improves code reuse, reduces duplication, and centralizes
-data-cleaning logic for easier maintenance.</p>
-<p><strong>3. Fixed MongoDB Query Syntax (&quot;$or&quot; vs &ldquo;or&rdquo;)</strong></p>
-<p>Initially, MongoDB filtering used an incorrect &ldquo;or&rdquo; syntax, which caused
-query errors. I corrected it by using the proper $or operator.</p>
-<p><strong>Before (Incorrect Query)</strong></p>
-<p>{</p>
-<p>&ldquo;$and&rdquo;: [</p>
-<p>{&ldquo;or&rdquo;: [ # Incorrect syntax should be &ldquo;$or&rdquo;</p>
-<p>{&lsquo;breed&rsquo;: {&quot;$regex&quot;: &lsquo;Labrador Retriever Mix&rsquo;}},</p>
-<p>{&lsquo;breed&rsquo;: {&quot;$regex&quot;: &lsquo;Chesapeake&rsquo;}},</p>
-<p>{&lsquo;breed&rsquo;: {&quot;$regex&quot;: &lsquo;Newfoundland&rsquo;}}</p>
-<p>]}</p>
-<p>]</p>
-<p>}</p>
-<p><strong>After (Correct Query)</strong></p>
-<p>{</p>
-<p>&ldquo;$and&rdquo;: [</p>
-<p>{&quot;$or&quot;: [ # Fixed syntax for proper MongoDB querying</p>
-<p>{&lsquo;breed&rsquo;: {&quot;$regex&quot;: &lsquo;Labrador Retriever Mix&rsquo;}},</p>
-<p>{&lsquo;breed&rsquo;: {&quot;$regex&quot;: &lsquo;Chesapeake&rsquo;}},</p>
-<p>{&lsquo;breed&rsquo;: {&quot;$regex&quot;: &lsquo;Newfoundland&rsquo;}}</p>
-<p>]}</p>
-<p>]</p>
-<p>}</p>
-<p><strong>Benefit:</strong> Ensures query validity, preventing unexpected database
-errors and ensuring the correct filtering logic.</p>
-<p><strong>4. Improved Error Handling for Image Loading</strong></p>
-<p>Originally, the code assumed the existence of an image file
+&lsquo;Dog&rsquo;})))</p><p><strong>Benefit:</strong> Improves code reuse, reduces duplication, and centralizes
+data-cleaning logic for easier maintenance.</p><p><strong>3. Fixed MongoDB Query Syntax ("$or" vs &ldquo;or&rdquo;)</strong></p><p>Initially, MongoDB filtering used an incorrect &ldquo;or&rdquo; syntax, which caused
+query errors. I corrected it by using the proper $or operator.</p><p><strong>Before (Incorrect Query)</strong></p><p>{</p><p>&ldquo;$and&rdquo;: [</p><p>{&ldquo;or&rdquo;: [ # Incorrect syntax should be &ldquo;$or&rdquo;</p><p>{&lsquo;breed&rsquo;: {"$regex": &lsquo;Labrador Retriever Mix&rsquo;}},</p><p>{&lsquo;breed&rsquo;: {"$regex": &lsquo;Chesapeake&rsquo;}},</p><p>{&lsquo;breed&rsquo;: {"$regex": &lsquo;Newfoundland&rsquo;}}</p><p>]}</p><p>]</p><p>}</p><p><strong>After (Correct Query)</strong></p><p>{</p><p>&ldquo;$and&rdquo;: [</p><p>{"$or": [ # Fixed syntax for proper MongoDB querying</p><p>{&lsquo;breed&rsquo;: {"$regex": &lsquo;Labrador Retriever Mix&rsquo;}},</p><p>{&lsquo;breed&rsquo;: {"$regex": &lsquo;Chesapeake&rsquo;}},</p><p>{&lsquo;breed&rsquo;: {"$regex": &lsquo;Newfoundland&rsquo;}}</p><p>]}</p><p>]</p><p>}</p><p><strong>Benefit:</strong> Ensures query validity, preventing unexpected database
+errors and ensuring the correct filtering logic.</p><p><strong>4. Improved Error Handling for Image Loading</strong></p><p>Originally, the code assumed the existence of an image file
 (Grazioso_Salvare_Logo.png), which could cause runtime errors if
-missing. I fixed this by checking its existence before reading.</p>
-<p><strong>Before (No Error Handling)</strong></p>
-<p>image_filename = &lsquo;Grazioso_Salvare_Logo.png&rsquo;</p>
-<p>encoded_image = base64.b64encode(open(image_filename, &lsquo;rb&rsquo;).read()) #
-Could fail if file is missing</p>
-<p><strong>After (Added Error Handling for Missing File)</strong></p>
-<p>image_filename = &lsquo;Grazioso_Salvare_Logo.png&rsquo;</p>
-<p>encoded_image = None # Default to None in case file isn&rsquo;t found</p>
-<p>if os.path.exists(image_filename): # Safely check if the file exists</p>
-<p>with open(image_filename, &lsquo;rb&rsquo;) as img_file:</p>
-<p>encoded_image = base64.b64encode(img_file.read()) # Encode if file
-exists</p>
-<p><strong>Benefit:</strong> Prevents crashes due to missing images, improving
-application reliability.</p>
-<p><strong>5. Cleaned Up Conditional Filtering Logic</strong></p>
-<p>The initial filtering logic had repetitive code blocks for each rescue
+missing. I fixed this by checking its existence before reading.</p><p><strong>Before (No Error Handling)</strong></p><p>image_filename = &lsquo;Grazioso_Salvare_Logo.png&rsquo;</p><p>encoded_image = base64.b64encode(open(image_filename, &lsquo;rb&rsquo;).read()) #
+Could fail if file is missing</p><p><strong>After (Added Error Handling for Missing File)</strong></p><p>image_filename = &lsquo;Grazioso_Salvare_Logo.png&rsquo;</p><p>encoded_image = None # Default to None in case file isn&rsquo;t found</p><p>if os.path.exists(image_filename): # Safely check if the file exists</p><p>with open(image_filename, &lsquo;rb&rsquo;) as img_file:</p><p>encoded_image = base64.b64encode(img_file.read()) # Encode if file
+exists</p><p><strong>Benefit:</strong> Prevents crashes due to missing images, improving
+application reliability.</p><p><strong>5. Cleaned Up Conditional Filtering Logic</strong></p><p>The initial filtering logic had repetitive code blocks for each rescue
 type. I refactored this into a dictionary-based approach, making it
-cleaner and more maintainable.</p>
-<p><strong>Before (Long Conditional Statements)</strong></p>
-<p>if filter_type == &lsquo;Water&rsquo;:</p>
-<p>df = pd.DataFrame.from_records(db.read({&hellip;}))</p>
-<p>elif filter_type == &lsquo;Mountain&rsquo;:</p>
-<p>df = pd.DataFrame.from_records(db.read({&hellip;}))</p>
-<p>elif filter_type == &lsquo;Disaster&rsquo;:</p>
-<p>df = pd.DataFrame.from_records(db.read({&hellip;}))</p>
-<p>else:</p>
-<p>df = pd.DataFrame.from_records(db.read({&lsquo;animal_type&rsquo;: &lsquo;Dog&rsquo;}))</p>
-<p><strong>After (Refactored Dictionary-Based Approach)</strong></p>
-<p>filters = {</p>
-<p>&lsquo;Water&rsquo;: {&hellip;}, # Query for water rescue dogs</p>
-<p>&lsquo;Mountain&rsquo;: {&hellip;}, # Query for mountain rescue dogs</p>
-<p>&lsquo;Disaster&rsquo;: {&hellip;} # Query for disaster rescue dogs</p>
-<p>}</p>
-<p>query = filters.get(filter_type, {&lsquo;animal_type&rsquo;: &lsquo;Dog&rsquo;}) # Default to
-all dogs if filter not found</p>
-<p>df = clean_dataframe(pd.DataFrame.from_records(db.read(query)))</p>
-<p><strong>Benefit:</strong> Eliminates redundancy, centralizes query logic, and makes
-updates easier.</p>
-
-      </div>
-
-
-      <footer>
-        
-
-
-        
-        
-        
-        
-        
-        
-        
-      </footer>
-    </article>
-
-    
-  </section>
-
-    </div>
-
-    <footer class="footer">
-  <section class="container">
-    ©
-    
-      2019 -
-    
-    2025
-     Benjamin Sturgeon 
-    ·
-    
-    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
-    
-  </section>
-</footer>
-
-  </main>
-
-  
-
-  
-  
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</body>
-</html>
+cleaner and more maintainable.</p><p><strong>Before (Long Conditional Statements)</strong></p><p>if filter_type == &lsquo;Water&rsquo;:</p><p>df = pd.DataFrame.from_records(db.read({&mldr;}))</p><p>elif filter_type == &lsquo;Mountain&rsquo;:</p><p>df = pd.DataFrame.from_records(db.read({&mldr;}))</p><p>elif filter_type == &lsquo;Disaster&rsquo;:</p><p>df = pd.DataFrame.from_records(db.read({&mldr;}))</p><p>else:</p><p>df = pd.DataFrame.from_records(db.read({&lsquo;animal_type&rsquo;: &lsquo;Dog&rsquo;}))</p><p><strong>After (Refactored Dictionary-Based Approach)</strong></p><p>filters = {</p><p>&lsquo;Water&rsquo;: {&mldr;}, # Query for water rescue dogs</p><p>&lsquo;Mountain&rsquo;: {&mldr;}, # Query for mountain rescue dogs</p><p>&lsquo;Disaster&rsquo;: {&mldr;} # Query for disaster rescue dogs</p><p>}</p><p>query = filters.get(filter_type, {&lsquo;animal_type&rsquo;: &lsquo;Dog&rsquo;}) # Default to
+all dogs if filter not found</p><p>df = clean_dataframe(pd.DataFrame.from_records(db.read(query)))</p><p><strong>Benefit:</strong> Eliminates redundancy, centralizes query logic, and makes
+updates easier.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+2019 -
+2025
+Benjamin Sturgeon
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

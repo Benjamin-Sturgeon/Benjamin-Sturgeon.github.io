@@ -1,61 +1,104 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Benjamin Sturgeon</title>
-    <link>https://benjamin-sturgeon.github.io/posts/</link>
-    <description>Recent content in Posts on Benjamin Sturgeon</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 08 Jun 2025 20:10:41 -0500</lastBuildDate>
-    <atom:link href="https://benjamin-sturgeon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Artifact Three Narrative</title>
-      <link>https://benjamin-sturgeon.github.io/posts/artifact_three_narrative/</link>
-      <pubDate>Sun, 08 Jun 2025 20:10:41 -0500</pubDate>
-      <guid>https://benjamin-sturgeon.github.io/posts/artifact_three_narrative/</guid>
-      <description>&lt;p&gt;Artifact Three Narrative&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Travlr Authentication System Enhancement and Debugging&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artifact Overview&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The artifact that I have chosen for this category is my full-stack&#xA;development website utilizing the MEAN stack. This application is&#xA;derived from my CS-465 Full-Stack Development 1 class. I have chosen&#xA;this artifact because it provides me with a great framework to showcase&#xA;my ability to improve a full-stack application. I specifically planned&#xA;to implement Authorization security procedures for users which access&#xA;the Mongo Database in this application.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Journal Two</title>
-      <link>https://benjamin-sturgeon.github.io/posts/journalthree/</link>
-      <pubDate>Sun, 08 Jun 2025 14:31:04 -0500</pubDate>
-      <guid>https://benjamin-sturgeon.github.io/posts/journalthree/</guid>
-      <description>&lt;p&gt;Part One:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Journal Entry: Emerging Trends in Computer Science&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. What is the significance of each trend?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artificial Intelligence in Cybersecurity&lt;/strong&gt;&lt;br&gt;&#xA;AI in cybersecurity is revolutionizing threat detection by automating&#xA;security analysis, predicting potential vulnerabilities, and responding&#xA;to attacks in real time. With the rise of sophisticated cyber threats,&#xA;AI-driven security systems play a vital role in safeguarding sensitive&#xA;data and ensuring operational continuity across industries.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Blockchain for Secure Data Management&lt;/strong&gt;&lt;br&gt;&#xA;Blockchain technology is transforming secure data handling by&#xA;introducing decentralized, tamper-proof ledgers that enhance&#xA;transparency and eliminate third-party dependencies. This approach&#xA;ensures that data remains verifiable and resilient to unauthorized&#xA;modifications, reinforcing trust in digital transactions.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Journal Two</title>
-      <link>https://benjamin-sturgeon.github.io/posts/journaltwo/</link>
-      <pubDate>Mon, 02 Jun 2025 14:31:04 -0500</pubDate>
-      <guid>https://benjamin-sturgeon.github.io/posts/journaltwo/</guid>
-      <description>&lt;p&gt;Part One:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Have you changed your career plans? If so, what prompted this&#xA;change? If not, why have you remained with your original plan?&lt;/strong&gt;&lt;br&gt;&#xA;Yes, I’ve shifted my career plans from data science to full-stack&#xA;development and application development. This change was driven by&#xA;my growing interest in user-centric design, structured workflows,&#xA;and maintainability. Through hands-on coding and collaborative&#xA;projects, I realized that I enjoy building complete systems that&#xA;prioritize efficiency and adaptability, rather than purely analyzing&#xA;data.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Code Review</title>
-      <link>https://benjamin-sturgeon.github.io/posts/codereview/</link>
-      <pubDate>Fri, 30 May 2025 14:31:04 -0500</pubDate>
-      <guid>https://benjamin-sturgeon.github.io/posts/codereview/</guid>
-      <description>&lt;p&gt;I completed a code review prior to implementing improvements to the projects. The link to this code review is provided here:&#xA;&lt;a href=&#34;https://youtu.be/ULIRyS-XVs4&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://youtu.be/ULIRyS-XVs4&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is the Script for the code review. It addresses improvmenent for three seperate projects:&lt;/p&gt;&#xA;&lt;p&gt;Code Review Script&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Category One: Software Design and Engineering&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Provide a clear, complete description of existing code&#xA;&lt;strong&gt;functionality&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;What does the code do?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The first artifact that I will be improving is a Weight&#xA;Tracking Application. This simple Java application is&#xA;designed to run on Android OS and provides users with a&#xA;way to track their weight. They can also set their goal&#xA;weight and opt in to receive a text notification once&#xA;their goal weight is reached. User accounts are created&#xA;during the initial login screen of the application. Data&#xA;is kept locally on the device via a MongoDB schema.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Focus on the features and functions of the existing code.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Journal One</title>
-      <link>https://benjamin-sturgeon.github.io/posts/journalone/</link>
-      <pubDate>Fri, 30 May 2025 14:31:04 -0500</pubDate>
-      <guid>https://benjamin-sturgeon.github.io/posts/journalone/</guid>
-      <description>&lt;p&gt;Part One:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;How might you use an ePortfolio for the benefit of self-promotion?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;An ePortfolio provides me with an excellent place to provide potential&#xA;employers with a showcase of my previous work and skills. It also&#xA;provides my contact information and other resume details in pleasant&#xA;format with an interactable UI. This showcases my ability to go above&#xA;and beyond in my application presentation which will potentially give me&#xA;a leg up over other candidates.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Artifact One Narrative</title>
-      <link>https://benjamin-sturgeon.github.io/posts/artifact_one_narrative/</link>
-      <pubDate>Mon, 26 May 2025 20:10:41 -0500</pubDate>
-      <guid>https://benjamin-sturgeon.github.io/posts/artifact_one_narrative/</guid>
-      <description>&lt;p&gt;Artifact One Narrative&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Briefly describe the artifact. What is it? When was it created?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The Weight Tracking Application is a mobile-based solution designed to&#xA;help users track their weight progress effectively while integrating&#xA;notifications and user-friendly UI enhancements. Originally developed&#xA;as part of my coursework, the artifact combines data storage,&#xA;interactive UI elements, and real-time notifications to encourage&#xA;weight management. The initial version contained foundational&#xA;functionality but lacked modern aesthetics, efficient UI behavior, and&#xA;seamless account management features.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Artifact Two Narrative</title>
-      <link>https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/</link>
-      <pubDate>Mon, 26 May 2025 20:10:41 -0500</pubDate>
-      <guid>https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/</guid>
-      <description>&lt;p&gt;Artifact Two Narrative&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Narrative: Enhancing the AAC Grazioso Salvare Dashboard&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Brief Description of the Artifact&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This artifact is an interactive Jupyter Dash application, built to&#xA;visualize animal rescue data efficiently using MongoDB queries, Dash&#xA;components, and Plotly visualizations. Originally created as part of the&#xA;Southern New Hampshire University CS 499 Capstone, the dashboard&#xA;provides users with filtering options, an interactive data table, a map&#xA;visualization, and a pie chart representation of rescued animal breeds.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Benjamin Sturgeon</title><link>https://benjamin-sturgeon.github.io/posts/</link><description>Recent content in Posts on Benjamin Sturgeon</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 12 Jun 2025 14:31:04 -0500</lastBuildDate><atom:link href="https://benjamin-sturgeon.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Journal Four</title><link>https://benjamin-sturgeon.github.io/posts/journalfour/</link><pubDate>Thu, 12 Jun 2025 14:31:04 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/posts/journalfour/</guid><description>&lt;p>&lt;strong>Part One&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>1. What is the identification and description of each technology?&lt;/strong>&lt;br>
+Artificial Intelligence (AI) is a field dedicated to enabling machines
+to perform tasks that typically require human intelligence, such as
+perception, learning, reasoning, and language comprehension. It includes
+technologies like machine learning, natural language processing, and
+computer vision. AI has evolved rapidly in recent years through
+advancements in large language models and real-time data analytics.
+Cloud computing, in contrast, provides on-demand access to computing
+resources such as servers, storage, and applications via the internet.
+This model frees developers from the limitations of physical
+infrastructure by allowing rapid deployment, scalable performance, and
+seamless global collaboration. Both AI and cloud computing are more than
+just innovations; they are fundamental shifts in how modern computing
+systems are designed and operated.&lt;/p></description></item><item><title>Artifact Three Narrative</title><link>https://benjamin-sturgeon.github.io/posts/artifact_three_narrative/</link><pubDate>Sun, 08 Jun 2025 20:10:41 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/posts/artifact_three_narrative/</guid><description>&lt;p>Artifact Three Narrative&lt;/p>
+&lt;p>&lt;strong>Travlr Authentication System Enhancement and Debugging&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Artifact Overview&lt;/strong>&lt;/p>
+&lt;p>The artifact that I have chosen for this category is my full-stack
+development website utilizing the MEAN stack. This application is
+derived from my CS-465 Full-Stack Development 1 class. I have chosen
+this artifact because it provides me with a great framework to showcase
+my ability to improve a full-stack application. I specifically planned
+to implement Authorization security procedures for users which access
+the Mongo Database in this application.&lt;/p></description></item><item><title>Journal Two</title><link>https://benjamin-sturgeon.github.io/posts/journalthree/</link><pubDate>Sun, 08 Jun 2025 14:31:04 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/posts/journalthree/</guid><description>&lt;p>Part One:&lt;/p>
+&lt;p>&lt;strong>Journal Entry: Emerging Trends in Computer Science&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>1. What is the significance of each trend?&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Artificial Intelligence in Cybersecurity&lt;/strong>&lt;br>
+AI in cybersecurity is revolutionizing threat detection by automating
+security analysis, predicting potential vulnerabilities, and responding
+to attacks in real time. With the rise of sophisticated cyber threats,
+AI-driven security systems play a vital role in safeguarding sensitive
+data and ensuring operational continuity across industries.&lt;/p>
+&lt;p>&lt;strong>Blockchain for Secure Data Management&lt;/strong>&lt;br>
+Blockchain technology is transforming secure data handling by
+introducing decentralized, tamper-proof ledgers that enhance
+transparency and eliminate third-party dependencies. This approach
+ensures that data remains verifiable and resilient to unauthorized
+modifications, reinforcing trust in digital transactions.&lt;/p></description></item><item><title>Journal Two</title><link>https://benjamin-sturgeon.github.io/posts/journaltwo/</link><pubDate>Mon, 02 Jun 2025 14:31:04 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/posts/journaltwo/</guid><description>&lt;p>Part One:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Have you changed your career plans? If so, what prompted this
+change? If not, why have you remained with your original plan?&lt;/strong>&lt;br>
+Yes, I’ve shifted my career plans from data science to full-stack
+development and application development. This change was driven by
+my growing interest in user-centric design, structured workflows,
+and maintainability. Through hands-on coding and collaborative
+projects, I realized that I enjoy building complete systems that
+prioritize efficiency and adaptability, rather than purely analyzing
+data.&lt;/p></description></item><item><title>Code Review</title><link>https://benjamin-sturgeon.github.io/posts/codereview/</link><pubDate>Fri, 30 May 2025 14:31:04 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/posts/codereview/</guid><description>&lt;p>I completed a code review prior to implementing improvements to the projects. The link to this code review is provided here:
+&lt;a href="https://youtu.be/ULIRyS-XVs4" class="external-link" target="_blank" rel="noopener">https://youtu.be/ULIRyS-XVs4&lt;/a>&lt;/p>
+&lt;p>This is the Script for the code review. It addresses improvmenent for three seperate projects:&lt;/p>
+&lt;p>Code Review Script&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Category One: Software Design and Engineering&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Provide a clear, complete description of existing code
+&lt;strong>functionality&lt;/strong>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>What does the code do?&lt;/p>
+&lt;ul>
+&lt;li>The first artifact that I will be improving is a Weight
+Tracking Application. This simple Java application is
+designed to run on Android OS and provides users with a
+way to track their weight. They can also set their goal
+weight and opt in to receive a text notification once
+their goal weight is reached. User accounts are created
+during the initial login screen of the application. Data
+is kept locally on the device via a MongoDB schema.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Focus on the features and functions of the existing code.&lt;/p></description></item><item><title>Journal One</title><link>https://benjamin-sturgeon.github.io/posts/journalone/</link><pubDate>Fri, 30 May 2025 14:31:04 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/posts/journalone/</guid><description>&lt;p>Part One:&lt;/p>
+&lt;ol>
+&lt;li>How might you use an ePortfolio for the benefit of self-promotion?&lt;/li>
+&lt;/ol>
+&lt;p>An ePortfolio provides me with an excellent place to provide potential
+employers with a showcase of my previous work and skills. It also
+provides my contact information and other resume details in pleasant
+format with an interactable UI. This showcases my ability to go above
+and beyond in my application presentation which will potentially give me
+a leg up over other candidates.&lt;/p></description></item><item><title>Artifact One Narrative</title><link>https://benjamin-sturgeon.github.io/posts/artifact_one_narrative/</link><pubDate>Mon, 26 May 2025 20:10:41 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/posts/artifact_one_narrative/</guid><description>&lt;p>Artifact One Narrative&lt;/p>
+&lt;ol>
+&lt;li>Briefly describe the artifact. What is it? When was it created?&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>The Weight Tracking Application is a mobile-based solution designed to
+help users track their weight progress effectively while integrating
+notifications and user-friendly UI enhancements. Originally developed
+as part of my coursework, the artifact combines data storage,
+interactive UI elements, and real-time notifications to encourage
+weight management. The initial version contained foundational
+functionality but lacked modern aesthetics, efficient UI behavior, and
+seamless account management features.&lt;/p></description></item><item><title>Artifact Two Narrative</title><link>https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/</link><pubDate>Mon, 26 May 2025 20:10:41 -0500</pubDate><guid>https://benjamin-sturgeon.github.io/posts/artifact_two_narrative/</guid><description>&lt;p>Artifact Two Narrative&lt;/p>
+&lt;p>&lt;strong>Narrative: Enhancing the AAC Grazioso Salvare Dashboard&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Brief Description of the Artifact&lt;/strong>&lt;/p>
+&lt;p>This artifact is an interactive Jupyter Dash application, built to
+visualize animal rescue data efficiently using MongoDB queries, Dash
+components, and Plotly visualizations. Originally created as part of the
+Southern New Hampshire University CS 499 Capstone, the dashboard
+provides users with filtering options, an interactive data table, a map
+visualization, and a pie chart representation of rescued animal breeds.&lt;/p></description></item></channel></rss>
