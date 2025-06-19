@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2025-06-08T14:31:04-05:00
-title = "Journal Two"
+title = "Journal Three"
 description = "Third Journal In CS-499 Capstone"
 featured_image = "/images/Journal.jpg"
 slug = ""
