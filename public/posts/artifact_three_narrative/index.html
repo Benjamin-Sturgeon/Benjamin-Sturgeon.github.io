@@ -1,13 +1,7 @@
 <!doctype html><html lang=en><head><title>Artifact Three Narrative · Benjamin Sturgeon</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Benjamin Sturgeon"><meta name=description content="Artifact Three Narrative
 Travlr Authentication System Enhancement and Debugging
 Artifact Overview
-The artifact that I have chosen for this category is my full-stack
-development website utilizing the MEAN stack. This application is
-derived from my CS-465 Full-Stack Development 1 class. I have chosen
-this artifact because it provides me with a great framework to showcase
-my ability to improve a full-stack application. I specifically planned
-to implement Authorization security procedures for users which access
-the Mongo Database in this application."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Artifact Three Narrative"><meta name=twitter:description content="Artifact Three Narrative
+The artifact that I have chosen for this category is my full-stack development website utilizing the MEAN stack. This application is derived from my CS-465 Full-Stack Development 1 class. I have chosen this artifact because it provides me with a great framework to showcase my ability to improve a full-stack application. I specifically planned to implement Authorization security procedures for users which access the Mongo Database in this application."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Artifact Three Narrative"><meta name=twitter:description content="Artifact Three Narrative
 Travlr Authentication System Enhancement and Debugging
 Artifact Overview
 The artifact that I have chosen for this category is my full-stack development website utilizing the MEAN stack. This application is derived from my CS-465 Full-Stack Development 1 class. I have chosen this artifact because it provides me with a great framework to showcase my ability to improve a full-stack application. I specifically planned to implement Authorization security procedures for users which access the Mongo Database in this application."><meta property="og:url" content="https://benjamin-sturgeon.github.io/posts/artifact_three_narrative/"><meta property="og:site_name" content="Benjamin Sturgeon"><meta property="og:title" content="Artifact Three Narrative"><meta property="og:description" content="Artifact Three Narrative
@@ -18,94 +12,46 @@ The artifact that I have chosen for this category is my full-stack development w
 <label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/about/>About</a></li><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/projects/>Projects</a></li><li class=navigation-item><a class=navigation-link href=/contact/>Contact me</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://benjamin-sturgeon.github.io/posts/artifact_three_narrative/>Artifact Three Narrative</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
 <time datetime=2025-06-08T20:10:41-05:00>June 8, 2025
 </time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
-5-minute read</span></div></div></header><div class=post-content><a href=/posts/artifact_three_narrative/><img src=/images/avatar4.jpg alt="Artifact Three Narrative" class=post-thumbnail></a><p>Artifact Three Narrative</p><p><strong>Travlr Authentication System Enhancement and Debugging</strong></p><p><strong>Artifact Overview</strong></p><p>The artifact that I have chosen for this category is my full-stack
-development website utilizing the MEAN stack. This application is
-derived from my CS-465 Full-Stack Development 1 class. I have chosen
-this artifact because it provides me with a great framework to showcase
-my ability to improve a full-stack application. I specifically planned
-to implement Authorization security procedures for users which access
-the Mongo Database in this application.</p><p>The artifact presented in this paper is a Travlr website system
-developed using Angular for the frontend and Express.js for the backend.
-This system now allows users to securely log in using JSON Web Tokens
-(JWT) stored in cookies, ensuring authentication without exposing
-sensitive credentials. The system was initially developed to provide a
-seamless user authentication experience while maintaining security best
-practices. Over time, improvements were made to refine the handling of
-authentication tokens, enhance error reporting, and resolve technical
-challenges related to frontend-backend communication.</p><p><strong>Justification for Inclusion</strong></p><p>This artifact is included in the portfolio because it demonstrates a
-comprehensive approach to debugging and improving authentication
-workflows. Secure authentication is a fundamental component of modern
-web applications, and the enhancements applied to this system reflect
-proficiency in implementing security principles, refining software
-functionality, and addressing real-world technical challenges.
-Specifically, the improvements highlight skills in debugging
-cross-origin authentication failures, resolving API communication
-errors, ensuring proper token storage, and providing user-friendly error
-feedback.</p><p>By including this artifact, I am showcasing my ability to methodically
-refine a system, troubleshoot errors in both frontend and backend
-components, and implement best practices in web security and
-authentication. The enhancements made throughout the process contribute
-to a more robust, maintainable, and efficient authentication solution.</p><p><strong>Improvements Made to the Artifact</strong></p><p>One of the key improvements involved fixing JWT retrieval timing issues
-in Angular’s HTTP interceptor. Previously, authentication headers were
-inconsistently applied due to asynchronous retrieval of JWT tokens. This
-was resolved by modifying the method of extracting JWT directly from
-cookies, ensuring that authentication headers are set immediately.</p><p>const cookieString = document.cookie;</p><p>const cookies = cookieString.split("; &ldquo;).reduce((acc, cookie) => {</p><p>const [name, value] = cookie.split("=&rdquo;);</p><p>acc[name] = decodeURIComponent(value);</p><p>return acc;</p><p>}, {} as Record&lt;string, string>);</p><p>const token = cookies[&ldquo;jwt&rdquo;];</p><p>if (token) {</p><p>const authReq = request.clone({</p><p>setHeaders: { Authorization: `Bearer ${token}` }</p><p>});</p><p>return next.handle(authReq);</p><p>}</p><p>Additionally, one of the significant technical issues encountered was
-the incorrect port mapping between Angular and Express.js. Initially,
-the frontend was making authentication requests to port 4200, whereas
-the backend was running on port 3000. This caused repeated 404 errors
-when attempting to log in. The solution involved explicitly setting the
-API request to target the correct backend port.</p><p>this.http.post(&ldquo;http://localhost:3000/api/login&rdquo;, { email: user.email,
-password: passwd }, { withCredentials: true });</p><p>To ensure proper cross-origin communication between Angular and
-Express.js, modifications were made to the backend CORS configuration.
-Without these updates, API requests from the frontend were rejected due
-to security restrictions.</p><p>app.use(&rsquo;/api&rsquo;, (req, res, next) => {</p><p>res.header(&lsquo;Access-Control-Allow-Origin&rsquo;, &lsquo;http://localhost:4200&rsquo;);</p><p>res.header(&lsquo;Access-Control-Allow-Headers&rsquo;, &lsquo;Origin, X-Requested-With,
-Content-Type, Accept, Authorization");</p><p>res.header(&lsquo;Access-Control-Allow-Methods&rsquo;, &lsquo;GET, POST, PUT, DELETE&rsquo;);</p><p>res.header(&lsquo;Access-Control-Allow-Credentials&rsquo;, &rsquo;true&rsquo;);</p><p>next();</p><p>});</p><p>Another crucial improvement was the enhancement of error handling in the
-login workflow. Previously, login failures were only logged in the
-console, providing no direct feedback to users. This was resolved by
-correctly updating the formError property in the login component.</p><p>public formError: string = &lsquo;&rsquo;;</p><p>onLoginSubmit(): void {</p><p>this.authenticationService.login(this.credentials.email,
-this.credentials.password)</p><p>.subscribe({</p><p>next: (response: any) => {</p><p>alert(&ldquo;Welcome back! You are now logged in.&rdquo;);</p><p>this.authenticationService.saveToken(response.token);</p><p>this.router.navigate([&rsquo;/trips&rsquo;]);</p><p>},</p><p>error: (error: any) => {</p><p>this.ngZone.run(() => {</p><p>this.formError = &ldquo;Invalid email or password. Please try again.&rdquo;;</p><p>});</p><p>}</p><p>});</p><p>}</p><p>This update ensured that error messages are displayed directly within
-the login form, providing immediate feedback to users in case of
-incorrect credentials.</p><p><strong>Meeting Course Outcomes</strong></p><p>The enhancements applied to this authentication system align with
-several key computer science program outcomes. Firstly, the debugging
-and iterative improvement of the login system illustrate the ability to
-design and evaluate computing solutions that solve authentication
-challenges using established software engineering principles. The
-modifications also reflect proficiency in designing professional-quality
-written communication, particularly in documenting issues and resolving
-them systematically.</p><p>Additionally, the process reinforced a security mindset, ensuring that
-authentication vulnerabilities were minimized and that proper practices
-in token storage and cross-origin handling were followed. The final
-refinements also demonstrate strategic collaborative problem-solving as
-multiple aspects of authentication were addressed collectively,
-balancing security considerations with usability.</p><p><strong>Reflection on the Enhancement Process</strong></p><p>Enhancing this authentication system required methodical problem-solving
-and debugging across multiple layers of the application. One of the most
-valuable lessons learned throughout this process was the importance of
-correctly handling asynchronous operations, particularly in
-authentication workflows. The issue of missing authentication headers
-was a direct result of delayed JWT retrieval, and understanding this
-timing issue was crucial in implementing a proper solution.</p><p>Additionally, resolving API request failures due to incorrect port
-configurations reinforced the need to carefully manage frontend-backend
-communication. The process of fixing these issues required structured
-debugging approaches, including verifying route registration, checking
-request headers, and ensuring proper data flow between client and
-server.</p><p>Another challenge encountered was ensuring that user error feedback was
-correctly displayed within the UI. While login errors were being logged
-in the console, the user interface remained unchanged, creating a
-disconnect in user experience. The final solution involved leveraging
-Angular’s change detection mechanism to ensure UI updates occurred as
-expected.</p><p>Overall, the refinement of this authentication system strengthened my
-ability to diagnose technical problems, implement secure coding
-practices, and optimize user interactions. These enhancements not only
-improved the security and functionality of the login system but also
-reinforced key principles in software development and authentication
-security.</p><p>This artifact serves as a strong representation of real-world software
-engineering challenges and solutions. By systematically improving
-authentication workflows, resolving critical security and usability
-issues, and ensuring best practices in API communication, this
-authentication system now provides a seamless, secure, and user-friendly
-experience. The knowledge gained from these enhancements will continue
-to inform future developments in web authentication security and system
-optimization.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+5-minute read</span></div></div></header><div class=post-content><a href=/posts/artifact_three_narrative/><img src=/images/avatar4.jpg alt="Artifact Three Narrative" class=post-thumbnail></a><p>Artifact Three Narrative</p><p><strong>Travlr Authentication System Enhancement and Debugging</strong></p><p><strong>Artifact Overview</strong></p><p>The artifact that I have chosen for this category is my full-stack development website utilizing the MEAN stack. This application is derived from my CS-465 Full-Stack Development 1 class. I have chosen this artifact because it provides me with a great framework to showcase my ability to improve a full-stack application. I specifically planned to implement Authorization security procedures for users which access the Mongo Database in this application.</p><p>The artifact presented in this paper is a Travlr website system developed using Angular for the frontend and Express.js for the backend. This system now allows users to securely log in using JSON Web Tokens (JWT) stored in cookies, ensuring authentication without exposing sensitive credentials. The system was initially developed to provide a seamless user authentication experience while maintaining security best practices. Over time, improvements were made to refine the handling of authentication tokens, enhance error reporting, and resolve technical challenges related to frontend-backend communication.</p><p><strong>Justification for Inclusion</strong></p><p>This artifact is included in the portfolio because it demonstrates a comprehensive approach to debugging and improving authentication workflows. Secure authentication is a fundamental component of modern web applications, and the enhancements applied to this system reflect proficiency in implementing security principles, refining software functionality, and addressing real-world technical challenges. Specifically, the improvements highlight skills in debugging cross-origin authentication failures, resolving API communication errors, ensuring proper token storage, and providing user-friendly error feedback.</p><p>By including this artifact, I am showcasing my ability to methodically refine a system, troubleshoot errors in both frontend and backend components, and implement best practices in web security and authentication. The enhancements made throughout the process contribute to a more robust, maintainable, and efficient authentication solution.</p><p><strong>Improvements Made to the Artifact</strong></p><p>One of the key improvements involved fixing JWT retrieval timing issues in Angular’s HTTP interceptor. Previously, authentication headers were inconsistently applied due to asynchronous retrieval of JWT tokens. This was resolved by modifying the method of extracting JWT directly from cookies, ensuring that authentication headers are set immediately.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>const</span> <span class=nx>cookieString</span> <span class=o>=</span> <span class=nb>document</span><span class=p>.</span><span class=nx>cookie</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>cookies</span> <span class=o>=</span> <span class=nx>cookieString</span><span class=p>.</span><span class=nx>split</span><span class=p>(</span><span class=s2>&#34;; &#34;</span><span class=p>).</span><span class=nx>reduce</span><span class=p>((</span><span class=nx>acc</span><span class=p>,</span> <span class=nx>cookie</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>[</span><span class=nx>name</span><span class=p>,</span> <span class=nx>value</span><span class=p>]</span> <span class=o>=</span> <span class=nx>cookie</span><span class=p>.</span><span class=nx>split</span><span class=p>(</span><span class=s2>&#34;=&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>acc</span><span class=p>[</span><span class=nx>name</span><span class=p>]</span> <span class=o>=</span> <span class=nb>decodeURIComponent</span><span class=p>(</span><span class=nx>value</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=nx>acc</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>},</span> <span class=p>{}</span> <span class=nx>as</span> <span class=nx>Record</span><span class=o>&lt;</span><span class=nx>string</span><span class=p>,</span> <span class=nx>string</span><span class=o>&gt;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>token</span> <span class=o>=</span> <span class=nx>cookies</span><span class=p>[</span><span class=s2>&#34;jwt&#34;</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nx>token</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>authReq</span> <span class=o>=</span> <span class=nx>request</span><span class=p>.</span><span class=nx>clone</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>    <span class=nx>setHeaders</span><span class=o>:</span> <span class=p>{</span> <span class=nx>Authorization</span><span class=o>:</span> <span class=sb>`Bearer </span><span class=si>${</span><span class=nx>token</span><span class=si>}</span><span class=sb>`</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>});</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=nx>next</span><span class=p>.</span><span class=nx>handle</span><span class=p>(</span><span class=nx>authReq</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Additionally, one of the significant technical issues encountered was the incorrect port mapping between Angular and Express.js. Initially, the frontend was making authentication requests to port 4200, whereas the backend was running on port 3000. This caused repeated 404 errors when attempting to log in. The solution involved explicitly setting the API request to target the correct backend port.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=k>this</span><span class=p>.</span><span class=nx>http</span><span class=p>.</span><span class=nx>post</span><span class=p>(</span><span class=s2>&#34;http://localhost:3000/api/login&#34;</span><span class=p>,</span> <span class=p>{</span> <span class=nx>email</span><span class=o>:</span> <span class=nx>user</span><span class=p>.</span><span class=nx>email</span><span class=p>,</span> <span class=nx>password</span><span class=o>:</span> <span class=nx>passwd</span> <span class=p>},</span> <span class=p>{</span> <span class=nx>withCredentials</span><span class=o>:</span> <span class=kc>true</span> <span class=p>});</span>
+</span></span></code></pre></div><p>To ensure proper cross-origin communication between Angular and Express.js, modifications were made to the backend CORS configuration. Without these updates, API requests from the frontend were rejected due to security restrictions.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=nx>app</span><span class=p>.</span><span class=nx>use</span><span class=p>(</span><span class=s1>&#39;/api&#39;</span><span class=p>,</span> <span class=p>(</span><span class=nx>req</span><span class=p>,</span> <span class=nx>res</span><span class=p>,</span> <span class=nx>next</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>res</span><span class=p>.</span><span class=nx>header</span><span class=p>(</span><span class=s1>&#39;Access-Control-Allow-Origin&#39;</span><span class=p>,</span> <span class=s1>&#39;http://localhost:4200&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>res</span><span class=p>.</span><span class=nx>header</span><span class=p>(</span><span class=s1>&#39;Access-Control-Allow-Headers&#39;</span><span class=p>,</span> <span class=s1>&#39;Origin, X-Requested-With, Content-Type, Accept, Authorization&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>res</span><span class=p>.</span><span class=nx>header</span><span class=p>(</span><span class=s1>&#39;Access-Control-Allow-Methods&#39;</span><span class=p>,</span> <span class=s1>&#39;GET, POST, PUT, DELETE&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>res</span><span class=p>.</span><span class=nx>header</span><span class=p>(</span><span class=s1>&#39;Access-Control-Allow-Credentials&#39;</span><span class=p>,</span> <span class=s1>&#39;true&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>next</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span></code></pre></div><p>Another crucial improvement was the enhancement of error handling in the login workflow. Previously, login failures were only logged in the console, providing no direct feedback to users. This was resolved by correctly updating the formError property in the login component.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>public</span> <span class=nx>formError</span>: <span class=kt>string</span> <span class=o>=</span> <span class=s1>&#39;&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>onLoginSubmit</span><span class=p>()</span><span class=o>:</span> <span class=k>void</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>this</span><span class=p>.</span><span class=nx>authenticationService</span><span class=p>.</span><span class=nx>login</span><span class=p>(</span><span class=k>this</span><span class=p>.</span><span class=nx>credentials</span><span class=p>.</span><span class=nx>email</span><span class=p>,</span> <span class=k>this</span><span class=p>.</span><span class=nx>credentials</span><span class=p>.</span><span class=nx>password</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>.</span><span class=nx>subscribe</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>      <span class=nx>next</span><span class=o>:</span> <span class=p>(</span><span class=nx>response</span>: <span class=kt>any</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nx>alert</span><span class=p>(</span><span class=s2>&#34;Welcome back! You are now logged in.&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=p>.</span><span class=nx>authenticationService</span><span class=p>.</span><span class=nx>saveToken</span><span class=p>(</span><span class=nx>response</span><span class=p>.</span><span class=nx>token</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=p>.</span><span class=nx>router</span><span class=p>.</span><span class=nx>navigate</span><span class=p>([</span><span class=s1>&#39;/trips&#39;</span><span class=p>]);</span>
+</span></span><span class=line><span class=cl>      <span class=p>},</span>
+</span></span><span class=line><span class=cl>      <span class=nx>error</span><span class=o>:</span> <span class=p>(</span><span class=nx>error</span>: <span class=kt>any</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=p>.</span><span class=nx>ngZone</span><span class=p>.</span><span class=nx>run</span><span class=p>(()</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>          <span class=k>this</span><span class=p>.</span><span class=nx>formError</span> <span class=o>=</span> <span class=s2>&#34;Invalid email or password. Please try again.&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=p>});</span>
+</span></span><span class=line><span class=cl>      <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>This update ensured that error messages are displayed directly within the login form, providing immediate feedback to users in case of incorrect credentials.</p><p><strong>Meeting Course Outcomes</strong></p><p>The enhancements applied to this authentication system align with several key computer science program outcomes. Firstly, the debugging and iterative improvement of the login system illustrate the ability to design and evaluate computing solutions that solve authentication challenges using established software engineering principles. The modifications also reflect proficiency in designing professional-quality written communication, particularly in documenting issues and resolving them systematically.</p><p>Additionally, the process reinforced a security mindset, ensuring that authentication vulnerabilities were minimized and that proper practices in token storage and cross-origin handling were followed. The final refinements also demonstrate strategic collaborative problem-solving as multiple aspects of authentication were addressed collectively, balancing security considerations with usability.</p><p><strong>Reflection on the Enhancement Process</strong></p><p>Enhancing this authentication system required methodical problem-solving and debugging across multiple layers of the application. One of the most valuable lessons learned throughout this process was the importance of correctly handling asynchronous operations, particularly in authentication workflows. The issue of missing authentication headers was a direct result of delayed JWT retrieval, and understanding this timing issue was crucial in implementing a proper solution.</p><p>Additionally, resolving API request failures due to incorrect port configurations reinforced the need to carefully manage frontend-backend communication. The process of fixing these issues required structured debugging approaches, including verifying route registration, checking request headers, and ensuring proper data flow between client and server.</p><p>Another challenge encountered was ensuring that user error feedback was correctly displayed within the UI. While login errors were being logged in the console, the user interface remained unchanged, creating a disconnect in user experience. The final solution involved leveraging Angular’s change detection mechanism to ensure UI updates occurred as expected.</p><p>Overall, the refinement of this authentication system strengthened my ability to diagnose technical problems, implement secure coding practices, and optimize user interactions. These enhancements not only improved the security and functionality of the login system but also reinforced key principles in software development and authentication security.</p><p>This artifact serves as a strong representation of real-world software engineering challenges and solutions. By systematically improving authentication workflows, resolving critical security and usability issues, and ensuring best practices in API communication, this authentication system now provides a seamless, secure, and user-friendly experience. The knowledge gained from these enhancements will continue to inform future developments in web authentication security and system optimization.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
 2019 -
 2025
 Benjamin Sturgeon

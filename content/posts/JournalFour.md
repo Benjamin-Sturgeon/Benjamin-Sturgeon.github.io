@@ -1,5 +1,5 @@
 +++ 
-draft = false
+draft = true
 date = 2025-06-12T14:31:04-05:00
 title = "Journal Four"
 description = "Fourth Journal In CS-499 Capstone"

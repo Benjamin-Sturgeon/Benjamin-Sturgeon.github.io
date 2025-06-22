@@ -5,125 +5,91 @@ title = 'Artifact One Narrative'
 featured_image = "/images/avatar4.jpg"
 +++
 
-Artifact One Narrative
+**Artifact One: Weight Tracking Application**
 
-1.  Briefly describe the artifact. What is it? When was it created?
+1.  **Briefly describe the artifact. What is it? When was it created?**
 
-> The Weight Tracking Application is a mobile-based solution designed to
-> help users track their weight progress effectively while integrating
-> notifications and user-friendly UI enhancements. Originally developed
-> as part of my coursework, the artifact combines data storage,
-> interactive UI elements, and real-time notifications to encourage
-> weight management. The initial version contained foundational
-> functionality but lacked modern aesthetics, efficient UI behavior, and
-> seamless account management features.
+The *Weight Tracking Application* is a mobile-based Android solution designed to assist users in monitoring their weight progress through interactive features, intuitive design, and goal-driven notifications. Created as part of my coursework in 2025, the initial version implemented basic logging and visualization capabilities. Enhancements brought refined user interface elements, responsive layouts, and meaningful real-time engagement, transforming the app into a more complete, user-centric experience.
 
-1.  Justify the inclusion of the artifact in your ePortfolio. Why did
-    you select this item? What specific components of the artifact
-    showcase your skills and abilities in software development? How was
-    the artifact improved?
+1.  **Justify the inclusion of the artifact in your ePortfolio. Why did you select this item?**
 
-> This artifact showcases my ability to design, implement, and refine a
-> fully functional mobile application with full-stack principles. I
-> selected it because it highlights my software development expertise,
-> including:
+This artifact reflects my ability to build and iteratively improve a mobile application through full-stack and user-centered principles. Specific components that showcase my development strengths include:
 
-- **UI/UX Design and Refinement** - Using Material Design principles to
-  enhance usability.
+- **UI/UX Design with Material Principles:** I integrated gradient backgrounds, updated typography, and floating action buttons (FAB) to modernize the app’s appearance:
 
-- **Design Documentation and Readability** – Writing code which is easy
-  to understand and well commented.
+```xml
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fabAddWeight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    app:layout_anchor="@id/weightListView"
+    app:srcCompat="@drawable/ic_add"
+    android:backgroundTint="@color/colorAccent"/>
+```
 
-- **Database Management and Account Handling** - Securely storing and
-  processing user data.
+- **Database Handling & Account Cleanup:** I implemented a secure delete-account feature that removes user data and associated weight entries:
 
-- **Event-Based Notifications** - Implementing SMS and popup alerts for
-  user achievements.
+```java
+public void deleteUserAccount(String userId) {
+    FirebaseDatabase db = FirebaseDatabase.getInstance();
+    DatabaseReference userRef = db.getReference("users").child(userId);
+    DatabaseReference weightsRef = db.getReference("weights").child(userId);
+    weightsRef.removeValue(); // Deletes weight logs
+    userRef.removeValue();    // Deletes user credentials
+}
+```
 
-- **Security Considerations** - Adding error handling and safe account
-  deletion mechanisms.
+- **Event-Based Notifications:** I added popup and SMS alerts when users reach their target goals, using conditional logic:
 
-> The improvement process focused on modernizing UI components,
-> enhancing database functions, and refining user interactions, making
-> it a standout example of my ability to integrate design and
-> functionality.
->
-> Several key improvements were made to transform the application:
+```java
+if (newWeight <= goalWeight) {
+    showPopup("🎯 You've reached your goal of " + goalWeight + " lbs!");
+    sendSMS(userPhone, "Congrats on hitting your weight goal!");
+}
+```
 
-1.  **UI Modernization** - Redesigned login and tracking pages,
-    including rounded corners, gradient backgrounds, refined typography,
-    and smoother animations.
+- **Code Modularity and Readability:** Repetitive logic was abstracted into helper methods for maintainability:
 
-2.  **Enhanced Functionality** - Introduced floating action buttons
-    (FAB), structured RecyclerView elements, and a streamlined toolbar.
+```java
+private boolean isValidWeightInput(String weightInput) {
+    return weightInput != null && !weightInput.isEmpty() && weightInput.matches("\\d{2,3}");
+}
+```
 
-3.  **Account Management Features** - Developed a secure Delete Account
-    function, ensuring proper database cleanup before user removal.
+These enhancements collectively improved app usability, engagement, and structural integrity, making the artifact both aesthetically pleasing and functionally sound.
 
-4.  **Improved Notification System** - Added SMS and popup alerts for
-    reaching weight goals, enhancing user motivation and engagement.
+1.  **Did you meet the course outcomes you planned to meet?**
 
-5.  **Security Enhancements** - Strengthened error handling, null
-    checks, and defensive programming techniques.
+Yes. This project aligns with the following course outcomes:
 
-6.  **Improved Code Readability and Documentation** – Introduced helper
-    functions instead of repeated code in methods and implement thorough
-    commentary on all lines of code for understandability.
+- **Collaborative Environments:** UX decisions were driven by iterative testing and feedback interpretation.
+- **Professional Communication:** Codebase includes detailed JavaDoc-style comments and logical naming conventions.
+- **Computing Solutions Evaluation:** I implemented structured validation logic to process and visualize user data efficiently.
+- **Engineering Practices:** Used RecyclerView and ConstraintLayout components for scalable list rendering and adaptive layout behavior.
+- **Security Mindset:** Developed defensive null checks and validation strategies to prevent crashes and unauthorized data access.
 
-> These updates make the artifact visually appealing, functionally
-> robust, and highly user-friendly.
+1.  **Reflect on the process of enhancing and modifying the artifact.**
 
-1.  Did you meet the course outcomes you planned to meet with this
-    enhancement in Module One? Do you have any updates to your
-    outcome-coverage plans?
+Several significant challenges strengthened my abilities throughout this project:
 
-> This enhancement process aligns with multiple course outcomes:
+- **ConstraintLayout Design:** Adjusting UI responsiveness across screen sizes was achieved through careful anchoring and testing:
 
-- Collaborative Environment Building - Structured clear decision-making
-  logic and intuitive UX design.
+```xml
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+```
 
-- Professional Communication in Software Development - Delivered clean
-  and maintainable code with structured documentation.
+- **Notification Logic Bug:** An oversight in the notification handler failed to trigger alerts for edited entries. I corrected this by checking value updates against the goal:
 
-- Computing Solutions Evaluation - Applied algorithmic principles and
-  well-designed data management techniques.
+```java
+if (previousWeight > goalWeight && newWeight <= goalWeight) {
+    triggerGoalReachedAlert();
+}
+```
 
-- Software Engineering Techniques - Implemented industry-standard
-  database integration and UI components.
+- **Deletion Cascade Issues:** I discovered that weight entries weren't cleared when deleting a user. The solution was to explicitly call both user and subcollection references.
 
-- Security Mindset Development - Strengthened privacy safeguards and
-  prevented unauthorized database operations.
-
-> With these improvements, the project meets all intended course
-> outcomes, reinforcing my ability to design and refine industry-ready
-> applications.
-
-1.  Reflect on the process of enhancing and modifying the artifact. What
-    did you learn as you were creating it and improving it? What
-    challenges did you face?
-
-> The enhancement process was both challenging and rewarding. I refined
-> UI structures by implementing Material Design best practices. That
-> process went fairly smoothly, however after that I faced challenges
-> with database management, especially ensuring safe account deletion
-> and cleanup. Fortunately, I was able to determine the best way to
-> implement the missing CRUD functionality with both the user and
-> weights databases. The SMS and popup notification integration required
-> careful handling to ensure seamless user experience. As I implemented
-> the additional popup notifications, I noticed some errors in the
-> functionality for the SMS notifications. One such error was that the
-> application did not provide a congratulatory message if a weight that
-> was already present in the list was edited to a value that met or was
-> under the goal weight. I was able to correct this oversight thanks to
-> my work on other improvements. Debugging UI layout issues involved
-> troubleshooting constraint problems while maintaining a responsive
-> design. Changing the layout of my xml files to be more pleasant to
-> view proved slightly challenging due to the nature of a constraint
-> layout. I had to be careful that every button and item fit
-> proportionally on the screen, which took some trial and error. I was
-> able to produce a significant UI improvement that matched the intended
-> functionality.
->
-> Ultimately, this project strengthened my problem-solving skills,
-> reinforced software engineering principles, and showcased my ability
-> to develop modern mobile applications.
+This process significantly expanded my understanding of mobile UI responsiveness, backend integrity, and user-centered alerting systems. It stands as a well-rounded example of applying classroom theory to practical, real-world software design.
