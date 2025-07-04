@@ -8,39 +8,116 @@ featured_image = "/images/avatar3.jpg"
 I have provided a link to download my current Resume here:
 [Download the Resume](https://benjamin-sturgeon.github.io/about/Resume.docx)
 
-# Objective
+**Benjamin Sturgeon**
+
+Baton Rouge, LA 70816 **|** (334) 372-9730 **|**
+<benjaminsturgeon@outlook.com> **|**
+[benjamin-sturgeon.github.io/](https://benjamin-sturgeon.github.io/)
+
+**Summary**
 
 I am a passionate and detail-oriented Software Developer with a strong
 foundation in full-stack development and software engineering. I am
 seeking a dynamic role where I can apply my problem-solving skills,
 technical expertise, and user-focused approach to create innovative,
-efficient solutions..
+efficient solutions.
 
-# Skills
 
-- **Frameworks & Technologies:** React, Angular, Node.js, RESTful APIs,
-  Material Design, MEAN Stack
 
-- **Programming Languages:** Java, C++, Python, Kotlin, SQL, NoSQL,
-  HTML, XML
+**Skills**
 
-- **Database Management:** MSSQL Server, Oracle, MongoDB, SQL Server
+**Frameworks & Technologies**: React, Angular, Node.js, RESTful APIs,
+Material Design
 
-- **Development Tools:** GitHub, Visual Studio, Android Studio, Pycharm,
-  Visual Studio Code
+**Programming Languages**: Java, C++, Python, Kotlin, SQL, NoSQL, HTML,
+XML
 
-- **System & Networking:** TCP/IP, Sockets, AWS, DevOps principles
+**Database Management**: MSSQL Server, Oracle, MongoDB, SQL Server,
 
-- **Software Engineering Practices:** Agile Development, Test-Driven
-  Development (TDD), Code Reviews
+**Development Tools**: GitHub, Visual Studio, Android Studio, PyCharm,
+Visual Studio Code, Docker
 
-#
+**System & Networking**: TCP/IP, Sockets, AWS, DevOps principles
 
-# Experience
+**Software Engineering Practices**: Agile Development, Test-Driven
+Development (TDD), Code Reviews
 
-## November 2019 – September 2020
 
-### Baton Rouge General, Baton Rouge *– Mental Health Tech II*
+
+**Education**
+
+**B.S. in Computer Science, Concentration in Software Engineering**
+Conferral August 2025
+
+Southern New Hampshire University 4.0 GPA
+
+**B.A. in Psychology, focus on Abnormal Psychology** June 2023 – June
+2025
+
+University of Louisiana at Monroe
+
+
+
+**Project Experience**
+
+**Weight Tracking Mobile Application – Southern New Hampshire University January – April 2025**
+
+- Designed and refined a full-featured Android app for weight logging,
+  goal setting, and interactive notifications using Material Design
+  principles.
+
+- Implemented SMS and popup alerts for user milestones, increasing
+  engagement through real-time feedback.
+
+- Developed secure account management features and integrated Firebase
+  database CRUD operations to ensure data integrity and usability.
+
+**AAC Grazioso Salvare Rescue Dashboard – Southern New Hampshire
+University January – April 2025**
+
+- Built a dynamic data visualization dashboard using Python Dash,
+  MongoDB, and Plotly to highlight animal rescue operations.
+
+- Refactored inefficient query logic and modularized repetitive code,
+  reducing execution latency by 40%.
+
+- Integrated secure authentication and robust error handling for image
+  rendering, database access, and environment variable usage.
+
+**Travlr Authentication System (MEAN Stack) January – April 2025**
+
+- Debugged and enhanced a secure authentication system using JWT
+  cookies, Angular interceptors, and Express.js APIs.
+
+- Resolved critical cross-origin and port mapping errors to ensure
+  reliable communication between frontend and backend services.
+
+- Improved user feedback through in-form error messaging and structured
+  async token handling, achieving near-perfect login stability.
+
+
+
+**Work Experience**
+
+**Advanced Tech Support/System Ambassador/Service Consultant** September
+2020 – Present
+
+AT&T Mobility Services – Baton Rouge, LA
+
+- Work to determine a resolution for a variety of technical problems
+  that affect cellular devices.
+
+<!-- -->
+
+- Interface with a range of technical systems that determine service
+  provisioning and cellular software
+
+- As System ambassador, conduct meetings and system analysis to suggest
+  and implement improvements to AT&T systems
+
+**Mental Health Tech II** November 2019 – September 2020
+
+Baton Rouge General – Baton Rouge, LA
 
 - Assisting Nursing Staff in Patient Care
 
@@ -51,24 +128,9 @@ efficient solutions..
 - Maintaining awareness of patient mental health and reporting changes
   to Nursing Staff
 
-##  September 2020 – Present
+**Office Assistant** March 2018 – November 2019
 
-### AT&T Mobility Services, Baton Rouge*- Advanced Tech Support/System Ambassador/Service Consultant*
-
-- Worked to determine a resolution for a variety of all technical
-  problems that affect cellular devices.
-
-- Interfaced with a range of technical systems that determined service
-  provisioning and cellular software
-
-- As System ambassador, conducted meetings and system analysis to
-  suggest and implement improvements to AT&T systems
-
-## 
-
-## March 2018 – November 2019
-
-### Dean Morris LLP, Monroe *– Office Assistant*
+Dean Morris LLP – Monroe, LA
 
 - Performed recording of incoming and out coming mail and monitored
   shipping statuses.
@@ -77,99 +139,3 @@ efficient solutions..
 
 - Proficient in using Perfect Practice to record matter statuses for
   legal cases.
-
-# 
-
-# Education
-
-## August 2014 - May 2017
-
-### Louisiana Tech University, Ruston *- B.S in Biomedical Engineering/B.S. Biochemistry*
-
-Attended Louisiana Tech University before transferring to ULM in January
-2018 to pursue a B.A. in Psychology. Learned strong time management
-skills and became proficient at computer information systems as well as
-biological and chemical analysis.
-
-## January 2018 - December 2019
-
-### University of Louisiana at Monroe, Monroe *- B.A in Psychology*
-
-Completed bachelor’s degree with focus on abnormal psychology.
-
-## June 2023 - June 2025
-
-### Southern New Hampshire University *- B.S in Computer Science*
-
-Currently attending with specialization in software engineering.
-
-### 
-
-# References:
-
-Brian Goosby – Manager AT&T Advance Tech Support
-
-(225)-588-6027
-
-Marianne Guillory- Quality Control Manager Dean Morris, LLP
-
-(318)-388-1440 ext 2093
-
-#
-# Additional Experience
-
-## December 2017 – June 2018
-
-### Olive Garden, Monroe *- Server/Bartender/Togo/Marketing*
-
-- Overseeing and checking out waitstaff
-
-- Making quality drinks
-
-- Overseeing Togo Orders
-
-- Tracking Alcohol Consumption and Beer Count for Restocking and Sales
-  Management
-
-## March 2014 – September 2014
-
-### McAlister’s, Baton Rouge*- Server*
-
-- Delivered food in a safe and timely manner.
-
-- Worked with GM for closing duties/Sales Tracking.
-
-## March 2016 – May 2017
-
-### Domino’s Pizza, Monroe/Ruston *–Delivery Driver/Inside Cook/ Assistant Manager*
-
-- Made and Delivered Pizzas in a timely Manner.
-
-- Assistant Manager in Training and Sales Tracking
-
-- Performed closing duties and brought daily earnings to bank for night
-  deposit
-
-## May 2017 – March 2018
-
-### Copeland’s of New Orleans, Monroe *- Headwait/Bartender/Catering/Marketing*
-
-- Overseeing and checking out waitstaff
-
-- Making quality drinks
-
-- Training new employees in required skills
-
-- Tracking Alcohol Consumption and Beer Count for Restocking and Sales
-  Management
-
-## March 2019 – March 2020
-
-### Texas Roadhouse, West Monroe/Baton Rouge *- Server*
-
-- Delivered food in a safe and timely manner.
-
-- Served according to specials and sales quotas in a friendly and family
-  oriented manner.
-
-- Worked with GM for closing duties/Sales Tracking.
